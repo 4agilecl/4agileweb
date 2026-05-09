@@ -1,0 +1,16 @@
+Uploading file (webdev private): /home/ubuntu/webdev-static-assets/4agile/4A-01.png (size: 10010 bytes)
+File uploaded successfully!
+Storage Path: /manus-storage/4A-01_ef1ac602.png
+Uploading file (webdev private): /home/ubuntu/webdev-static-assets/4agile/4A-02.png (size: 9631 bytes)
+File uploaded successfully!
+Storage Path: /manus-storage/4A-02_675ed2a4.png
+Uploading file (webdev private): /home/ubuntu/webdev-static-assets/4agile/4A-03.png (size: 10067 bytes)
+File uploaded successfully!
+Storage Path: /manus-storage/4A-03_5031d5e0.png
+
+========== Upload Summary ==========
+[SUCCESS] /home/ubuntu/webdev-static-assets/4agile/4A-01.png -> /manus-storage/4A-01_ef1ac602.png
+[SUCCESS] /home/ubuntu/webdev-static-assets/4agile/4A-02.png -> /manus-storage/4A-02_675ed2a4.png
+[SUCCESS] /home/ubuntu/webdev-static-assets/4agile/4A-03.png -> /manus-storage/4A-03_5031d5e0.png
+=====================================
+Total: 3, Success: 3, Failed: 0
