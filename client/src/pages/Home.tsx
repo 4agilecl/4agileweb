@@ -58,6 +58,7 @@ export default function Home() {
           <a href="#diferenciales">Diferenciales</a>
           <a href="#proceso">Proceso</a>
           <a href="#especialidades">Especialidades</a>
+          <a href="#blog">Blog</a>
           <a className="nav-cta" href="#contacto">Conversemos</a>
         </nav>
       </header>
@@ -66,8 +67,8 @@ export default function Home() {
         <section className="hero section-dark" style={{ backgroundImage: `url(${HERO_URL})` }}>
           <div className="hero-overlay" />
           <div className="hero-content container">
-            <div className="eyebrow">Outsourcing de talentos · Hunting especializado</div>
-            <h1>Talento experto para crecer, transformar y ejecutar sin fricción.</h1>
+            <div className="eyebrow">STAFFING REFORMER • OUTSOURCING ESPECIALIZADO</div>
+            <h1>Talento que transforma, acelera y marca la diferencia desde el día uno.</h1>
             <p className="hero-copy">En 4AGILE ayudamos a empresas a incorporar talento especializado mediante dos servicios principales: <strong>outsourcing de talentos</strong> para sumar capacidad operativa y <strong>hunting de talentos</strong> para encontrar perfiles clave con precisión, velocidad y acompañamiento experto.</p>
             <div className="hero-actions">
               <a className="btn btn-primary" href="#contacto">Solicitar talento <ArrowRight size={18} /></a>
