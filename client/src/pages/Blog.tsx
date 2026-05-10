@@ -18,6 +18,26 @@ const articles = [
     image:
       "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=800&q=80",
   },
+  {
+    slug: "data-scientist-en-chile",
+    title: "Cómo un Data Scientist en Chile impulsa la toma de decisiones",
+    excerpt: "Descubre cómo un Data Scientist en Chile puede transformar la sobreabundancia de datos de tu empresa en decisiones estratégicas y ventajas competitivas.",
+    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80",
+    date: "2026-05-10",
+    category: "Datos",
+    tags: ["Data Scientist", "Chile", "Toma de decisiones", "Machine Learning"],
+    metaDescription: "Descubre cómo integrar un Data Scientist en Chile transforma los datos de tu empresa en rentabilidad y decisiones estratégicas. ¡Contáctanos!"
+  },
+  {
+    slug: "servicios-devops-chile-migracion-cloud",
+    title: "Migración Cloud y Servicios DevOps en Chile: Clave de Agilidad",
+    excerpt: "Acelera tus procesos y mejora la estabilidad de tu infraestructura tecnológica mediante la adopción de Servicios DevOps en Chile y estrategias Cloud.",
+    image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=800&q=80",
+    date: "2026-05-10",
+    category: "DevOps y Cloud",
+    tags: ["Servicios DevOps", "Cloud", "Chile", "Migración", "Integración Continua"],
+    metaDescription: "Acelera tus lanzamientos y escala tu infraestructura con nuestros Servicios DevOps en Chile. Agilidad y seguridad para tu empresa. ¡Escríbenos!"
+  },
 ];
 
 export default function Blog() {
