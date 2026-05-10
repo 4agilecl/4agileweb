@@ -209,6 +209,7 @@ export default function Home() {{
               <p className="hidden-field"><label>No completar: <input name="bot-field" /></label></p>
               <label>Nombre<input name="nombre" type="text" placeholder="Tu nombre" required /></label>
               <label>Empresa<input name="empresa" type="text" placeholder="Nombre de la empresa" /></label>
+              <label>Teléfono<input name="telefono" type="tel" placeholder="Tu teléfono (opcional)" /></label>
               <label>Correo<input name="email" type="email" placeholder="tu@empresa.com" required /></label>
               <label>Servicio de interés
                 <select name="servicio" defaultValue="" required>
@@ -320,6 +321,7 @@ index = f'''<!doctype html>
       <input name="bot-field" />
       <input type="text" name="nombre" />
       <input type="text" name="empresa" />
+      <input type="tel" name="telefono" />
       <input type="email" name="email" />
       <select name="servicio"><option>Outsourcing de talentos</option><option>Hunting de talentos</option><option>Outsourcing y hunting</option></select>
       <textarea name="mensaje"></textarea>

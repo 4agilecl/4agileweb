@@ -1,4 +1,6 @@
-import { ArrowRight, BadgeCheck, Clock3, Handshake, Mail, Phone, Search, ShieldCheck, Target, UsersRound } from "lucide-react";
+import { useState } from "react";
+import { useLocation, Link } from "wouter";
+import { ArrowRight, BadgeCheck, BookOpen, Clock3, Handshake, Mail, Phone, Search, ShieldCheck, Target, UsersRound } from "lucide-react";
 
 const LOGO_URL = "https://files.manuscdn.com/user_upload_by_module/session_file/310519663522518131/WbYuRCsZwwbLteMC.png";
 const HERO_URL = "https://files.manuscdn.com/user_upload_by_module/session_file/310519663522518131/mRkESQxeYuKpdQTF.png";
@@ -46,6 +48,40 @@ const specialties = [
 ];
 
 export default function Home() {
+  const [, setLocation] = useLocation();
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [isSuccess, setIsSuccess] = useState(false);
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+    const form = e.currentTarget;
+    const formData = new FormData(form);
+
+    try {
+      // Usar la ruta del archivo estático generado en el index.html
+      // para asegurar que el enrutamiento SSR no intercepte el POST
+      const response = await fetch('/index.html', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: new URLSearchParams(formData as any).toString(),
+      });
+
+      if (response.ok) {
+        setIsSuccess(true);
+        form.reset();
+      } else {
+        console.error('Error enviando formulario:', response.statusText);
+        alert('Hubo un problema al enviar el formulario. Por favor, intenta de nuevo.');
+      }
+    } catch (error) {
+      console.error('Error al enviar el formulario:', error);
+      alert('Hubo un problema de conexión al enviar el formulario. Por favor, intenta de nuevo.');
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
   return (
     <div className="site-shell">
       <header className="site-header" aria-label="Navegación principal">
@@ -58,6 +94,7 @@ export default function Home() {
           <a href="#diferenciales">Diferenciales</a>
           <a href="#proceso">Proceso</a>
           <a href="#especialidades">Especialidades</a>
+          <Link href="/blog">Blog</Link>
           <a className="nav-cta" href="#contacto">Conversemos</a>
         </nav>
       </header>
@@ -66,8 +103,8 @@ export default function Home() {
         <section className="hero section-dark" style={{ backgroundImage: `url(${HERO_URL})` }}>
           <div className="hero-overlay" />
           <div className="hero-content container">
-            <div className="eyebrow">Outsourcing de talentos · Hunting especializado</div>
-            <h1>Talento experto para crecer, transformar y ejecutar sin fricción.</h1>
+            <div className="eyebrow">STAFFING REFORMER • OUTSOURCING ESPECIALIZADO</div>
+            <h1>Talento que transforma, acelera y marca la diferencia desde el día uno.</h1>
             <p className="hero-copy">En 4AGILE ayudamos a empresas a incorporar talento especializado mediante dos servicios principales: <strong>outsourcing de talentos</strong> para sumar capacidad operativa y <strong>hunting de talentos</strong> para encontrar perfiles clave con precisión, velocidad y acompañamiento experto.</p>
             <div className="hero-actions">
               <a className="btn btn-primary" href="#contacto">Solicitar talento <ArrowRight size={18} /></a>
@@ -181,6 +218,42 @@ export default function Home() {
           </div>
         </section>
 
+        <section className="blog container" id="blog" style={{ padding: '110px 0' }}>
+          <div className="section-kicker">Blog</div>
+          <h2>Perspectivas y conocimientos sobre talento y agilidad.</h2>
+          <div className="primary-services" style={{ gap: '2rem' }}>
+            <Link href="/blog/por-que-es-util-el-outsourcing" style={{ textDecoration: 'none' }}>
+              <article className="primary-service-card" style={{ cursor: 'pointer', padding: 0, overflow: 'hidden', display: 'flex', flexDirection: 'column', height: '100%' }}>
+                <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80" alt="Por qué es útil el outsourcing" style={{ width: '100%', height: '200px', objectFit: 'cover', borderBottom: '1px solid var(--line)' }} />
+                <div style={{ padding: '24px', flex: 1, display: 'flex', flexDirection: 'column' }}>
+                  <div className="service-topline" style={{ marginBottom: '12px' }}><BookOpen size={24} /><span>Negocios</span></div>
+                  <h3 style={{ fontSize: '24px', marginBottom: '16px' }}>Por qué es útil el outsourcing en la era digital</h3>
+                  <p style={{ flex: 1 }}>Descubre cómo la externalización de talento puede acelerar tus proyectos y reducir costos operativos.</p>
+                  <span style={{ display: 'flex', alignItems: 'center', gap: '8px', color: 'var(--blue)', fontWeight: 600, marginTop: '16px' }}>
+                    Leer artículo <ArrowRight size={17} />
+                  </span>
+                </div>
+              </article>
+            </Link>
+            <Link href="/blog/estado-del-arte-inteligencia-artificial" style={{ textDecoration: 'none' }}>
+              <article className="primary-service-card" style={{ cursor: 'pointer', padding: 0, overflow: 'hidden', display: 'flex', flexDirection: 'column', height: '100%' }}>
+                <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=800&q=80" alt="Estado del arte IA" style={{ width: '100%', height: '200px', objectFit: 'cover', borderBottom: '1px solid var(--line)' }} />
+                <div style={{ padding: '24px', flex: 1, display: 'flex', flexDirection: 'column' }}>
+                  <div className="service-topline" style={{ marginBottom: '12px' }}><BookOpen size={24} /><span>Tecnología</span></div>
+                  <h3 style={{ fontSize: '24px', marginBottom: '16px' }}>El estado del arte de la inteligencia artificial</h3>
+                  <p style={{ flex: 1 }}>Un análisis de los avances más recientes en IA y su aplicación práctica en el mundo empresarial moderno.</p>
+                  <span style={{ display: 'flex', alignItems: 'center', gap: '8px', color: 'var(--blue)', fontWeight: 600, marginTop: '16px' }}>
+                    Leer artículo <ArrowRight size={17} />
+                  </span>
+                </div>
+              </article>
+            </Link>
+          </div>
+          <div style={{ textAlign: 'center', marginTop: '3rem' }}>
+            <Link href="/blog" className="btn btn-secondary">Ver todos los artículos</Link>
+          </div>
+        </section>
+
         <section className="contact container" id="contacto">
           <div className="contact-card">
             <div>
@@ -193,23 +266,39 @@ export default function Home() {
                 <a href="https://www.4agile.cl" target="_blank" rel="noopener">www.4agile.cl</a>
               </div>
             </div>
-            <form className="lead-form" name="contacto-4agile" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/gracias">
-              <input type="hidden" name="form-name" value="contacto-4agile" />
-              <p className="hidden-field"><label>No completar: <input name="bot-field" /></label></p>
-              <label>Nombre<input name="nombre" type="text" placeholder="Tu nombre" required /></label>
-              <label>Empresa<input name="empresa" type="text" placeholder="Nombre de la empresa" /></label>
-              <label>Correo<input name="email" type="email" placeholder="tu@empresa.com" required /></label>
-              <label>Servicio de interés
-                <select name="servicio" defaultValue="" required>
-                  <option value="" disabled>Selecciona una opción</option>
-                  <option value="Outsourcing de talentos">Outsourcing de talentos</option>
-                  <option value="Hunting de talentos">Hunting de talentos</option>
-                  <option value="Outsourcing y hunting">Outsourcing y hunting</option>
-                </select>
-              </label>
-              <label>¿Qué necesitas?<textarea name="mensaje" rows={4} placeholder="Cuéntanos qué perfil, capacidad o desafío necesitas resolver" required /></label>
-              <button className="btn btn-primary" type="submit">Enviar solicitud <ArrowRight size={18} /></button>
-            </form>
+            {isSuccess ? (
+              <div className="lead-form" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', textAlign: 'center', padding: '40px 20px', gap: '16px', background: '#fff', borderRadius: '24px', border: '1px solid var(--line)', boxShadow: 'var(--shadow)' }}>
+                <div style={{ width: '64px', height: '64px', borderRadius: '50%', backgroundColor: 'var(--blue)', color: 'white', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '8px' }}>
+                  <BadgeCheck size={36} />
+                </div>
+                <h3 style={{ margin: 0, fontSize: '24px', color: 'var(--blue-700)' }}>¡Mensaje enviado!</h3>
+                <p style={{ margin: 0, color: 'var(--muted)' }}>Gracias por contactarnos. Nuestro equipo revisará tu solicitud y se comunicará contigo a la brevedad.</p>
+                <button className="btn btn-primary" style={{ marginTop: '16px' }} onClick={() => setIsSuccess(false)}>
+                  Enviar otro mensaje
+                </button>
+              </div>
+            ) : (
+              <form className="lead-form" name="contacto-4agile" method="POST" data-netlify="true" netlify-honeypot="bot-field" onSubmit={handleSubmit}>
+                <input type="hidden" name="form-name" value="contacto-4agile" />
+                <p className="hidden-field" style={{ display: 'none' }}><label>No completar: <input name="bot-field" /></label></p>
+                <label>Nombre<input name="nombre" type="text" placeholder="Tu nombre" required disabled={isSubmitting} /></label>
+                <label>Empresa<input name="empresa" type="text" placeholder="Nombre de la empresa" disabled={isSubmitting} /></label>
+                <label>Teléfono<input name="telefono" type="tel" placeholder="Tu teléfono (opcional)" disabled={isSubmitting} /></label>
+                <label>Correo<input name="email" type="email" placeholder="tu@empresa.com" required disabled={isSubmitting} /></label>
+                <label>Servicio de interés
+                  <select name="servicio" defaultValue="" required disabled={isSubmitting}>
+                    <option value="" disabled>Selecciona una opción</option>
+                    <option value="Outsourcing de talentos">Outsourcing de talentos</option>
+                    <option value="Hunting de talentos">Hunting de talentos</option>
+                    <option value="Outsourcing y hunting">Outsourcing y hunting</option>
+                  </select>
+                </label>
+                <label>¿Qué necesitas?<textarea name="mensaje" rows={4} placeholder="Cuéntanos qué perfil, capacidad o desafío necesitas resolver" required disabled={isSubmitting} /></label>
+                <button className="btn btn-primary" type="submit" disabled={isSubmitting}>
+                  {isSubmitting ? "Enviando..." : "Enviar solicitud"} <ArrowRight size={18} />
+                </button>
+              </form>
+            )}
           </div>
         </section>
       </main>
