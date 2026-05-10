@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap");
 @import "tailwindcss";
 @import "tw-animate-css";
 
@@ -20,17 +20,17 @@
   --color-ring: var(--ring);
 }
 
-:root{
-  --blue:#284b9b;
-  --blue-700:#163577;
-  --blue-900:#071a3d;
-  --ink:#0f172a;
-  --muted:#5f6b7a;
-  --line:#d9e2ef;
-  --bg:#f7f9fc;
-  --white:#ffffff;
-  --shadow:0 24px 70px rgba(8,24,60,.14);
-  --radius:28px;
+:root {
+  --blue: #284b9b;
+  --blue-700: #163577;
+  --blue-900: #071a3d;
+  --ink: #0f172a;
+  --muted: #5f6b7a;
+  --line: #d9e2ef;
+  --bg: #f7f9fc;
+  --white: #ffffff;
+  --shadow: 0 24px 70px rgba(8, 24, 60, 0.14);
+  --radius: 28px;
   --background: oklch(0.985 0.006 245);
   --foreground: oklch(0.18 0.02 250);
   --primary: oklch(0.39 0.15 263);
