@@ -109,7 +109,7 @@ export default function Home() {
     try {
       // Usar la ruta del archivo estático generado en el index.html
       // para asegurar que el enrutamiento SSR no intercepte el POST
-      const response = await fetch("/index.html", {
+      const response = await fetch("/__forms.html", {
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
         body: new URLSearchParams(formData as any).toString(),
@@ -473,6 +473,7 @@ export default function Home() {
                 onSubmit={handleSubmit}
               >
                 <input type="hidden" name="form-name" value="contacto-4agile" />
+                <input type="hidden" name="subject" value="Nuevo mensaje de contacto de %{nombre}" />
                 <p className="hidden-field" style={{ display: "none" }}>
                   <label>
                     No completar: <input name="bot-field" />
