@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { ArrowRight, BadgeCheck, Clock3, Handshake, Mail, Phone, Search, ShieldCheck, Target, UsersRound } from "lucide-react";
 
 const LOGO_URL = "https://files.manuscdn.com/user_upload_by_module/session_file/310519663522518131/WbYuRCsZwwbLteMC.png";
@@ -46,6 +47,29 @@ const specialties = [
 ];
 
 export default function Home() {
+  const [isSubmitted, setIsSubmitted] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+    const form = e.currentTarget;
+    const formData = new FormData(form);
+
+    try {
+      await fetch("/__forms.html", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: new URLSearchParams(formData as any).toString(),
+      });
+      setIsSubmitted(true);
+    } catch (error) {
+      console.error("Error al enviar el formulario", error);
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
   return (
     <div className="site-shell">
       <header className="site-header" aria-label="Navegación principal">
@@ -67,8 +91,8 @@ export default function Home() {
         <section className="hero section-dark" style={{ backgroundImage: `url(${HERO_URL})` }}>
           <div className="hero-overlay" />
           <div className="hero-content container">
-            <div className="eyebrow">Outsourcing de talentos · Hunting especializado</div>
-            <h1>Talento experto para crecer, transformar y ejecutar sin fricción.</h1>
+            <div className="eyebrow">STAFFING REFORMER • OUTSOURCING ESPECIALIZADO</div>
+            <h1>Talento que transforma, acelera y marca la diferencia desde el día uno.</h1>
             <p className="hero-copy">En 4AGILE ayudamos a empresas a incorporar talento especializado mediante dos servicios principales: <strong>outsourcing de talentos</strong> para sumar capacidad operativa y <strong>hunting de talentos</strong> para encontrar perfiles clave con precisión, velocidad y acompañamiento experto.</p>
             <div className="hero-actions">
               <a className="btn btn-primary" href="#contacto">Solicitar talento <ArrowRight size={18} /></a>
@@ -234,23 +258,33 @@ export default function Home() {
                 <a href="https://www.4agile.cl" target="_blank" rel="noopener">www.4agile.cl</a>
               </div>
             </div>
-            <form className="lead-form" name="contacto-4agile" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/gracias">
-              <input type="hidden" name="form-name" value="contacto-4agile" />
-              <p className="hidden-field"><label>No completar: <input name="bot-field" /></label></p>
-              <label>Nombre<input name="nombre" type="text" placeholder="Tu nombre" required /></label>
-              <label>Empresa<input name="empresa" type="text" placeholder="Nombre de la empresa" /></label>
-              <label>Correo<input name="email" type="email" placeholder="tu@empresa.com" required /></label>
-              <label>Servicio de interés
-                <select name="servicio" defaultValue="" required>
-                  <option value="" disabled>Selecciona una opción</option>
-                  <option value="Outsourcing de talentos">Outsourcing de talentos</option>
-                  <option value="Hunting de talentos">Hunting de talentos</option>
-                  <option value="Outsourcing y hunting">Outsourcing y hunting</option>
-                </select>
-              </label>
-              <label>¿Qué necesitas?<textarea name="mensaje" rows={4} placeholder="Cuéntanos qué perfil, capacidad o desafío necesitas resolver" required /></label>
-              <button className="btn btn-primary" type="submit">Enviar solicitud <ArrowRight size={18} /></button>
-            </form>
+            {isSubmitted ? (
+              <div className="lead-form success-message" style={{ textAlign: "center", padding: "3rem 1.5rem" }}>
+                <BadgeCheck size={48} style={{ color: "var(--color-primary)", margin: "0 auto 1rem" }} />
+                <h3>¡Gracias por tu mensaje!</h3>
+                <p>Hemos recibido tu solicitud correctamente. Nos pondremos en contacto contigo a la brevedad para conversar sobre cómo podemos ayudarte.</p>
+              </div>
+            ) : (
+              <form className="lead-form" name="contacto-4agile" method="POST" data-netlify="true" netlify-honeypot="bot-field" onSubmit={handleSubmit}>
+                <input type="hidden" name="form-name" value="contacto-4agile" />
+                <p className="hidden-field"><label>No completar: <input name="bot-field" /></label></p>
+                <label>Nombre<input name="nombre" type="text" placeholder="Tu nombre" required /></label>
+                <label>Empresa<input name="empresa" type="text" placeholder="Nombre de la empresa" /></label>
+                <label>Correo<input name="email" type="email" placeholder="tu@empresa.com" required /></label>
+                <label>Servicio de interés
+                  <select name="servicio" defaultValue="" required>
+                    <option value="" disabled>Selecciona una opción</option>
+                    <option value="Outsourcing de talentos">Outsourcing de talentos</option>
+                    <option value="Hunting de talentos">Hunting de talentos</option>
+                    <option value="Outsourcing y hunting">Outsourcing y hunting</option>
+                  </select>
+                </label>
+                <label>¿Qué necesitas?<textarea name="mensaje" rows={4} placeholder="Cuéntanos qué perfil, capacidad o desafío necesitas resolver" required /></label>
+                <button className="btn btn-primary" type="submit" disabled={isSubmitting}>
+                  {isSubmitting ? "Enviando..." : <>Enviar solicitud <ArrowRight size={18} /></>}
+                </button>
+              </form>
+            )}
           </div>
         </section>
       </main>
