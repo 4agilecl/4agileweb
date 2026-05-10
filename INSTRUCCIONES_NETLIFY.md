@@ -2,14 +2,14 @@
 
 Esta versión conserva el diseño premium original preparado para GoHighLevel y queda adaptada para Netlify. El contenido se centra en los servicios principales de **outsourcing de talentos** y **hunting de talentos**, destacando velocidad, curaduría, garantía comercial, acompañamiento experto y reducción de riesgo.
 
-| Elemento | Configuración final |
-|---|---|
-| Plataforma recomendada | Netlify |
-| Build command | `pnpm build` |
-| Publish directory | `dist/public` |
-| Formulario | `contacto-4agile` |
-| Página posterior al envío | `/gracias` |
-| SEO técnico | `title`, `description`, Open Graph, JSON-LD, `robots.txt`, `sitemap.xml` |
+| Elemento                  | Configuración final                                                      |
+| ------------------------- | ------------------------------------------------------------------------ |
+| Plataforma recomendada    | Netlify                                                                  |
+| Build command             | `pnpm build`                                                             |
+| Publish directory         | `dist/public`                                                            |
+| Formulario                | `contacto-4agile`                                                        |
+| Página posterior al envío | `/gracias`                                                               |
+| SEO técnico               | `title`, `description`, Open Graph, JSON-LD, `robots.txt`, `sitemap.xml` |
 
 ## Pasos para publicar
 

@@ -1,7 +1,18 @@
 <html>
   <body>
-    <form name="contacto-4agile" method="POST" data-netlify="true" netlify-honeypot="bot-field" hidden>
+    <form
+      name="contacto-4agile"
+      method="POST"
+      data-netlify="true"
+      netlify-honeypot="bot-field"
+      hidden
+    >
       <input type="hidden" name="form-name" value="contacto-4agile" />
+      <input
+        type="hidden"
+        name="subject"
+        value="Nuevo mensaje de contacto de %{nombre}"
+      />
       <input name="bot-field" />
       <input type="text" name="nombre" />
       <input type="text" name="empresa" />
