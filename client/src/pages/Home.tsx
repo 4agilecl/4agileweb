@@ -82,7 +82,7 @@ export default function Home() {
           <a href="#diferenciales">Diferenciales</a>
           <a href="#proceso">Proceso</a>
           <a href="#especialidades">Especialidades</a>
-          <a href="#blog">Blog</a>
+          <a href="/blog">Blog</a>
           <a className="nav-cta" href="#contacto">Conversemos</a>
         </nav>
       </header>
@@ -203,6 +203,46 @@ export default function Home() {
               <h2>Si el primer mes el talento no satisface tus expectativas, ese mes es gratis.</h2>
             </div>
             <p>Respaldamos la calidad de nuestra búsqueda, evaluación e integración. Si el perfil no es el adecuado, buscamos un reemplazo sin costo adicional y mantenemos el foco en resolver tu necesidad.</p>
+          </div>
+        </section>
+
+        <section className="blog container" id="blog" style={{ padding: "110px 0" }}>
+          <div className="section-kicker">Blog</div>
+          <h2>Perspectivas y conocimientos sobre talento y agilidad.</h2>
+          <div className="primary-services" style={{ gap: "2rem" }}>
+            <a href="/blog/por-que-es-util-el-outsourcing" style={{ textDecoration: "none" }}>
+              <article className="primary-service-card" style={{ cursor: "pointer", padding: 0, overflow: "hidden", display: "flex", flexDirection: "column", height: "100%" }}>
+                <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80" alt="Por qué es útil el outsourcing" style={{ width: "100%", height: "200px", objectFit: "cover", borderBottom: "1px solid var(--line)" }} />
+                <div style={{ padding: "24px", flex: 1, display: "flex", flexDirection: "column" }}>
+                  <div className="service-topline" style={{ marginBottom: "12px" }}>
+                    <span>Negocios</span>
+                  </div>
+                  <h3 style={{ fontSize: "24px", marginBottom: "16px" }}>Por qué es útil el outsourcing en la era digital</h3>
+                  <p style={{ flex: 1, color: "var(--muted)" }}>Descubre cómo la externalización de talento puede acelerar tus proyectos y reducir costos operativos.</p>
+                  <span style={{ display: "flex", alignItems: "center", gap: "8px", color: "var(--blue)", fontWeight: 600, marginTop: "16px" }}>
+                    Leer artículo <ArrowRight size={17} />
+                  </span>
+                </div>
+              </article>
+            </a>
+            <a href="/blog/estado-del-arte-inteligencia-artificial" style={{ textDecoration: "none" }}>
+              <article className="primary-service-card" style={{ cursor: "pointer", padding: 0, overflow: "hidden", display: "flex", flexDirection: "column", height: "100%" }}>
+                <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=800&q=80" alt="Estado del arte IA" style={{ width: "100%", height: "200px", objectFit: "cover", borderBottom: "1px solid var(--line)" }} />
+                <div style={{ padding: "24px", flex: 1, display: "flex", flexDirection: "column" }}>
+                  <div className="service-topline" style={{ marginBottom: "12px" }}>
+                    <span>Tecnología</span>
+                  </div>
+                  <h3 style={{ fontSize: "24px", marginBottom: "16px" }}>El estado del arte de la inteligencia artificial</h3>
+                  <p style={{ flex: 1, color: "var(--muted)" }}>Un análisis de los avances más recientes en IA y su aplicación práctica en el mundo empresarial moderno.</p>
+                  <span style={{ display: "flex", alignItems: "center", gap: "8px", color: "var(--blue)", fontWeight: 600, marginTop: "16px" }}>
+                    Leer artículo <ArrowRight size={17} />
+                  </span>
+                </div>
+              </article>
+            </a>
+          </div>
+          <div style={{ textAlign: "center", marginTop: "3rem" }}>
+            <a href="/blog" className="btn btn-secondary" style={{ color: "var(--ink)", borderColor: "var(--line)" }}>Ver todos los artículos</a>
           </div>
         </section>
 
