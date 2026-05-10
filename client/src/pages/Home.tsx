@@ -31,7 +31,7 @@ const serviceCards = [
     icon: Search,
     title: "Hunting de talentos",
     label: "Búsqueda precisa de perfiles clave",
-    copy: "Encontramos, evaluamos y presentamos candidatos alineados al perfil técnico, contexto cultural y objetivos del negocio. Aplicamos curaduría experta para reducir tiempo, riesgo y fricción en contrataciones estratégicas.",
+    copy: "Encontramos, evaluamos y presentamos candidatos alineados al perfil técnico, contexto cultural y objetivos del negocio. Aplicamos selección experta para reducir tiempo, riesgo y fricción en contrataciones estratégicas.",
     cta: "Quiero buscar un perfil clave",
   },
 ];
@@ -320,7 +320,7 @@ export default function Home() {
               </article>
               <article>
                 <span>Hunting</span>
-                <h3>Curaduría antes que volumen</h3>
+                <h3>Selección antes que volumen</h3>
                 <p>
                   Buscamos perfiles alineados al contexto técnico y cultural,
                   reduciendo entrevistas improductivas y tiempo de decisión.
@@ -473,7 +473,7 @@ export default function Home() {
                 onSubmit={handleSubmit}
               >
                 <input type="hidden" name="form-name" value="contacto-4agile" />
-                <input type="hidden" name="subject" value="Nuevo mensaje de contacto de %{nombre}" />
+                <input type="hidden" name="subject" value="Propsecto del sitio web 4agile.cl" />
                 <p className="hidden-field" style={{ display: "none" }}>
                   <label>
                     No completar: <input name="bot-field" />

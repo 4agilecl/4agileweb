@@ -26,7 +26,7 @@ const serviceCards = [
     icon: Search,
     title: "Hunting de talentos",
     label: "Búsqueda precisa de perfiles clave",
-    copy: "Encontramos, evaluamos y presentamos candidatos alineados al perfil técnico, contexto cultural y objetivos del negocio. Aplicamos curaduría experta para reducir tiempo, riesgo y fricción en contrataciones estratégicas.",
+    copy: "Encontramos, evaluamos y presentamos candidatos alineados al perfil técnico, contexto cultural y objetivos del negocio. Aplicamos selección experta para reducir tiempo, riesgo y fricción en contrataciones estratégicas.",
     cta: "Quiero buscar un perfil clave",
   }},
 ];
@@ -166,7 +166,7 @@ export default function Home() {{
             <h2>Una experiencia de talento más rápida, cercana y medible.</h2>
             <div className="case-grid">
               <article><span>Outsourcing</span><h3>Talento integrado, no tercerización distante</h3><p>Los profesionales trabajan conectados al cliente y acompañados por 4AGILE para mantener desempeño, motivación y continuidad.</p></article>
-              <article><span>Hunting</span><h3>Curaduría antes que volumen</h3><p>Buscamos perfiles alineados al contexto técnico y cultural, reduciendo entrevistas improductivas y tiempo de decisión.</p></article>
+              <article><span>Hunting</span><h3>Selección antes que volumen</h3><p>Buscamos perfiles alineados al contexto técnico y cultural, reduciendo entrevistas improductivas y tiempo de decisión.</p></article>
               <article><span>Acompañamiento</span><h3>Seguimiento posterior a la incorporación</h3><p>Mentorías, feedback y comunicación cercana con talentos y líderes para asegurar adopción y resultados.</p></article>
             </div>
           </div>
@@ -306,7 +306,7 @@ index = f'''<!doctype html>
     <link rel="canonical" href="https://TU-DOMINIO.com/" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="4AGILE | Outsourcing de talentos y hunting especializado" />
-    <meta property="og:description" content="Incorpora talento especializado con rapidez, curaduría experta, garantía comercial y acompañamiento continuo." />
+    <meta property="og:description" content="Incorpora talento especializado con rapidez, selección experta, garantía comercial y acompañamiento continuo." />
     <meta property="og:image" content="{hero_url}" />
     <meta property="og:url" content="https://TU-DOMINIO.com/" />
     <meta name="twitter:card" content="summary_large_image" />
