@@ -77,7 +77,7 @@ const process = [
   [
     "03",
     "Presentamos",
-    "Entregamos perfiles curados y listos para entrevista en un plazo ágil.",
+    "Entregamos perfiles filtrados y entrevistados y listos para entrevista en un plazo ágil.",
   ],
   [
     "04",
@@ -536,6 +536,12 @@ export default function Home() {
                     </option>
                     <option value="Outsourcing y hunting">
                       Outsourcing y hunting
+                    </option>
+                    <option value="Entrenamiento y talleres de formación">
+                      Entrenamiento y talleres de formación
+                    </option>
+                    <option value="otros">
+                      otros
                     </option>
                   </select>
                 </label>

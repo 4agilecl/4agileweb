@@ -43,7 +43,7 @@ const differentiators = [
 const process = [
   ["01", "Escuchamos", "Entendemos tu necesidad, urgencia, cultura, stack, objetivos y perfil ideal."],
   ["02", "Buscamos", "Activamos hunting, screening y evaluación para encontrar talento realmente alineado."],
-  ["03", "Presentamos", "Entregamos perfiles curados y listos para entrevista en un plazo ágil."],
+  ["03", "Presentamos", "Entregamos perfiles filtrados y entrevistados y listos para entrevista en un plazo ágil."],
   ["04", "Acompañamos", "Facilitamos incorporación, seguimiento, mentorías, coaching y mejora continua."],
 ];
 
