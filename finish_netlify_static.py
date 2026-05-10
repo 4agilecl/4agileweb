@@ -94,7 +94,7 @@ Sitemap: https://TU-DOMINIO.com/sitemap.xml
 
 (root / 'INSTRUCCIONES_NETLIFY.md').write_text('''# 4AGILE — Publicación en Netlify
 
-Esta versión conserva el diseño premium original preparado para GoHighLevel y queda adaptada para Netlify. El contenido se centra en los servicios principales de **outsourcing de talentos** y **hunting de talentos**, destacando velocidad, curaduría, garantía comercial, acompañamiento experto y reducción de riesgo.
+Esta versión conserva el diseño premium original preparado para GoHighLevel y queda adaptada para Netlify. El contenido se centra en los servicios principales de **outsourcing de talentos** y **hunting de talentos**, destacando velocidad, selección, garantía comercial, acompañamiento experto y reducción de riesgo.
 
 | Elemento | Configuración final |
 |---|---|
