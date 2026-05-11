@@ -38,6 +38,26 @@ const articles = [
     tags: ["Servicios DevOps", "Cloud", "Chile", "Migración", "Integración Continua"],
     metaDescription: "Acelera tus lanzamientos y escala tu infraestructura con nuestros Servicios DevOps en Chile. Agilidad y seguridad para tu empresa. ¡Escríbenos!"
   },
+  {
+    slug: "automatizacion-procesos-empresariales-ia-chile",
+    title: "Automatización de procesos empresariales con IA en Chile: Eficiencia y crecimiento",
+    excerpt: "Descubre cómo la automatización de procesos empresariales con IA en Chile está transformando la operatividad, optimizando recursos y potenciando el talento B2B.",
+    image: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80",
+    date: "2026-05-11",
+    category: "Inteligencia Artificial",
+    tags: ["Automatización", "IA", "Chile", "Procesos", "Eficiencia"],
+    metaDescription: "La automatización de procesos empresariales con IA en Chile es clave para la competitividad corporativa. En 4AGILE te ayudamos a implementarla con talento experto. ¡Hablemos!"
+  },
+  {
+    slug: "modernizacion-aplicaciones-legacy-empresas-chilenas",
+    title: "Modernización de aplicaciones legacy para empresas chilenas: Innovación segura",
+    excerpt: "Conoce los beneficios de la modernización de aplicaciones legacy para empresas chilenas y cómo una transición estratégica asegura el éxito operativo.",
+    image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=800&q=80",
+    date: "2026-05-11",
+    category: "Desarrollo y Modernización",
+    tags: ["Modernización", "Aplicaciones Legacy", "Chile", "Innovación", "Software"],
+    metaDescription: "Evita riesgos y altos costos operativos. Descubre cómo la modernización de aplicaciones legacy impulsa a las empresas chilenas. ¡Contáctanos en 4AGILE!"
+  },
 ];
 
 export default function Blog() {
