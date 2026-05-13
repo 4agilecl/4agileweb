@@ -58,6 +58,27 @@ const articles = [
     tags: ["Modernización", "Aplicaciones Legacy", "Chile", "Innovación", "Software"],
     metaDescription: "Evita riesgos y altos costos operativos. Descubre cómo la modernización de aplicaciones legacy impulsa a las empresas chilenas. ¡Contáctanos en 4AGILE!"
   },
+  {
+    slug: "automatizacion-qa-equipos-digitales-chile",
+    title: "Automatización QA para equipos digitales en Chile: calidad continua y menos retrabajo",
+    excerpt: "Descubre cómo la automatización QA para equipos digitales en Chile optimiza el desarrollo, reduce el retrabajo y asegura productos de alta calidad.",
+    image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&q=80",
+    date: "2026-05-13",
+    category: "Calidad y Pruebas",
+    tags: ["Automatización QA", "Testing", "Chile", "Equipos Digitales", "Desarrollo de Software"],
+    metaDescription: "Optimiza tus entregas con automatización QA para equipos digitales en Chile. Reduce el retrabajo y mejora la calidad del software. ¡Contáctanos!"
+  },
+  {
+    slug: "ciberseguridad-transformacion-digital-chile",
+    title: "Ciberseguridad para transformación digital en Chile: proteger el crecimiento empresarial",
+    excerpt: "La ciberseguridad para transformación digital en Chile es vital para proteger los activos, la reputación y asegurar el éxito de tu modernización.",
+    image: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=800&q=80",
+    date: "2026-05-13",
+    category: "Ciberseguridad",
+    tags: ["Ciberseguridad", "Transformación Digital", "Chile", "Protección", "Empresas"],
+    metaDescription: "Asegura el futuro de tu negocio con ciberseguridad para transformación digital en Chile. Protegemos el crecimiento de tu empresa. ¡Escríbenos!"
+  },
+
 ];
 
 export default function Blog() {
