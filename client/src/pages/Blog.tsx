@@ -79,6 +79,26 @@ const articles = [
     metaDescription: "Asegura el futuro de tu negocio con ciberseguridad para transformación digital en Chile. Protegemos el crecimiento de tu empresa. ¡Escríbenos!"
   },
 
+  {
+    slug: "mlops-empresas-chilenas-ia-produccion",
+    title: "MLOps para empresas chilenas: escalando IA en producción",
+    excerpt: "Descubre cómo pasar de pilotos de IA a modelos productivos, gobernados, monitoreados y mantenibles mediante MLOps para empresas chilenas.",
+    image: "https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?auto=format&fit=crop&w=800&q=80",
+    date: "2026-05-14",
+    category: "Inteligencia Artificial",
+    tags: ["MLOps", "IA", "Chile", "Producción", "Modelos"],
+    metaDescription: "Escala la Inteligencia Artificial en tu organización. MLOps para empresas chilenas que buscan modelos en producción gobernados y eficientes. ¡Contáctanos!"
+  },
+  {
+    slug: "gobierno-datos-ia-responsable-chile",
+    title: "Gobierno de datos e IA responsable para organizaciones en Chile",
+    excerpt: "Conoce las políticas, trazabilidad y preparación organizacional necesarias para adoptar un sólido gobierno de datos e IA responsable en Chile.",
+    image: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=800&q=80",
+    date: "2026-05-14",
+    category: "Datos y Seguridad",
+    tags: ["Gobierno de datos", "IA responsable", "Chile", "Trazabilidad", "Políticas"],
+    metaDescription: "Asegura la calidad y adopción ética con gobierno de datos e IA responsable para organizaciones en Chile. Mitiga riesgos y lidera con 4AGILE. ¡Escríbenos!"
+  },
 ];
 
 export default function Blog() {
