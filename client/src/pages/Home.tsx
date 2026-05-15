@@ -146,6 +146,7 @@ export default function Home() {
           <a href="#diferenciales">Diferenciales</a>
           <a href="#proceso">Proceso</a>
           <a href="#especialidades">Especialidades</a>
+          <a href="#formacion">Formación</a>
           <Link href="/blog">Blog</Link>
           <a className="nav-cta" href="#contacto">
             Conversemos
@@ -164,8 +165,8 @@ export default function Home() {
               STAFFING REFORMER • OUTSOURCING ESPECIALIZADO
             </div>
             <h1>
-              Talento que transforma, acelera y marca la diferencia desde el día
-              uno.
+              Talento que transforma, acelera y marca la diferencia desde el
+              primer día.
             </h1>
             <p className="hero-copy">
               En 4AGILE ayudamos a empresas a incorporar talento especializado
@@ -302,6 +303,51 @@ export default function Home() {
                 <h3>{item}</h3>
               </article>
             ))}
+          </div>
+        </section>
+
+        <section className="intro container" id="formacion">
+          <div className="section-kicker">Qué enseñamos</div>
+          <div className="split">
+            <div>
+              <h2>
+                Formación continua y mentalidad de Silicon Valley para nuestros
+                talentos y tus equipos.
+              </h2>
+            </div>
+            <div>
+              <p>
+                El foco de 4AGILE está en las habilidades. Formamos a las
+                personas que trabajan con nosotros con cursos online de{" "}
+                <strong>Inteligencia Artificial</strong>, nivelación en brechas
+                tecnológicas y{" "}
+                <strong>coaching personalizado en habilidades blandas</strong>.
+                Esta misma experiencia de aprendizaje la ofrecemos a través de{" "}
+                <strong>talleres de formación para empresas</strong>.
+              </p>
+              <p>
+                Utilizamos nuestro propio <em>Handbook</em> para instalar la
+                mentalidad de Silicon Valley en nuestros talentos desplegados,
+                impulsando la innovación y productividad que también
+                transmitimos a nuestros clientes. Además, como pioneros en la
+                enseñanza de agilidad (a través de nuestra iniciativa hermana{" "}
+                <a
+                  href="https://agilefactor.digital"
+                  target="_blank"
+                  rel="noopener"
+                  style={{
+                    color: "var(--blue)",
+                    textDecoration: "underline",
+                    fontWeight: "600",
+                  }}
+                >
+                  Agilefactor
+                </a>
+                ), somos especialistas en mindset ágil más allá de los equipos
+                TI. Esto no es solo lo que enseñamos, es nuestra forma de operar
+                y generar valor.
+              </p>
+            </div>
           </div>
         </section>
 
@@ -473,7 +519,11 @@ export default function Home() {
                 onSubmit={handleSubmit}
               >
                 <input type="hidden" name="form-name" value="contacto-4agile" />
-                <input type="hidden" name="subject" value="Propsecto del sitio web 4agile.cl" />
+                <input
+                  type="hidden"
+                  name="subject"
+                  value="Propsecto del sitio web 4agile.cl"
+                />
                 <p className="hidden-field" style={{ display: "none" }}>
                   <label>
                     No completar: <input name="bot-field" />
@@ -540,9 +590,7 @@ export default function Home() {
                     <option value="Entrenamiento y talleres de formación">
                       Entrenamiento y talleres de formación
                     </option>
-                    <option value="otros">
-                      otros
-                    </option>
+                    <option value="otros">otros</option>
                   </select>
                 </label>
                 <label>

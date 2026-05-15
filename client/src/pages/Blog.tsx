@@ -21,83 +21,141 @@ const articles = [
   {
     slug: "data-scientist-en-chile",
     title: "Cómo un Data Scientist en Chile impulsa la toma de decisiones",
-    excerpt: "Descubre cómo un Data Scientist en Chile puede transformar la sobreabundancia de datos de tu empresa en decisiones estratégicas y ventajas competitivas.",
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80",
+    excerpt:
+      "Descubre cómo un Data Scientist en Chile puede transformar la sobreabundancia de datos de tu empresa en decisiones estratégicas y ventajas competitivas.",
+    image:
+      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80",
     date: "2026-05-10",
     category: "Datos",
     tags: ["Data Scientist", "Chile", "Toma de decisiones", "Machine Learning"],
-    metaDescription: "Descubre cómo integrar un Data Scientist en Chile transforma los datos de tu empresa en rentabilidad y decisiones estratégicas. ¡Contáctanos!"
+    metaDescription:
+      "Descubre cómo integrar un Data Scientist en Chile transforma los datos de tu empresa en rentabilidad y decisiones estratégicas. ¡Contáctanos!",
   },
   {
     slug: "servicios-devops-chile-migracion-cloud",
     title: "Migración Cloud y Servicios DevOps en Chile: Clave de Agilidad",
-    excerpt: "Acelera tus procesos y mejora la estabilidad de tu infraestructura tecnológica mediante la adopción de Servicios DevOps en Chile y estrategias Cloud.",
-    image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=800&q=80",
+    excerpt:
+      "Acelera tus procesos y mejora la estabilidad de tu infraestructura tecnológica mediante la adopción de Servicios DevOps en Chile y estrategias Cloud.",
+    image:
+      "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=800&q=80",
     date: "2026-05-10",
     category: "DevOps y Cloud",
-    tags: ["Servicios DevOps", "Cloud", "Chile", "Migración", "Integración Continua"],
-    metaDescription: "Acelera tus lanzamientos y escala tu infraestructura con nuestros Servicios DevOps en Chile. Agilidad y seguridad para tu empresa. ¡Escríbenos!"
+    tags: [
+      "Servicios DevOps",
+      "Cloud",
+      "Chile",
+      "Migración",
+      "Integración Continua",
+    ],
+    metaDescription:
+      "Acelera tus lanzamientos y escala tu infraestructura con nuestros Servicios DevOps en Chile. Agilidad y seguridad para tu empresa. ¡Escríbenos!",
   },
   {
     slug: "automatizacion-procesos-empresariales-ia-chile",
-    title: "Automatización de procesos empresariales con IA en Chile: Eficiencia y crecimiento",
-    excerpt: "Descubre cómo la automatización de procesos empresariales con IA en Chile está transformando la operatividad, optimizando recursos y potenciando el talento B2B.",
-    image: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80",
+    title:
+      "Automatización de procesos empresariales con IA en Chile: Eficiencia y crecimiento",
+    excerpt:
+      "Descubre cómo la automatización de procesos empresariales con IA en Chile está transformando la operatividad, optimizando recursos y potenciando el talento B2B.",
+    image:
+      "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80",
     date: "2026-05-11",
     category: "Inteligencia Artificial",
     tags: ["Automatización", "IA", "Chile", "Procesos", "Eficiencia"],
-    metaDescription: "La automatización de procesos empresariales con IA en Chile es clave para la competitividad corporativa. En 4AGILE te ayudamos a implementarla con talento experto. ¡Hablemos!"
+    metaDescription:
+      "La automatización de procesos empresariales con IA en Chile es clave para la competitividad corporativa. En 4AGILE te ayudamos a implementarla con talento experto. ¡Hablemos!",
   },
   {
     slug: "modernizacion-aplicaciones-legacy-empresas-chilenas",
-    title: "Modernización de aplicaciones legacy para empresas chilenas: Innovación segura",
-    excerpt: "Conoce los beneficios de la modernización de aplicaciones legacy para empresas chilenas y cómo una transición estratégica asegura el éxito operativo.",
-    image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=800&q=80",
+    title:
+      "Modernización de aplicaciones legacy para empresas chilenas: Innovación segura",
+    excerpt:
+      "Conoce los beneficios de la modernización de aplicaciones legacy para empresas chilenas y cómo una transición estratégica asegura el éxito operativo.",
+    image:
+      "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=800&q=80",
     date: "2026-05-11",
     category: "Desarrollo y Modernización",
-    tags: ["Modernización", "Aplicaciones Legacy", "Chile", "Innovación", "Software"],
-    metaDescription: "Evita riesgos y altos costos operativos. Descubre cómo la modernización de aplicaciones legacy impulsa a las empresas chilenas. ¡Contáctanos en 4AGILE!"
+    tags: [
+      "Modernización",
+      "Aplicaciones Legacy",
+      "Chile",
+      "Innovación",
+      "Software",
+    ],
+    metaDescription:
+      "Evita riesgos y altos costos operativos. Descubre cómo la modernización de aplicaciones legacy impulsa a las empresas chilenas. ¡Contáctanos en 4AGILE!",
   },
   {
     slug: "automatizacion-qa-equipos-digitales-chile",
-    title: "Automatización QA para equipos digitales en Chile: calidad continua y menos retrabajo",
-    excerpt: "Descubre cómo la automatización QA para equipos digitales en Chile optimiza el desarrollo, reduce el retrabajo y asegura productos de alta calidad.",
-    image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&q=80",
+    title:
+      "Automatización QA para equipos digitales en Chile: calidad continua y menos retrabajo",
+    excerpt:
+      "Descubre cómo la automatización QA para equipos digitales en Chile optimiza el desarrollo, reduce el retrabajo y asegura productos de alta calidad.",
+    image:
+      "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&q=80",
     date: "2026-05-13",
     category: "Calidad y Pruebas",
-    tags: ["Automatización QA", "Testing", "Chile", "Equipos Digitales", "Desarrollo de Software"],
-    metaDescription: "Optimiza tus entregas con automatización QA para equipos digitales en Chile. Reduce el retrabajo y mejora la calidad del software. ¡Contáctanos!"
+    tags: [
+      "Automatización QA",
+      "Testing",
+      "Chile",
+      "Equipos Digitales",
+      "Desarrollo de Software",
+    ],
+    metaDescription:
+      "Optimiza tus entregas con automatización QA para equipos digitales en Chile. Reduce el retrabajo y mejora la calidad del software. ¡Contáctanos!",
   },
   {
     slug: "ciberseguridad-transformacion-digital-chile",
-    title: "Ciberseguridad para transformación digital en Chile: proteger el crecimiento empresarial",
-    excerpt: "La ciberseguridad para transformación digital en Chile es vital para proteger los activos, la reputación y asegurar el éxito de tu modernización.",
-    image: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=800&q=80",
+    title:
+      "Ciberseguridad para transformación digital en Chile: proteger el crecimiento empresarial",
+    excerpt:
+      "La ciberseguridad para transformación digital en Chile es vital para proteger los activos, la reputación y asegurar el éxito de tu modernización.",
+    image:
+      "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=800&q=80",
     date: "2026-05-13",
     category: "Ciberseguridad",
-    tags: ["Ciberseguridad", "Transformación Digital", "Chile", "Protección", "Empresas"],
-    metaDescription: "Asegura el futuro de tu negocio con ciberseguridad para transformación digital en Chile. Protegemos el crecimiento de tu empresa. ¡Escríbenos!"
+    tags: [
+      "Ciberseguridad",
+      "Transformación Digital",
+      "Chile",
+      "Protección",
+      "Empresas",
+    ],
+    metaDescription:
+      "Asegura el futuro de tu negocio con ciberseguridad para transformación digital en Chile. Protegemos el crecimiento de tu empresa. ¡Escríbenos!",
   },
 
   {
     slug: "mlops-empresas-chilenas-ia-produccion",
     title: "MLOps para empresas chilenas: escalando IA en producción",
-    excerpt: "Descubre cómo pasar de pilotos de IA a modelos productivos, gobernados, monitoreados y mantenibles mediante MLOps para empresas chilenas.",
-    image: "https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?auto=format&fit=crop&w=800&q=80",
+    excerpt:
+      "Descubre cómo pasar de pilotos de IA a modelos productivos, gobernados, monitoreados y mantenibles mediante MLOps para empresas chilenas.",
+    image:
+      "https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?auto=format&fit=crop&w=800&q=80",
     date: "2026-05-14",
     category: "Inteligencia Artificial",
     tags: ["MLOps", "IA", "Chile", "Producción", "Modelos"],
-    metaDescription: "Escala la Inteligencia Artificial en tu organización. MLOps para empresas chilenas que buscan modelos en producción gobernados y eficientes. ¡Contáctanos!"
+    metaDescription:
+      "Escala la Inteligencia Artificial en tu organización. MLOps para empresas chilenas que buscan modelos en producción gobernados y eficientes. ¡Contáctanos!",
   },
   {
     slug: "gobierno-datos-ia-responsable-chile",
     title: "Gobierno de datos e IA responsable para organizaciones en Chile",
-    excerpt: "Conoce las políticas, trazabilidad y preparación organizacional necesarias para adoptar un sólido gobierno de datos e IA responsable en Chile.",
-    image: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=800&q=80",
+    excerpt:
+      "Conoce las políticas, trazabilidad y preparación organizacional necesarias para adoptar un sólido gobierno de datos e IA responsable en Chile.",
+    image:
+      "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=800&q=80",
     date: "2026-05-14",
     category: "Datos y Seguridad",
-    tags: ["Gobierno de datos", "IA responsable", "Chile", "Trazabilidad", "Políticas"],
-    metaDescription: "Asegura la calidad y adopción ética con gobierno de datos e IA responsable para organizaciones en Chile. Mitiga riesgos y lidera con 4AGILE. ¡Escríbenos!"
+    tags: [
+      "Gobierno de datos",
+      "IA responsable",
+      "Chile",
+      "Trazabilidad",
+      "Políticas",
+    ],
+    metaDescription:
+      "Asegura la calidad y adopción ética con gobierno de datos e IA responsable para organizaciones en Chile. Mitiga riesgos y lidera con 4AGILE. ¡Escríbenos!",
   },
 ];
 
@@ -114,6 +172,7 @@ export default function Blog() {
         </Link>
         <nav className="nav-links" aria-label="Secciones del sitio">
           <Link href="/">Inicio</Link>
+          <Link href="/#formacion">Formación</Link>
           <Link href="/blog">Blog</Link>
           <Link className="nav-cta" href="/#contacto">
             Conversemos
