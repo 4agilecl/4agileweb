@@ -157,6 +157,40 @@ const articles = [
     metaDescription:
       "Asegura la calidad y adopción ética con gobierno de datos e IA responsable para organizaciones en Chile. Mitiga riesgos y lidera con 4AGILE. ¡Escríbenos!",
   },
+  {
+    slug: "arquitectura-microservicios-empresas-chilenas",
+    title:
+      "Arquitectura de microservicios para empresas chilenas: Escalabilidad y Continuidad",
+    excerpt:
+      "Descubre cómo la arquitectura de microservicios para empresas chilenas permite escalar sistemas de forma independiente y garantizar la continuidad operativa.",
+    image:
+      "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=800&q=80",
+    date: "2026-05-16",
+    category: "Desarrollo y Arquitectura",
+    tags: [
+      "Microservicios",
+      "Arquitectura",
+      "Chile",
+      "Escalabilidad",
+      "Transformación Digital",
+    ],
+    metaDescription:
+      "Implementar una arquitectura de microservicios para empresas chilenas permite desacoplar sistemas y asegurar continuidad. ¡Conoce cómo en 4AGILE!",
+  },
+  {
+    slug: "observabilidad-cloud-plataformas-digitales-chile",
+    title:
+      "Observabilidad cloud para plataformas digitales en Chile: Monitoreo Avanzado y SRE",
+    excerpt:
+      "La observabilidad cloud para plataformas digitales en Chile es indispensable para asegurar trazabilidad, reducir tiempos de caída y optimizar el rendimiento.",
+    image:
+      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80",
+    date: "2026-05-16",
+    category: "DevOps y Cloud",
+    tags: ["Observabilidad", "Cloud", "SRE", "Chile", "Monitoreo"],
+    metaDescription:
+      "Garantiza la continuidad del negocio con observabilidad cloud para plataformas digitales en Chile. Logs, métricas y trazabilidad. ¡Contáctanos!",
+  },
 ];
 
 export default function Blog() {
