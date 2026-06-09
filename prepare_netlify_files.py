@@ -478,13 +478,13 @@ index_html = '''<!doctype html>
 robots = '''User-agent: *
 Allow: /
 
-Sitemap: https://TU-DOMINIO.com/sitemap.xml
+Sitemap: https://4agile.cl/sitemap.xml
 '''
 
 sitemap = '''<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://TU-DOMINIO.com/</loc>
+    <loc>https://4agile.cl/</loc>
     <lastmod>2026-05-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
