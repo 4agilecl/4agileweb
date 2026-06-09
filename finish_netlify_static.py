@@ -63,17 +63,17 @@ export default App;
 (public / 'robots.txt').write_text('''User-agent: *
 Allow: /
 
-Sitemap: https://TU-DOMINIO.com/sitemap.xml
+Sitemap: https://4agile.cl/sitemap.xml
 ''', encoding='utf-8')
 
 (public / 'sitemap.xml').write_text('''<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://TU-DOMINIO.com/</loc>
+    <loc>https://4agile.cl/</loc>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://TU-DOMINIO.com/gracias</loc>
+    <loc>https://4agile.cl/gracias</loc>
     <priority>0.2</priority>
   </url>
 </urlset>
