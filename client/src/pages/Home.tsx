@@ -13,6 +13,7 @@ import {
   Target,
   UsersRound,
 } from "lucide-react";
+import { useSEO } from "../hooks/useSEO";
 
 const LOGO_URL =
   "https://files.manuscdn.com/user_upload_by_module/session_file/310519663522518131/WbYuRCsZwwbLteMC.png";
@@ -96,6 +97,13 @@ const specialties = [
 ];
 
 export default function Home() {
+  useSEO({
+    title: "4AGILE | Outsourcing de talentos y hunting especializado",
+    description:
+      "4AGILE ofrece outsourcing de talentos y hunting especializado para empresas que necesitan incorporar perfiles tecnológicos, ágiles y de gestión con rapidez, garantía y acompañamiento experto.",
+    canonicalPath: "/",
+  });
+
   const [, setLocation] = useLocation();
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
@@ -137,20 +145,20 @@ export default function Home() {
   return (
     <div className="site-shell">
       <header className="site-header" aria-label="Navegación principal">
-        <a className="brand" href="#inicio" aria-label="4AGILE inicio">
+        <Link className="brand" href="/" aria-label="4AGILE inicio">
           <img src={LOGO_URL} alt="Logo 4AGILE" />
           <span>4AGILE</span>
-        </a>
+        </Link>
         <nav className="nav-links" aria-label="Secciones del sitio">
-          <a href="#servicios">Servicios</a>
-          <a href="#diferenciales">Diferenciales</a>
-          <a href="#proceso">Proceso</a>
-          <a href="#especialidades">Especialidades</a>
-          <a href="#formacion">Formación</a>
+          <Link href="/" className="active">
+            Inicio
+          </Link>
+          <Link href="/servicios">Servicios</Link>
+          <Link href="/nosotros">Nosotros</Link>
           <Link href="/blog">Blog</Link>
-          <a className="nav-cta" href="#contacto">
+          <Link className="nav-cta" href="/contacto">
             Conversemos
-          </a>
+          </Link>
         </nav>
       </header>
 
@@ -176,9 +184,9 @@ export default function Home() {
               perfiles clave con precisión, velocidad y acompañamiento experto.
             </p>
             <div className="hero-actions">
-              <a className="btn btn-primary" href="#contacto">
+              <Link className="btn btn-primary" href="/contacto">
                 Solicitar talento <ArrowRight size={18} />
-              </a>
+              </Link>
               <a className="btn btn-secondary" href="tel:+56957876174">
                 Llamar ahora
               </a>
@@ -238,9 +246,9 @@ export default function Home() {
                   </div>
                   <h3>{service.title}</h3>
                   <p>{service.copy}</p>
-                  <a href="#contacto">
+                  <Link href="/servicios">
                     {service.cta} <ArrowRight size={17} />
-                  </a>
+                  </Link>
                 </article>
               );
             })}

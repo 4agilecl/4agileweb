@@ -1,5 +1,6 @@
 import { Link } from "wouter";
 import { ArrowRight } from "lucide-react";
+import { useSEO } from "../hooks/useSEO";
 
 const articles = [
   {
@@ -234,6 +235,13 @@ const articles = [
 ];
 
 export default function Blog() {
+  useSEO({
+    title: "Blog y Perspectivas Tecnológicas | 4AGILE",
+    description:
+      "Explora nuestras ideas, artículos y análisis sobre outsourcing TI, reclutamiento especializado, inteligencia artificial y metodologías ágiles en Chile.",
+    canonicalPath: "/blog",
+  });
+
   return (
     <div className="site-shell">
       <header className="site-header" aria-label="Navegación principal">
@@ -246,9 +254,12 @@ export default function Blog() {
         </Link>
         <nav className="nav-links" aria-label="Secciones del sitio">
           <Link href="/">Inicio</Link>
-          <Link href="/#formacion">Formación</Link>
-          <Link href="/blog">Blog</Link>
-          <Link className="nav-cta" href="/#contacto">
+          <Link href="/servicios">Servicios</Link>
+          <Link href="/nosotros">Nosotros</Link>
+          <Link href="/blog" className="active">
+            Blog
+          </Link>
+          <Link className="nav-cta" href="/contacto">
             Conversemos
           </Link>
         </nav>

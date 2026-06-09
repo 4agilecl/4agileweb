@@ -1,6 +1,15 @@
 import { ArrowLeft, CheckCircle2 } from "lucide-react";
+import { useSEO } from "../hooks/useSEO";
 
 export default function Gracias() {
+  useSEO({
+    title: "Solicitud Recibida | 4AGILE",
+    description:
+      "Gracias por contactarnos. Tu solicitud de outsourcing o hunting de talentos ha sido recibida.",
+    canonicalPath: "/gracias",
+    noindex: true,
+  });
+
   return (
     <main className="thanks-page">
       <section className="thanks-card">
