@@ -323,16 +323,16 @@ index = f'''<!doctype html>
     <title>4AGILE | Outsourcing de talentos y hunting especializado</title>
     <meta name="description" content="4AGILE ofrece outsourcing de talentos y hunting especializado para empresas que necesitan incorporar perfiles tecnológicos, ágiles y de gestión con rapidez, garantía y acompañamiento experto." />
     <meta name="robots" content="index, follow" />
-    <link rel="canonical" href="https://TU-DOMINIO.com/" />
+    <link rel="canonical" href="https://4agile.cl/" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="4AGILE | Outsourcing de talentos y hunting especializado" />
     <meta property="og:description" content="Incorpora talento especializado con rapidez, selección experta, garantía comercial y acompañamiento continuo." />
     <meta property="og:image" content="{hero_url}" />
-    <meta property="og:url" content="https://TU-DOMINIO.com/" />
+    <meta property="og:url" content="https://4agile.cl/" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="theme-color" content="#284b9b" />
     <script type="application/ld+json">
-      {{"@context":"https://schema.org","@type":"ProfessionalService","name":"4AGILE","url":"https://TU-DOMINIO.com/","description":"Outsourcing de talentos y hunting especializado para empresas que necesitan perfiles tecnológicos, ágiles y de gestión.","areaServed":"Latin America","serviceType":["Outsourcing de talentos","Hunting de talentos","Staffing especializado"]}}
+      {{"@context":"https://schema.org","@type":"ProfessionalService","name":"4AGILE","url":"https://4agile.cl/","description":"Outsourcing de talentos y hunting especializado para empresas que necesitan perfiles tecnológicos, ágiles y de gestión.","areaServed":"Latin America","serviceType":["Outsourcing de talentos","Hunting de talentos","Staffing especializado"]}}
     </script>
   </head>
   <body>
@@ -362,7 +362,7 @@ Esta versión conserva el diseño premium original preparado para GoHighLevel y 
 | Formulario | Compatible con Netlify Forms bajo el nombre `contacto-4agile` |
 | Página de gracias | Disponible en `/gracias` |
 | SEO | Metatítulos, descripción, Open Graph, canonical, robots y sitemap preparados |
-| Dominio | Reemplazar `https://TU-DOMINIO.com/` por el dominio real antes de publicar |
+| Dominio | Reemplazar `https://4agile.cl/` por el dominio real antes de publicar |
 
 ## Publicación recomendada
 

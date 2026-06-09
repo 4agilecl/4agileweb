@@ -1,5 +1,6 @@
 import { Link } from "wouter";
 import { ArrowRight } from "lucide-react";
+import { useSEO } from "@/hooks/useSEO";
 
 const articles = [
   {
@@ -234,23 +235,35 @@ const articles = [
 ];
 
 export default function Blog() {
+  useSEO({
+    title: "Blog | 4AGILE · Perspectivas y conocimientos sobre outsourcing TI",
+    description:
+      "Perspectivas, conocimientos y guía práctica sobre el outsourcing de talentos, hunting y desarrollo de equipos TI en Chile.",
+    canonicalUrl: "https://4agile.cl/blog",
+    ogImage:
+      "https://files.manuscdn.com/user_upload_by_module/session_file/310519663522518131/mRkESQxeYuKpdQTF.png",
+  });
+
   return (
     <div className="site-shell">
       <header className="site-header" aria-label="Navegación principal">
-        <Link className="brand" href="/" aria-label="4AGILE inicio">
+        <a className="brand" href="/#inicio" aria-label="4AGILE inicio">
           <img
             src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663522518131/WbYuRCsZwwbLteMC.png"
             alt="Logo 4AGILE"
           />
           <span>4AGILE</span>
-        </Link>
+        </a>
         <nav className="nav-links" aria-label="Secciones del sitio">
-          <Link href="/">Inicio</Link>
-          <Link href="/#formacion">Formación</Link>
+          <a href="/#servicios">Servicios</a>
+          <a href="/#diferenciales">Diferenciales</a>
+          <a href="/#proceso">Proceso</a>
+          <a href="/#especialidades">Especialidades</a>
+          <a href="/#formacion">Formación</a>
           <Link href="/blog">Blog</Link>
-          <Link className="nav-cta" href="/#contacto">
+          <a className="nav-cta" href="/#contacto">
             Conversemos
-          </Link>
+          </a>
         </nav>
       </header>
 

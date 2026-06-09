@@ -63,17 +63,17 @@ export default App;
 (public / 'robots.txt').write_text('''User-agent: *
 Allow: /
 
-Sitemap: https://TU-DOMINIO.com/sitemap.xml
+Sitemap: https://4agile.cl/sitemap.xml
 ''', encoding='utf-8')
 
 (public / 'sitemap.xml').write_text('''<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://TU-DOMINIO.com/</loc>
+    <loc>https://4agile.cl/</loc>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://TU-DOMINIO.com/gracias</loc>
+    <loc>https://4agile.cl/gracias</loc>
     <priority>0.2</priority>
   </url>
 </urlset>
@@ -124,11 +124,11 @@ Esta versión conserva el diseño premium original preparado para GoHighLevel y 
 
 Primero sube el ZIP fuente a GitHub o crea un repositorio con estos archivos. Luego entra a Netlify, selecciona **Add new site**, elige el repositorio y confirma que el build command sea `pnpm build` y el directorio publicable sea `dist/public`. Netlify detectará el formulario `contacto-4agile` porque está incluido en el HTML base del sitio.
 
-Después del primer despliegue, envía una prueba desde el formulario. Luego entra a **Forms** dentro de Netlify, abre el formulario `contacto-4agile` y configura las notificaciones al correo comercial de 4AGILE. Finalmente, reemplaza `https://TU-DOMINIO.com/` por el dominio real en `client/index.html`, `client/public/robots.txt` y `client/public/sitemap.xml` antes del deploy definitivo.
+Después del primer despliegue, envía una prueba desde el formulario. Luego entra a **Forms** dentro de Netlify, abre el formulario `contacto-4agile` y configura las notificaciones al correo comercial de 4AGILE. Finalmente, reemplaza `https://4agile.cl/` por el dominio real en `client/index.html`, `client/public/robots.txt` y `client/public/sitemap.xml` antes del deploy definitivo.
 
 ## Recomendación de dominio y SEO
 
-Cuando conectes el dominio final, usa una única versión canónica con HTTPS. Si el dominio será `https://www.4agile.cl`, reemplaza todas las apariciones de `https://TU-DOMINIO.com/` por ese valor. Después del deploy definitivo, envía el `sitemap.xml` a Google Search Console para facilitar el rastreo inicial.
+Cuando conectes el dominio final, usa una única versión canónica con HTTPS. Si el dominio será `https://www.4agile.cl`, reemplaza todas las apariciones de `https://4agile.cl/` por ese valor. Después del deploy definitivo, envía el `sitemap.xml` a Google Search Console para facilitar el rastreo inicial.
 ''', encoding='utf-8')
 
 print('SEO, formulario, página de gracias y configuración Netlify actualizados.')

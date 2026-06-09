@@ -66,9 +66,9 @@ Google recomienda que el sitio sea útil para usuarios, fácil de rastrear, con 
 
 | Archivo                     | Buscar                               | Reemplazar por                                          |
 | --------------------------- | ------------------------------------ | ------------------------------------------------------- |
-| `client/index.html`         | `https://TU-DOMINIO.com/`            | Tu dominio final, por ejemplo `https://www.4agile.com/` |
-| `client/public/robots.txt`  | `https://TU-DOMINIO.com/sitemap.xml` | URL real del sitemap                                    |
-| `client/public/sitemap.xml` | `https://TU-DOMINIO.com/`            | URL real de la página principal                         |
+| `client/index.html`         | `https://4agile.cl/`            | Tu dominio final, por ejemplo `https://www.4agile.com/` |
+| `client/public/robots.txt`  | `https://4agile.cl/sitemap.xml` | URL real del sitemap                                    |
+| `client/public/sitemap.xml` | `https://4agile.cl/`            | URL real de la página principal                         |
 
 > Google explica que el SEO consiste en ayudar a los motores de búsqueda a entender el contenido y ayudar a los usuarios a encontrar el sitio y decidir si deben visitarlo desde un buscador.[2]
 

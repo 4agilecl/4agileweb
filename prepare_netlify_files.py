@@ -447,16 +447,16 @@ index_html = '''<!doctype html>
     <title>4AGILE | Staffing Reformer y agilidad aplicada para empresas</title>
     <meta name="description" content="4AGILE ayuda a empresas a cubrir brechas críticas de talento, integrar equipos especializados y mejorar la ejecución operativa con agilidad aplicada." />
     <meta name="robots" content="index, follow" />
-    <link rel="canonical" href="https://TU-DOMINIO.com/" />
+    <link rel="canonical" href="https://4agile.cl/" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="4AGILE | Staffing Reformer y soluciones de talento" />
     <meta property="og:description" content="Talento especializado, transformación operativa y agilidad práctica para empresas que necesitan avanzar con velocidad." />
     <meta property="og:image" content="https://d2xsxph8kpxj0f.cloudfront.net/310519663522518131/cGj8tVWagDbYH7CbaH9eJ6/4agile-hero-executive-operations-DVD6EE8dqhsyXTLW9ykH8w.png" />
-    <meta property="og:url" content="https://TU-DOMINIO.com/" />
+    <meta property="og:url" content="https://4agile.cl/" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="theme-color" content="#173f91" />
     <script type="application/ld+json">
-      {"@context":"https://schema.org","@type":"Organization","name":"4AGILE","url":"https://TU-DOMINIO.com/","description":"Staffing Reformer y soluciones de agilidad aplicada para empresas.","areaServed":"United States, Latin America","sameAs":[]}
+      {"@context":"https://schema.org","@type":"Organization","name":"4AGILE","url":"https://4agile.cl/","description":"Staffing Reformer y soluciones de agilidad aplicada para empresas.","areaServed":"United States, Latin America","sameAs":[]}
     </script>
   </head>
   <body>
@@ -478,13 +478,13 @@ index_html = '''<!doctype html>
 robots = '''User-agent: *
 Allow: /
 
-Sitemap: https://TU-DOMINIO.com/sitemap.xml
+Sitemap: https://4agile.cl/sitemap.xml
 '''
 
 sitemap = '''<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://TU-DOMINIO.com/</loc>
+    <loc>https://4agile.cl/</loc>
     <lastmod>2026-05-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
@@ -535,7 +535,7 @@ La forma más segura es subir este repositorio a GitHub y conectarlo con Netlify
 
 ## SEO pendiente de personalización
 
-Antes de publicar con dominio final, reemplaza `https://TU-DOMINIO.com/` en estos archivos:
+Antes de publicar con dominio final, reemplaza `https://4agile.cl/` en estos archivos:
 
 | Archivo | Qué cambiar |
 |---|---|

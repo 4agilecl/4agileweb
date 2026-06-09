@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useLocation, Link } from "wouter";
+import { useSEO } from "@/hooks/useSEO";
 import {
   ArrowRight,
   BadgeCheck,
@@ -100,6 +101,15 @@ export default function Home() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
 
+  useSEO({
+    title: "4AGILE | Outsourcing de talentos y hunting especializado",
+    description:
+      "4AGILE ofrece outsourcing de talentos y hunting especializado para empresas que necesitan incorporar perfiles tecnológicos, ágiles y de gestión con rapidez, garantía y acompañamiento experto.",
+    canonicalUrl: "https://4agile.cl/",
+    ogImage:
+      "https://files.manuscdn.com/user_upload_by_module/session_file/310519663522518131/mRkESQxeYuKpdQTF.png",
+  });
+
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setIsSubmitting(true);
@@ -137,18 +147,18 @@ export default function Home() {
   return (
     <div className="site-shell">
       <header className="site-header" aria-label="Navegación principal">
-        <a className="brand" href="#inicio" aria-label="4AGILE inicio">
+        <a className="brand" href="/#inicio" aria-label="4AGILE inicio">
           <img src={LOGO_URL} alt="Logo 4AGILE" />
           <span>4AGILE</span>
         </a>
         <nav className="nav-links" aria-label="Secciones del sitio">
-          <a href="#servicios">Servicios</a>
-          <a href="#diferenciales">Diferenciales</a>
-          <a href="#proceso">Proceso</a>
-          <a href="#especialidades">Especialidades</a>
-          <a href="#formacion">Formación</a>
+          <a href="/#servicios">Servicios</a>
+          <a href="/#diferenciales">Diferenciales</a>
+          <a href="/#proceso">Proceso</a>
+          <a href="/#especialidades">Especialidades</a>
+          <a href="/#formacion">Formación</a>
           <Link href="/blog">Blog</Link>
-          <a className="nav-cta" href="#contacto">
+          <a className="nav-cta" href="/#contacto">
             Conversemos
           </a>
         </nav>
