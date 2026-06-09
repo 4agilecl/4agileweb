@@ -84,9 +84,24 @@ Sitemap: https://TU-DOMINIO.com/sitemap.xml
   publish = "dist/public"
 
 [[redirects]]
-  from = "/*"
+  from = "/gracias"
   to = "/index.html"
   status = 200
+
+[[redirects]]
+  from = "/blog"
+  to = "/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/blog/*"
+  to = "/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/*"
+  to = "/"
+  status = 301
 
 [build.environment]
   NODE_VERSION = "22"

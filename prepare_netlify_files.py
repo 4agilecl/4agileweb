@@ -493,7 +493,9 @@ sitemap = '''<?xml version="1.0" encoding="UTF-8"?>
 '''
 
 redirects = '''/gracias /index.html 200
-/* /index.html 200
+/blog /index.html 200
+/blog/* /index.html 200
+/* / 301
 '''
 
 netlify_toml = '''[build]
