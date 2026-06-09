@@ -1,2 +1,8 @@
+# SPA Routes rewrites to allow client-side routing
 /gracias /index.html 200
-/* /index.html 200
+/blog /index.html 200
+/blog/* /index.html 200
+/404 /index.html 200
+
+# Catch-all redirect for any other non-existent path to the homepage with a 301 status
+/* / 301
