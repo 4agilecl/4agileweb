@@ -225,8 +225,7 @@ export default function Gracias() {
 
 app_tsx = '''import { Toaster } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
-import NotFound from "@/pages/NotFound";
-import { Route, Switch } from "wouter";
+import { Route, Switch, Redirect } from "wouter";
 import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
 import Home from "./pages/Home";
@@ -237,8 +236,12 @@ function Router() {
     <Switch>
       <Route path="/" component={Home} />
       <Route path="/gracias" component={Gracias} />
-      <Route path="/404" component={NotFound} />
-      <Route component={NotFound} />
+      <Route path="/404">
+        <Redirect to="/" replace />
+      </Route>
+      <Route>
+        <Redirect to="/" replace />
+      </Route>
     </Switch>
   );
 }
