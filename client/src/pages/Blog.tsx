@@ -191,6 +191,46 @@ const articles = [
     metaDescription:
       "Garantiza la continuidad del negocio con observabilidad cloud para plataformas digitales en Chile. Logs, métricas y trazabilidad. ¡Contáctanos!",
   },
+  {
+    slug: "hunting-tecnologico-equipos-ia-chile",
+    title:
+      "Hunting tecnológico para equipos de IA en Chile: cómo contratar perfiles críticos sin frenar el negocio",
+    excerpt:
+      "Descubre cómo un proceso de hunting tecnológico especializado permite armar equipos de inteligencia artificial en Chile sin demoras ni riesgos de mala contratación.",
+    image:
+      "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=800&q=80",
+    date: "2026-05-24",
+    category: "Hunting y Talento",
+    tags: [
+      "Hunting Tecnológico",
+      "Inteligencia Artificial",
+      "Chile",
+      "Talento TI",
+      "Reclutamiento",
+    ],
+    metaDescription:
+      "Encuentra y contrata perfiles de IA críticos en Chile con hunting tecnológico especializado. Reduce tiempos de contratación y riesgo. ¡Habla con 4AGILE!",
+  },
+  {
+    slug: "outsourcing-ti-modernizacion-cloud-chile",
+    title:
+      "Outsourcing TI para modernización cloud en Chile: velocidad, control y reducción de riesgo",
+    excerpt:
+      "Conoce cómo el outsourcing TI especializado acelera la modernización cloud de empresas chilenas, manteniendo el control operativo y reduciendo riesgos.",
+    image:
+      "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&w=800&q=80",
+    date: "2026-05-24",
+    category: "DevOps y Cloud",
+    tags: [
+      "Outsourcing TI",
+      "Cloud",
+      "Chile",
+      "Modernización",
+      "Reducción de Riesgo",
+    ],
+    metaDescription:
+      "Acelera tu modernización cloud en Chile con outsourcing TI especializado. Velocidad, control y menos riesgo para tu empresa. ¡Contáctanos en 4AGILE!",
+  },
 ];
 
 export default function Blog() {
