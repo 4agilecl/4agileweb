@@ -2343,8 +2343,334 @@ const articlesContent: Record<
             style={{ color: "var(--blue)", textDecoration: "underline" }}
           >
             Escríbenos hoy
-          </a>{" "}
+          </a>{"\ "}
           y comencemos a diseñar tu hoja de ruta cloud.
+        </p>
+      </>
+    ),
+  },
+
+  "platform-engineering-empresas-chilenas": {
+    title:
+      "Platform Engineering para empresas chilenas: cómo construir plataformas internas que escalan",
+    image:
+      "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=800&q=80",
+    date: "2026-06-12",
+    category: "DevOps y Cloud",
+    tags: [
+      "Platform Engineering",
+      "Chile",
+      "DevOps",
+      "Plataformas Internas",
+      "Transformación Digital",
+    ],
+    metaDescription:
+      "Implementa Platform Engineering en tu empresa chilena y acelera la entrega de software con plataformas internas escalables. Conoce cómo en 4AGILE.",
+    content: (
+      <>
+        <p>
+          En los últimos años, el concepto de <strong>Platform Engineering</strong> ha
+          emergido con fuerza en las organizaciones tecnológicas más avanzadas del mundo.
+          En Chile, las empresas que lideran la transformación digital ya están adoptando
+          este enfoque para resolver uno de los problemas más persistentes en los equipos
+          de desarrollo: la fricción operativa que frena la velocidad de entrega. El
+          Platform Engineering en Chile no es una moda pasajera; es una respuesta
+          estructural a la complejidad creciente de los entornos de software modernos.
+        </p>
+
+        <h2>¿Qué es el Platform Engineering y por qué importa?</h2>
+        <p>
+          El Platform Engineering es la disciplina que consiste en diseñar, construir y
+          mantener plataformas internas de desarrollo —conocidas como Internal Developer
+          Platforms (IDP)— que permiten a los equipos de ingeniería desplegar, operar y
+          monitorear sus aplicaciones de forma autónoma, sin depender constantemente de
+          equipos de infraestructura o DevOps centralizados. En esencia, se trata de
+          convertir las capacidades de infraestructura, CI/CD, observabilidad y seguridad
+          en productos internos de autoservicio que los desarrolladores pueden consumir
+          con mínima fricción.
+        </p>
+        <p>
+          Para las empresas chilenas que operan con múltiples equipos de desarrollo, la
+          ausencia de una plataforma interna coherente genera cuellos de botella
+          predecibles: los desarrolladores pierden tiempo configurando entornos, los
+          equipos de operaciones se convierten en guardianes de procesos manuales y la
+          velocidad de entrega se resiente. El Platform Engineering resuelve este problema
+          de raíz, estableciendo una capa de abstracción que democratiza el acceso a la
+          infraestructura sin sacrificar el control ni la seguridad.
+        </p>
+
+        <h2>Los pilares de una plataforma interna efectiva</h2>
+        <p>
+          Construir una Internal Developer Platform exitosa requiere más que herramientas;
+          exige un enfoque de producto aplicado a la infraestructura. Los pilares
+          fundamentales incluyen: un portal de autoservicio donde los desarrolladores
+          puedan provisionar entornos, desplegar servicios y consultar documentación sin
+          abrir tickets; pipelines de CI/CD estandarizados y reutilizables que reduzcan
+          la duplicación de configuraciones entre equipos; una capa de observabilidad
+          integrada con logs, métricas y trazas disponibles desde el primer despliegue;
+          y políticas de seguridad y cumplimiento aplicadas de forma automática,
+          sin bloquear la velocidad de los equipos.
+        </p>
+        <p>
+          En el contexto chileno, donde muchas organizaciones aún operan con
+          infraestructura híbrida o en proceso de migración cloud, el Platform Engineering
+          actúa como el pegamento que unifica las capacidades existentes bajo una
+          experiencia de desarrollo coherente. Esto es especialmente valioso para empresas
+          de sectores como banca, retail, salud y telecomunicaciones, donde la
+          complejidad regulatoria y operativa es alta.
+        </p>
+
+        <h2>Platform Engineering versus DevOps: una evolución, no una ruptura</h2>
+        <p>
+          Una pregunta frecuente en las organizaciones chilenas que están evaluando este
+          enfoque es si el Platform Engineering reemplaza al DevOps. La respuesta es no:
+          el Platform Engineering es la evolución natural del DevOps a escala. Mientras
+          que el DevOps promueve la colaboración entre desarrollo y operaciones, el
+          Platform Engineering institucionaliza esa colaboración en forma de productos
+          internos reutilizables. Los ingenieros de plataforma no son administradores de
+          sistemas con otro nombre; son ingenieros de software que aplican principios de
+          diseño de producto a la infraestructura, con el desarrollador como usuario final.
+        </p>
+        <p>
+          En 4AGILE hemos acompañado a equipos de ingeniería chilenos en la transición
+          desde modelos DevOps artesanales hacia plataformas internas estructuradas. La
+          diferencia en velocidad de entrega y satisfacción de los equipos de desarrollo
+          es consistentemente notable: los ciclos de despliegue se acortan, los
+          incidentes por configuración manual disminuyen y los desarrolladores recuperan
+          tiempo para enfocarse en crear valor de negocio.
+        </p>
+
+        <h2>Cómo adoptar Platform Engineering en tu empresa chilena</h2>
+        <p>
+          La adopción de Platform Engineering no requiere una transformación
+          big-bang. El enfoque más efectivo es incremental: comenzar identificando
+          los puntos de mayor fricción en el ciclo de vida del desarrollo, construir
+          una primera versión mínima de la plataforma que resuelva esos problemas
+          específicos, y luego iterar basándose en el feedback de los equipos de
+          desarrollo. Las herramientas más utilizadas en este espacio incluyen
+          Backstage (portal de desarrolladores de Spotify), ArgoCD y Flux para
+          GitOps, Crossplane para infraestructura declarativa, y plataformas cloud
+          como AWS, GCP o Azure con sus servicios gestionados.
+        </p>
+        <p>
+          El factor humano es igualmente crítico. Construir una plataforma interna
+          exitosa requiere ingenieros con una combinación poco común de habilidades:
+          profundidad en infraestructura cloud, experiencia en desarrollo de software
+          y, sobre todo, empatía hacia el usuario desarrollador. En el mercado chileno,
+          estos perfiles son escasos y altamente demandados, lo que hace que el
+          acompañamiento de un partner especializado sea frecuentemente la vía más
+          rápida y segura para avanzar.
+        </p>
+
+        <h2>Beneficios medibles del Platform Engineering en organizaciones chilenas</h2>
+        <p>
+          Las organizaciones que implementan Platform Engineering reportan mejoras
+          consistentes en métricas DORA: mayor frecuencia de despliegue, menor tiempo
+          de recuperación ante incidentes, menor tasa de fallos en cambios y menor
+          tiempo de entrega de cambios. Más allá de las métricas técnicas, el impacto
+          en la retención de talento es significativo: los desarrolladores prefieren
+          trabajar en entornos donde la infraestructura no es un obstáculo sino un
+          habilitador. En un mercado laboral tecnológico tan competitivo como el chileno,
+          este factor tiene un valor estratégico que va más allá de la eficiencia operativa.
+        </p>
+
+        <h2>Conclusión: la plataforma interna como ventaja competitiva</h2>
+        <p>
+          El Platform Engineering en Chile está dejando de ser una práctica de vanguardia
+          reservada para las grandes empresas tecnológicas para convertirse en una
+          necesidad operativa para cualquier organización que quiera competir con agilidad
+          en la economía digital. Las empresas que invierten hoy en construir plataformas
+          internas sólidas están construyendo una ventaja competitiva duradera: la
+          capacidad de entregar software de calidad, con velocidad y con equipos
+          autónomos y motivados.
+        </p>
+
+        <p
+          className="cta-paragraph"
+          style={{
+            marginTop: "40px",
+            padding: "24px",
+            backgroundColor: "var(--bg-secondary)",
+            borderRadius: "8px",
+            border: "1px solid var(--border)",
+            textAlign: "center",
+          }}
+        >
+          <strong>
+            ¿Necesitas Platform Engineering para tu empresa en Chile?
+          </strong>{" "}
+          En 4AGILE contamos con ingenieros especializados en plataformas internas,
+          DevOps avanzado y arquitectura cloud que pueden acompañarte desde el
+          diagnóstico hasta la implementación.{" "}
+          <a
+            href="/contacto"
+            style={{ color: "var(--blue)", textDecoration: "underline" }}
+          >
+            Conversemos hoy
+          </a>{" "}
+          y diseñemos juntos la plataforma que tu equipo necesita.
+        </p>
+      </>
+    ),
+  },
+
+  "staffing-tecnologico-proyectos-transformacion-digital-chile": {
+    title:
+      "Staffing tecnológico para proyectos de transformación digital en Chile: talento justo, en el momento exacto",
+    image:
+      "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&w=800&q=80",
+    date: "2026-06-12",
+    category: "Hunting y Talento",
+    tags: [
+      "Staffing Tecnológico",
+      "Chile",
+      "Transformación Digital",
+      "Talento TI",
+      "Outsourcing",
+    ],
+    metaDescription:
+      "El staffing tecnológico en Chile es la solución para cubrir talento crítico en proyectos de transformación digital. Conoce el modelo de 4AGILE. ¡Conversemos!",
+    content: (
+      <>
+        <p>
+          Los proyectos de transformación digital en Chile tienen una característica
+          que los distingue de otros tipos de iniciativas empresariales: su éxito
+          depende de manera crítica de la disponibilidad de talento tecnológico
+          especializado en el momento preciso. No antes, no después. El{" "}
+          <strong>staffing tecnológico</strong> surge como la respuesta más pragmática
+          a este desafío, permitiendo a las organizaciones chilenas incorporar
+          profesionales de alto nivel exactamente cuando los necesitan, sin los
+          tiempos y riesgos asociados a los procesos de contratación permanente.
+        </p>
+
+        <h2>El problema del talento en proyectos de transformación digital</h2>
+        <p>
+          La transformación digital no es un proyecto con inicio y fin claramente
+          definidos; es un proceso continuo que atraviesa fases con requerimientos
+          de talento muy distintos. En la fase de diagnóstico y arquitectura se
+          necesitan arquitectos de soluciones y consultores de estrategia tecnológica.
+          En la fase de implementación, el foco se desplaza hacia ingenieros de
+          software, especialistas en cloud y expertos en integración de sistemas.
+          En la fase de estabilización y operación, los perfiles críticos son los
+          SREs, los ingenieros de DevOps y los especialistas en observabilidad.
+        </p>
+        <p>
+          Contratar a todos estos perfiles de forma permanente es inviable para la
+          mayoría de las empresas chilenas, tanto por el costo como por la dificultad
+          de retenerlos una vez que el proyecto concluye. El staffing tecnológico
+          en Chile resuelve esta ecuación: permite acceder a los perfiles correctos
+          en cada fase del proyecto, con contratos flexibles que se ajustan a la
+          duración real de cada etapa.
+        </p>
+
+        <h2>Qué diferencia al staffing tecnológico del reclutamiento tradicional</h2>
+        <p>
+          El staffing tecnológico especializado no es simplemente una agencia de
+          empleo con foco en TI. Las diferencias son sustanciales. En primer lugar,
+          los tiempos son radicalmente distintos: mientras un proceso de reclutamiento
+          permanente puede tomar entre dos y cuatro meses, un proceso de staffing
+          tecnológico bien ejecutado puede incorporar al profesional en dos a cuatro
+          semanas. En segundo lugar, la validación técnica es más profunda: los
+          proveedores de staffing especializados evalúan no solo el CV sino las
+          habilidades técnicas reales mediante pruebas prácticas y entrevistas
+          con pares técnicos.
+        </p>
+        <p>
+          En tercer lugar, y quizás lo más relevante para los proyectos de
+          transformación digital en Chile, el staffing tecnológico incluye una
+          garantía de reemplazo: si el profesional no se adapta al proyecto o al
+          equipo, el proveedor asume la responsabilidad de encontrar un reemplazo
+          sin costo adicional. Esta garantía transforma el riesgo de una mala
+          contratación —que en un proceso permanente puede costar entre seis y doce
+          meses de salario— en un riesgo gestionado y acotado.
+        </p>
+
+        <h2>Perfiles más demandados en staffing tecnológico para transformación digital</h2>
+        <p>
+          En el mercado chileno, los perfiles más solicitados a través de staffing
+          tecnológico para proyectos de transformación digital incluyen: ingenieros
+          de backend con experiencia en microservicios y APIs REST/GraphQL; especialistas
+          en cloud (AWS, GCP, Azure) con certificaciones vigentes; ingenieros de
+          datos con dominio de pipelines ETL/ELT y plataformas como Databricks o
+          Snowflake; arquitectos de soluciones con experiencia en migraciones cloud;
+          y líderes técnicos con capacidad de gestionar equipos distribuidos y
+          comunicarse efectivamente con stakeholders de negocio.
+        </p>
+        <p>
+          La escasez de estos perfiles en el mercado laboral chileno hace que el
+          staffing tecnológico sea especialmente valioso: los proveedores
+          especializados mantienen comunidades activas de profesionales que no
+          están buscando empleo activamente pero están abiertos a proyectos
+          interesantes, lo que amplía significativamente el universo de candidatos
+          disponibles respecto a lo que se puede encontrar en plataformas de
+          empleo convencionales.
+        </p>
+
+        <h2>El modelo de staffing tecnológico de 4AGILE</h2>
+        <p>
+          En 4AGILE hemos desarrollado un modelo de staffing tecnológico para
+          proyectos de transformación digital en Chile que combina tres elementos
+          diferenciadores. El primero es la comunidad de talento: mantenemos
+          relaciones activas con una red de profesionales tecnológicos de alto
+          nivel que han sido evaluados previamente, lo que nos permite reducir
+          drásticamente los tiempos de incorporación. El segundo es la validación
+          técnica rigurosa: cada profesional pasa por una evaluación técnica
+          específica para el rol y el contexto del proyecto, no una evaluación
+          genérica. El tercero es el acompañamiento post-incorporación: no
+          desaparecemos después de la firma del contrato; hacemos seguimiento
+          activo durante los primeros noventa días para asegurar que la integración
+          sea exitosa.
+        </p>
+
+        <h2>Cuándo el staffing tecnológico es la mejor opción</h2>
+        <p>
+          El staffing tecnológico en Chile es la opción más adecuada cuando el
+          proyecto tiene una duración definida (entre seis meses y dos años),
+          cuando se necesita un perfil muy específico que no existe en el equipo
+          interno, cuando el tiempo de incorporación es crítico para no retrasar
+          el proyecto, o cuando la empresa quiere evaluar a un profesional antes
+          de ofrecerle una posición permanente. Este último caso —conocido como
+          staffing to hire— es cada vez más frecuente en Chile, ya que permite
+          tomar decisiones de contratación permanente basadas en evidencia real
+          de desempeño en lugar de en entrevistas.
+        </p>
+
+        <h2>Conclusión: el talento correcto, en el momento correcto</h2>
+        <p>
+          La transformación digital en Chile no fracasa por falta de tecnología;
+          fracasa por falta del talento adecuado en el momento adecuado. El
+          staffing tecnológico especializado es la herramienta que permite a las
+          organizaciones chilenas cerrar esa brecha de manera rápida, flexible
+          y con riesgo controlado. Las empresas que adoptan este modelo no solo
+          aceleran sus proyectos de transformación digital; también aprenden a
+          gestionar el talento tecnológico como un recurso estratégico dinámico,
+          no como un costo fijo.
+        </p>
+
+        <p
+          className="cta-paragraph"
+          style={{
+            marginTop: "40px",
+            padding: "24px",
+            backgroundColor: "var(--bg-secondary)",
+            borderRadius: "8px",
+            border: "1px solid var(--border)",
+            textAlign: "center",
+          }}
+        >
+          <strong>
+            ¿Necesitas staffing tecnológico para tu proyecto de transformación digital en Chile?
+          </strong>{" "}
+          En 4AGILE conectamos a las empresas con el talento tecnológico que
+          necesitan, en el momento exacto y con la validación técnica que garantiza
+          el éxito del proyecto.{" "}
+          <a
+            href="/contacto"
+            style={{ color: "var(--blue)", textDecoration: "underline" }}
+          >
+            Conversemos hoy
+          </a>{" "}
+          y cuéntanos qué perfil necesitas.
         </p>
       </>
     ),
