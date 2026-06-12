@@ -232,6 +232,46 @@ const articles = [
     metaDescription:
       "Acelera tu modernización cloud en Chile con outsourcing TI especializado. Velocidad, control y menos riesgo para tu empresa. ¡Contáctanos en 4AGILE!",
   },
+  {
+    slug: "platform-engineering-empresas-chilenas",
+    title:
+      "Platform Engineering para empresas chilenas: cómo construir plataformas internas que escalan",
+    excerpt:
+      "Descubre cómo el Platform Engineering en Chile permite a los equipos de desarrollo moverse más rápido, con menos fricción y mayor autonomía operativa.",
+    image:
+      "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=800&q=80",
+    date: "2026-06-12",
+    category: "DevOps y Cloud",
+    tags: [
+      "Platform Engineering",
+      "Chile",
+      "DevOps",
+      "Plataformas Internas",
+      "Transformación Digital",
+    ],
+    metaDescription:
+      "Implementa Platform Engineering en tu empresa chilena y acelera la entrega de software con plataformas internas escalables. Conoce cómo en 4AGILE.",
+  },
+  {
+    slug: "staffing-tecnologico-proyectos-transformacion-digital-chile",
+    title:
+      "Staffing tecnológico para proyectos de transformación digital en Chile: talento justo, en el momento exacto",
+    excerpt:
+      "Aprende cómo el staffing tecnológico especializado en Chile permite cubrir brechas de talento crítico en proyectos de transformación digital sin los riesgos de una contratación permanente apresurada.",
+    image:
+      "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&w=800&q=80",
+    date: "2026-06-12",
+    category: "Hunting y Talento",
+    tags: [
+      "Staffing Tecnológico",
+      "Chile",
+      "Transformación Digital",
+      "Talento TI",
+      "Outsourcing",
+    ],
+    metaDescription:
+      "El staffing tecnológico en Chile es la solución para cubrir talento crítico en proyectos de transformación digital. Conoce el modelo de 4AGILE. ¡Conversemos!",
+  },
 ];
 
 export default function Blog() {
