@@ -232,6 +232,40 @@ const articles = [
     metaDescription:
       "Acelera tu modernización cloud en Chile con outsourcing TI especializado. Velocidad, control y menos riesgo para tu empresa. ¡Contáctanos en 4AGILE!",
   },
+  {
+    slug: "ia-generativa-banca-chile",
+    title:
+      "IA Generativa para la banca en Chile: transformando la eficiencia operativa y el cumplimiento",
+    excerpt:
+      "Descubre cómo la adopción estratégica de la IA Generativa para la banca en Chile redefine la eficiencia del back office y asegura el cumplimiento ante la CMF.",
+    image:
+      "https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=800&q=80",
+    date: "2026-06-12",
+    category: "Inteligencia Artificial",
+    tags: ["IA Generativa", "Banca", "Chile", "Cumplimiento", "Eficiencia"],
+    metaDescription:
+      "Descubre cómo la IA Generativa para la banca en Chile está redefiniendo la eficiencia y el cumplimiento regulatorio en el sector financiero.",
+  },
+  {
+    slug: "celulas-agiles-desarrollo-chile",
+    title:
+      "Células ágiles de desarrollo: el motor de la transformación digital en grandes empresas chilenas",
+    excerpt:
+      "Conoce cómo las células ágiles de desarrollo aceleran la innovación y reducen el Time-to-Market en las principales industrias corporativas de Chile.",
+    image:
+      "https://images.unsplash.com/photo-1531538606174-0f90ff5dce83?auto=format&fit=crop&w=800&q=80",
+    date: "2026-06-12",
+    category: "Metodologías y Agilidad",
+    tags: [
+      "Células Ágiles",
+      "Transformación Digital",
+      "Grandes Empresas",
+      "Chile",
+      "Desarrollo de Software",
+    ],
+    metaDescription:
+      "Conoce cómo las células ágiles de desarrollo impulsan la transformación digital en grandes empresas chilenas con velocidad y calidad.",
+  },
 ];
 
 export default function Blog() {

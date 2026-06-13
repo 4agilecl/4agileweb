@@ -1,12 +1,15 @@
-import fs from 'fs';
-import path from 'path';
-import { fileURLToPath } from 'url';
+import fs from "fs";
+import path from "path";
+import { fileURLToPath } from "url";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-const blogFilePath = path.resolve(__dirname, '../client/src/pages/Blog.tsx');
-const sitemapOutputPath = path.resolve(__dirname, '../client/public/sitemap.xml');
+const blogFilePath = path.resolve(__dirname, "../client/src/pages/Blog.tsx");
+const sitemapOutputPath = path.resolve(
+  __dirname,
+  "../client/public/sitemap.xml",
+);
 
 function extractArticles(content: string) {
   const startKeyword = "const articles = [";
@@ -35,8 +38,11 @@ function extractArticles(content: string) {
 
   for (let j = 0; j < articlesStr.length; j++) {
     const char = articlesStr[j];
-    
-    if ((char === '"' || char === "'" || char === "`") && articlesStr[j - 1] !== '\\') {
+
+    if (
+      (char === '"' || char === "'" || char === "`") &&
+      articlesStr[j - 1] !== "\\"
+    ) {
       if (!inString) {
         inString = true;
         stringChar = char;
@@ -66,27 +72,34 @@ function extractArticles(content: string) {
     }
   }
 
-  return blocks.map(block => {
-    const slugMatch = block.match(/slug:\s*["']([^"']+)["']/);
-    const dateMatch = block.match(/date:\s*["']([^"']+)["']/);
-    return {
-      slug: slugMatch ? slugMatch[1] : null,
-      date: dateMatch ? dateMatch[1] : null
-    };
-  }).filter((item): item is { slug: string, date: string | null } => item.slug !== null);
+  return blocks
+    .map((block) => {
+      const slugMatch = block.match(/slug:\s*["']([^"']+)["']/);
+      const dateMatch = block.match(/date:\s*["']([^"']+)["']/);
+      return {
+        slug: slugMatch ? slugMatch[1] : null,
+        date: dateMatch ? dateMatch[1] : null,
+      };
+    })
+    .filter(
+      (item): item is { slug: string; date: string | null } =>
+        item.slug !== null,
+    );
 }
 
 function main() {
-  console.log('Iniciando generación de sitemap...');
-  
+  console.log("Iniciando generación de sitemap...");
+
   if (!fs.existsSync(blogFilePath)) {
-    console.error(`Error: No se encontró el archivo de blog en: ${blogFilePath}`);
+    console.error(
+      `Error: No se encontró el archivo de blog en: ${blogFilePath}`,
+    );
     process.exit(1);
   }
 
-  const blogContent = fs.readFileSync(blogFilePath, 'utf-8');
+  const blogContent = fs.readFileSync(blogFilePath, "utf-8");
   const articles = extractArticles(blogContent);
-  
+
   console.log(`Se encontraron ${articles.length} artículos en Blog.tsx`);
 
   let sitemapContent = `<?xml version="1.0" encoding="UTF-8"?>
@@ -113,7 +126,7 @@ function main() {
   </url>
 `;
 
-  articles.forEach(article => {
+  articles.forEach((article) => {
     sitemapContent += `  <url>\n`;
     sitemapContent += `    <loc>https://4agile.cl/blog/${article.slug}</loc>\n`;
     if (article.date) {
@@ -130,13 +143,13 @@ function main() {
 </urlset>
 `;
 
-  fs.writeFileSync(sitemapOutputPath, sitemapContent, 'utf-8');
+  fs.writeFileSync(sitemapOutputPath, sitemapContent, "utf-8");
   console.log(`Sitemap generado exitosamente en: ${sitemapOutputPath}`);
 
   // Si existe la carpeta dist/public, también copiamos el sitemap allí para asegurar consistencia
-  const distSitemapPath = path.resolve(__dirname, '../dist/public/sitemap.xml');
+  const distSitemapPath = path.resolve(__dirname, "../dist/public/sitemap.xml");
   if (fs.existsSync(path.dirname(distSitemapPath))) {
-    fs.writeFileSync(distSitemapPath, sitemapContent, 'utf-8');
+    fs.writeFileSync(distSitemapPath, sitemapContent, "utf-8");
     console.log(`Sitemap copiado exitosamente a: ${distSitemapPath}`);
   }
 }
