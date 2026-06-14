@@ -233,44 +233,38 @@ const articles = [
       "Acelera tu modernización cloud en Chile con outsourcing TI especializado. Velocidad, control y menos riesgo para tu empresa. ¡Contáctanos en 4AGILE!",
   },
   {
-    slug: "platform-engineering-empresas-chilenas",
+    slug: "ia-generativa-banca-chile",
     title:
-      "Platform Engineering para empresas chilenas: cómo construir plataformas internas que escalan",
+      "IA Generativa para la banca en Chile: transformando la eficiencia operativa y el cumplimiento",
     excerpt:
-      "Descubre cómo el Platform Engineering en Chile permite a los equipos de desarrollo moverse más rápido, con menos fricción y mayor autonomía operativa.",
+      "Descubre cómo la adopción estratégica de la IA Generativa para la banca en Chile redefine la eficiencia del back office y asegura el cumplimiento ante la CMF.",
     image:
-      "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=800&q=80",
     date: "2026-06-12",
-    category: "DevOps y Cloud",
-    tags: [
-      "Platform Engineering",
-      "Chile",
-      "DevOps",
-      "Plataformas Internas",
-      "Transformación Digital",
-    ],
+    category: "Inteligencia Artificial",
+    tags: ["IA Generativa", "Banca", "Chile", "Cumplimiento", "Eficiencia"],
     metaDescription:
-      "Implementa Platform Engineering en tu empresa chilena y acelera la entrega de software con plataformas internas escalables. Conoce cómo en 4AGILE.",
+      "Descubre cómo la IA Generativa para la banca en Chile está redefiniendo la eficiencia y el cumplimiento regulatorio en el sector financiero.",
   },
   {
-    slug: "staffing-tecnologico-proyectos-transformacion-digital-chile",
+    slug: "celulas-agiles-desarrollo-chile",
     title:
-      "Staffing tecnológico para proyectos de transformación digital en Chile: talento justo, en el momento exacto",
+      "Células ágiles de desarrollo: el motor de la transformación digital en grandes empresas chilenas",
     excerpt:
-      "Aprende cómo el staffing tecnológico especializado en Chile permite cubrir brechas de talento crítico en proyectos de transformación digital sin los riesgos de una contratación permanente apresurada.",
+      "Conoce cómo las células ágiles de desarrollo aceleran la innovación y reducen el Time-to-Market en las principales industrias corporativas de Chile.",
     image:
-      "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1531538606174-0f90ff5dce83?auto=format&fit=crop&w=800&q=80",
     date: "2026-06-12",
-    category: "Hunting y Talento",
+    category: "Metodologías y Agilidad",
     tags: [
-      "Staffing Tecnológico",
-      "Chile",
+      "Células Ágiles",
       "Transformación Digital",
-      "Talento TI",
-      "Outsourcing",
+      "Grandes Empresas",
+      "Chile",
+      "Desarrollo de Software",
     ],
     metaDescription:
-      "El staffing tecnológico en Chile es la solución para cubrir talento crítico en proyectos de transformación digital. Conoce el modelo de 4AGILE. ¡Conversemos!",
+      "Conoce cómo las células ágiles de desarrollo impulsan la transformación digital en grandes empresas chilenas con velocidad y calidad.",
   },
 ];
 
