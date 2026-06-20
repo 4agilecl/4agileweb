@@ -4,6 +4,27 @@ import { useSEO } from "../hooks/useSEO";
 
 const articles = [
   {
+    slug: "beneficios-ia-generativa-gestion-proyectos-ti",
+    title: "Beneficios de la IA Generativa en la Gestión de Proyectos TI",
+    excerpt: "Descubre cómo la IA Generativa revoluciona la gestión de proyectos TI en Chile, optimizando tiempos, recursos y calidad de entrega.",
+    image: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80",
+    date: "2026-06-19",
+    category: "Inteligencia Artificial",
+    tags: ["IA Generativa", "Gestión de Proyectos", "Chile", "TI", "Agilidad"],
+    metaDescription: "Descubre cómo la IA Generativa revoluciona la gestión de proyectos TI en Chile, optimizando tiempos, recursos y calidad de entrega. ¡Hablemos!",
+  },
+  {
+    slug: "estrategias-ciberseguridad-trabajo-remoto-chile",
+    title: "Estrategias de Ciberseguridad para el Trabajo Remoto en Chile",
+    excerpt: "Protege tu empresa con las mejores estrategias de ciberseguridad para el trabajo remoto en Chile.",
+    image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=800&q=80",
+    date: "2026-06-19",
+    category: "Ciberseguridad",
+    tags: ["Ciberseguridad", "Trabajo Remoto", "Chile", "Protección", "Estrategia"],
+    metaDescription: "Protege tu empresa con las mejores estrategias de ciberseguridad para el trabajo remoto en Chile. Evita riesgos y asegura la continuidad. ¡Contáctanos!",
+  },
+
+  {
     slug: "por-que-es-util-el-outsourcing",
     title: "Por qué es útil el outsourcing en la era digital",
     excerpt:
