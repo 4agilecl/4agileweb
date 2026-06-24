@@ -4,6 +4,27 @@ import { useSEO } from "../hooks/useSEO";
 
 const articles = [
   {
+    slug: "optimizacion-costos-cloud-chile-estrategias-finops",
+    title: "Optimización de Costos Cloud en Chile: Estrategias FinOps para Empresas Modernas",
+    excerpt: "Descubre cómo la optimización de costos cloud en Chile a través de estrategias FinOps ayuda a empresas modernas a maximizar su ROI en la nube y optimizar su presupuesto técnico.",
+    image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=800&q=80",
+    date: "2026-06-24",
+    category: "DevOps y Cloud",
+    tags: ["Cloud", "FinOps", "Chile", "Optimización de Costos", "Empresas Modernas"],
+    metaDescription: "Descubre cómo la optimización de costos cloud en Chile a través de estrategias FinOps ayuda a empresas modernas a maximizar su ROI en la nube. ¡Hablemos!"
+  },
+  {
+    slug: "qa-automation-reducir-time-to-market-desarrollo-software-chileno",
+    title: "QA Automation: Cómo Reducir el Time-to-Market en el Desarrollo de Software Chileno",
+    excerpt: "Descubre cómo la implementación de QA Automation acelera los ciclos de entrega de software y reduce el time-to-market en el desarrollo de software chileno de alto nivel.",
+    image: "https://images.unsplash.com/photo-1607799279861-4dd421887fb3?auto=format&fit=crop&w=800&q=80",
+    date: "2026-06-24",
+    category: "Calidad y Pruebas",
+    tags: ["QA Automation", "Time-to-Market", "Desarrollo de Software", "Chile", "Testing"],
+    metaDescription: "Descubre cómo la implementación de QA Automation permite acelerar las entregas y reducir el time-to-market en el desarrollo de software chileno de alto nivel."
+  },
+
+  {
     slug: "beneficios-ia-generativa-gestion-proyectos-ti",
     title: "Beneficios de la IA Generativa en la Gestión de Proyectos TI",
     excerpt: "Descubre cómo la IA Generativa revoluciona la gestión de proyectos TI en Chile, optimizando tiempos, recursos y calidad de entrega.",
