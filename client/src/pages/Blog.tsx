@@ -4,6 +4,26 @@ import { useSEO } from "../hooks/useSEO";
 
 const articles = [
   {
+    slug: "observabilidad-monitoreo-proactivo-resiliencia-plataformas-digitales-chile",
+    title: "Observabilidad y Monitoreo Proactivo: Clave para la Resiliencia de Plataformas Digitales en Chile",
+    excerpt: "Descubre cómo la observabilidad y el monitoreo proactivo permiten anticipar incidentes, reducir tiempos de caída y garantizar la resiliencia de las plataformas digitales en Chile.",
+    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80",
+    date: "2026-06-26",
+    category: "DevOps y Cloud",
+    tags: ["Observabilidad", "Monitoreo Proactivo", "Resiliencia", "Chile", "SRE"],
+    metaDescription: "Descubre cómo la observabilidad y el monitoreo proactivo aseguran la resiliencia de las plataformas digitales en Chile, anticipando incidentes. ¡Conversemos!"
+  },
+  {
+    slug: "staffing-tecnologico-vs-reclutamiento-tradicional-escalar-equipos-it-chile",
+    title: "Staffing Tecnológico vs. Reclutamiento Tradicional: ¿Cuál es la mejor opción para escalar equipos de IT en Chile?",
+    excerpt: "Comparamos el staffing tecnológico y el reclutamiento tradicional para ayudarte a elegir el modelo más eficiente al escalar equipos de IT en Chile con velocidad y control.",
+    image: "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&w=800&q=80",
+    date: "2026-06-26",
+    category: "Hunting y Talento",
+    tags: ["Staffing Tecnológico", "Reclutamiento", "Equipos de IT", "Chile", "Outsourcing"],
+    metaDescription: "Staffing tecnológico vs. reclutamiento tradicional: descubre cuál es la mejor opción para escalar equipos de IT en Chile con agilidad y control. ¡Conversemos!"
+  },
+  {
     slug: "optimizacion-costos-cloud-chile-estrategias-finops",
     title: "Optimización de Costos Cloud en Chile: Estrategias FinOps para Empresas Modernas",
     excerpt: "Descubre cómo la optimización de costos cloud en Chile a través de estrategias FinOps ayuda a empresas modernas a maximizar su ROI en la nube y optimizar su presupuesto técnico.",
