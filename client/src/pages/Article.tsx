@@ -14,6 +14,203 @@ const articlesContent: Record<
     content: React.ReactNode;
   }
 > = {
+  "ciberseguridad-cloud-chile-protegiendo-infraestructura-critica-nube": {
+    title: "Ciberseguridad Cloud en Chile: Protegiendo la Infraestructura Crítica en la Nube",
+    image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?auto=format&fit=crop&w=800&q=80",
+    date: "2026-06-27",
+    category: "Ciberseguridad",
+    tags: ["Ciberseguridad Cloud", "Infraestructura Crítica", "Chile", "Nube", "Cumplimiento"],
+    metaDescription: "Descubre cómo la ciberseguridad cloud en Chile protege la infraestructura crítica en la nube, reduce riesgos y asegura la continuidad del negocio. ¡Conversemos!",
+    content: (
+      <>
+        <p>
+          La migración hacia la nube dejó de ser una tendencia para convertirse en el estándar operativo de las empresas chilenas. Bancos, retailers, aseguradoras, prestadores de salud y servicios públicos digitales trasladaron sus cargas más sensibles a entornos cloud en busca de escalabilidad, velocidad y eficiencia. Sin embargo, esa misma agilidad amplió de forma drástica la superficie de ataque y expuso datos críticos a amenazas cada vez más sofisticadas. En este contexto, la <strong>ciberseguridad cloud en Chile</strong> se ha transformado en una prioridad de directorio y no en un asunto exclusivamente técnico, porque proteger la <strong>infraestructura crítica en la nube</strong> es hoy sinónimo de proteger la continuidad, la reputación y la viabilidad misma del negocio.
+        </p>
+
+        <p>
+          Muchas organizaciones asumen, erróneamente, que migrar a un proveedor cloud líder las exime de responsabilidad sobre la seguridad. La realidad es distinta: los grandes proveedores garantizan la seguridad "de" la nube —los centros de datos, el hardware y la red física—, pero la seguridad "en" la nube —las configuraciones, los accesos, los datos y las aplicaciones— recae directamente sobre la empresa. Comprender este modelo de responsabilidad compartida es el primer paso para diseñar una estrategia de <strong>ciberseguridad cloud en Chile</strong> verdaderamente sólida.
+        </p>
+
+        <h2>¿Por qué la infraestructura crítica en la nube exige una protección especializada?</h2>
+
+        <p>
+          La <strong>infraestructura crítica en la nube</strong> abarca todos aquellos sistemas cuya interrupción o vulneración tendría un impacto severo: plataformas de pago, bases de datos de clientes, sistemas core bancarios, registros clínicos o portales de servicios esenciales. A diferencia de un entorno on-premise tradicional, estos activos viven en arquitecturas dinámicas, distribuidas y altamente automatizadas, donde un solo error de configuración puede dejar expuesta información sensible a internet en cuestión de segundos.
+        </p>
+
+        <p>
+          En Chile, además, la presión regulatoria se ha intensificado. La Ley Marco de Ciberseguridad, las exigencias de la CMF para el sector financiero y la actualización de la normativa de protección de datos personales obligan a las empresas a demostrar trazabilidad, control de accesos y capacidad de respuesta ante incidentes. La <strong>ciberseguridad cloud en Chile</strong> ya no es solo una buena práctica defensiva, sino un requisito de cumplimiento que puede determinar la operación legal de una compañía.
+        </p>
+
+        <h2>Principales amenazas que enfrenta la infraestructura crítica en la nube</h2>
+
+        <p>
+          Antes de blindar un entorno cloud es indispensable entender cómo y por dónde ocurren los ataques. Estas son las vulnerabilidades más recurrentes que observamos en el mercado nacional.
+        </p>
+
+        <h3>1. Configuraciones erróneas (misconfigurations)</h3>
+        <p>
+          Es la causa número uno de brechas en la nube. Buckets de almacenamiento públicos, puertos abiertos, permisos excesivos o credenciales por defecto sin modificar abren la puerta a filtraciones masivas de datos sin que medie un ataque sofisticado. La automatización del despliegue, si no está bien gobernada, propaga estos errores a gran escala.
+        </p>
+
+        <h3>2. Gestión deficiente de identidades y accesos</h3>
+        <p>
+          El robo de credenciales y el abuso de privilegios son vectores predilectos de los atacantes. Sin un control riguroso de identidades, autenticación multifactor y el principio de mínimo privilegio, un solo usuario comprometido puede escalar permisos y comprometer toda la <strong>infraestructura crítica en la nube</strong>.
+        </p>
+
+        <h3>3. Amenazas avanzadas y ransomware</h3>
+        <p>
+          El ransomware evolucionó para atacar entornos cloud y respaldos en línea, cifrando datos y exigiendo rescates millonarios. A esto se suman ataques de cadena de suministro y la explotación de APIs mal aseguradas, cada vez más frecuentes en arquitecturas modernas basadas en microservicios.
+        </p>
+
+        <h2>Pilares de una estrategia de ciberseguridad cloud en Chile</h2>
+
+        <p>
+          Proteger los activos digitales en la nube requiere un enfoque integral, por capas y continuo. Una estrategia madura de <strong>ciberseguridad cloud en Chile</strong> se sostiene sobre los siguientes fundamentos.
+        </p>
+
+        <h3>Arquitectura Zero Trust</h3>
+        <p>
+          El modelo "nunca confiar, siempre verificar" parte de la premisa de que ninguna identidad o dispositivo es confiable por defecto, esté dentro o fuera de la red. Cada acceso se autentica, se autoriza y se inspecciona, reduciendo de forma drástica el movimiento lateral de un atacante que logre vulnerar un punto de entrada.
+        </p>
+
+        <h3>Seguridad como código y postura cloud (CSPM)</h3>
+        <p>
+          Integrar controles de seguridad directamente en los pipelines de despliegue permite detectar configuraciones inseguras antes de que lleguen a producción. Las herramientas de gestión de postura de seguridad cloud (CSPM) monitorean de forma continua el entorno, identifican desviaciones y corrigen automáticamente los riesgos sobre la <strong>infraestructura crítica en la nube</strong>.
+        </p>
+
+        <h3>Cifrado, respaldo y plan de recuperación</h3>
+        <p>
+          Cifrar los datos en reposo y en tránsito, mantener respaldos inmutables y contar con un plan de recuperación ante desastres probado periódicamente son medidas no negociables. La resiliencia se demuestra en la capacidad de restaurar operaciones rápidamente tras un incidente, minimizando el tiempo de inactividad.
+        </p>
+
+        <h3>Monitoreo continuo y respuesta a incidentes</h3>
+        <p>
+          La detección temprana es decisiva. Centralizar logs, correlacionar eventos y contar con capacidades de respuesta 24/7 permite contener una amenaza antes de que se convierta en una crisis. La <strong>ciberseguridad cloud en Chile</strong> exige vigilancia permanente, no auditorías esporádicas.
+        </p>
+
+        <h2>El factor humano: el talento especializado como ventaja decisiva</h2>
+
+        <p>
+          La tecnología por sí sola no protege a una organización. La brecha de talento en ciberseguridad es uno de los mayores desafíos del mercado chileno: los perfiles con experiencia comprobada en seguridad cloud son escasos, altamente demandados y rotan con frecuencia. Esta carencia deja a muchas empresas con herramientas potentes, pero sin las personas capaces de configurarlas, interpretarlas y responder ante un incidente real.
+        </p>
+
+        <p>
+          Por esta razón, un número creciente de organizaciones opta por incorporar especialistas en ciberseguridad cloud a través de modelos de outsourcing de talento. Sumar ingenieros con experiencia en arquitecturas Zero Trust, cumplimiento normativo y respuesta a incidentes acelera la madurez de seguridad, evita errores costosos de configuración y permite que los equipos internos adopten rápidamente las mejores prácticas para proteger la <strong>infraestructura crítica en la nube</strong> desde el primer día.
+        </p>
+
+        <h2>Conclusión: la seguridad cloud como habilitador del negocio</h2>
+
+        <p>
+          Lejos de ser un freno a la innovación, una estrategia robusta de <strong>ciberseguridad cloud en Chile</strong> es lo que permite a las empresas adoptar la nube con confianza, cumplir con la regulación y crecer sin exponer sus activos más valiosos. Proteger la infraestructura crítica ya no es un costo defensivo, sino una inversión estratégica que sostiene la continuidad y la reputación del negocio en un entorno de amenazas en constante evolución.
+        </p>
+
+        <p style={{
+          marginTop: '3rem',
+          padding: '2rem',
+          backgroundColor: 'var(--blue-light)',
+          borderRadius: '12px',
+          border: '1px solid var(--blue-20)'
+        }}>
+          <strong>¿Necesitas ciberseguridad cloud para tu empresa? Conversemos.</strong> En 4AGILE contamos con especialistas en seguridad cloud y cumplimiento normativo listos para diseñar la estrategia que tu organización necesita. <a href="/contacto" style={{ color: 'var(--blue)', textDecoration: 'underline' }}>Contáctanos hoy</a> y protege tu infraestructura crítica en la nube con confianza.
+        </p>
+      </>
+    ),
+  },
+  "modernizacion-aplicaciones-estrategias-transformacion-digital-empresas-chilenas": {
+    title: "Modernización de Aplicaciones: Estrategias para la Transformación Digital de Empresas Chilenas",
+    image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80",
+    date: "2026-06-27",
+    category: "Desarrollo y Modernización",
+    tags: ["Modernización de Aplicaciones", "Transformación Digital", "Empresas Chilenas", "Cloud", "Legacy"],
+    metaDescription: "Conoce las estrategias de modernización de aplicaciones que impulsan la transformación digital de empresas chilenas sin frenar la operación. ¡Conversemos!",
+    content: (
+      <>
+        <p>
+          Detrás de muchas operaciones críticas de las grandes compañías chilenas siguen funcionando sistemas construidos hace una o dos décadas. Aplicaciones monolíticas, dependientes de tecnologías obsoletas y difíciles de mantener, que aún sostienen procesos centrales del negocio. Estos sistemas legacy cumplieron su propósito en su momento, pero hoy se han convertido en un freno: encarecen el mantenimiento, dificultan la integración con nuevas plataformas y ralentizan la innovación. En este escenario, la <strong>modernización de aplicaciones</strong> se ha consolidado como una pieza clave de la <strong>transformación digital de empresas chilenas</strong> que buscan competir con agilidad sin poner en riesgo su continuidad operativa.
+        </p>
+
+        <p>
+          Modernizar no significa, necesariamente, reescribir todo desde cero. Se trata de un proceso estratégico y gradual que evalúa cada aplicación según su valor de negocio, su deuda técnica y su criticidad, para definir el camino más eficiente hacia una arquitectura ágil, escalable y segura. Abordada con método, la <strong>modernización de aplicaciones</strong> reduce costos, mejora la experiencia del usuario y libera a la organización para innovar con velocidad.
+        </p>
+
+        <h2>¿Por qué la modernización de aplicaciones es urgente para las empresas chilenas?</h2>
+
+        <p>
+          Mantener sistemas legacy tiene un costo silencioso pero creciente. El soporte de tecnologías descontinuadas es cada vez más caro y escaso, los riesgos de seguridad se multiplican al no recibir actualizaciones, y la imposibilidad de integrarse con servicios cloud o APIs modernas deja a la empresa fuera de los ecosistemas digitales actuales. Para la <strong>transformación digital de empresas chilenas</strong>, esta rigidez tecnológica se traduce en oportunidades de mercado perdidas frente a competidores más ágiles.
+        </p>
+
+        <p>
+          A esto se suma un factor humano determinante: los profesionales que dominan tecnologías antiguas son cada vez más difíciles de encontrar y retener. Cada año que se posterga la modernización, aumenta la dependencia de un conocimiento que escasea y crece la deuda técnica acumulada. La <strong>modernización de aplicaciones</strong> deja así de ser un proyecto opcional para convertirse en una decisión de supervivencia competitiva.
+        </p>
+
+        <h2>Estrategias de modernización de aplicaciones</h2>
+
+        <p>
+          No existe una única ruta de modernización. La estrategia correcta depende de los objetivos del negocio, el presupuesto y el nivel de transformación deseado. Estas son las principales aproximaciones, conocidas en la industria como las "R" de la modernización.
+        </p>
+
+        <h3>1. Rehosting (lift and shift)</h3>
+        <p>
+          Consiste en migrar la aplicación a la nube sin modificar su código. Es la opción más rápida y de menor riesgo, ideal para obtener beneficios inmediatos de infraestructura y reducir costos de centro de datos. Sin embargo, no aprovecha plenamente las capacidades nativas de la nube.
+        </p>
+
+        <h3>2. Replatforming</h3>
+        <p>
+          Introduce optimizaciones moderadas durante la migración —como adoptar bases de datos administradas o contenedores— sin reescribir la lógica central. Equilibra esfuerzo y beneficio, mejorando rendimiento y escalabilidad con un riesgo controlado.
+        </p>
+
+        <h3>3. Refactoring y rearquitectura</h3>
+        <p>
+          Implica reestructurar el código y, en muchos casos, descomponer el monolito en microservicios. Es la estrategia más profunda y exigente, pero también la que entrega mayor agilidad, escalabilidad independiente y velocidad de despliegue. Es el corazón de una verdadera <strong>transformación digital de empresas chilenas</strong> que aspiran a innovar de forma continua.
+        </p>
+
+        <h3>4. Reemplazo por soluciones SaaS</h3>
+        <p>
+          Cuando una aplicación legacy no aporta diferenciación competitiva, suele convenir reemplazarla por una solución SaaS de mercado, liberando al equipo interno para concentrarse en los sistemas que sí generan valor único para el negocio.
+        </p>
+
+        <h2>Cómo abordar la modernización sin frenar la operación</h2>
+
+        <p>
+          El mayor temor de las gerencias de TI es que un proyecto de <strong>modernización de aplicaciones</strong> interrumpa los servicios en producción. La buena noticia es que existen metodologías probadas para mitigar ese riesgo.
+        </p>
+
+        <p>
+          El patrón "Strangler Fig" permite reemplazar progresivamente las funcionalidades del sistema antiguo por nuevos componentes modernos, sin un apagón total. La aplicación legacy convive con la nueva arquitectura mientras se migra módulo a módulo, hasta que finalmente queda obsoleta. A esto se suman prácticas de DevOps, integración y despliegue continuo (CI/CD) y automatización de pruebas, que aseguran que cada cambio se valide y despliegue de forma controlada y reversible.
+        </p>
+
+        <p>
+          Una modernización exitosa siempre comienza con un diagnóstico riguroso: mapear las aplicaciones, evaluar su deuda técnica y su valor de negocio, y priorizar por impacto. Este enfoque iterativo permite generar resultados tempranos y demostrables, ganar la confianza de los stakeholders y financiar las siguientes etapas con los ahorros y mejoras obtenidas.
+        </p>
+
+        <h2>El rol del talento especializado en la transformación digital de empresas chilenas</h2>
+
+        <p>
+          La modernización combina disciplinas que rara vez conviven en un solo equipo: arquitectura de software, dominio de plataformas cloud, prácticas DevOps y comprensión profunda del negocio. Reunir ese conocimiento internamente toma tiempo y compite con la escasez de talento que caracteriza al mercado tecnológico nacional.
+        </p>
+
+        <p>
+          Por eso, muchas organizaciones aceleran su <strong>transformación digital de empresas chilenas</strong> integrando ingenieros y arquitectos especializados a través de modelos de outsourcing de talento. Sumar perfiles con experiencia comprobada en proyectos de modernización reduce los riesgos de implementación, acorta los plazos y permite que los equipos internos absorban las mejores prácticas, asegurando que la <strong>modernización de aplicaciones</strong> se construya sobre bases sólidas y sostenibles.
+        </p>
+
+        <h2>Conclusión: modernizar para competir</h2>
+
+        <p>
+          La <strong>modernización de aplicaciones</strong> no es un fin en sí mismo, sino el habilitador que permite a las empresas chilenas innovar con rapidez, reducir costos operativos y ofrecer mejores experiencias digitales. Postergarla solo incrementa la deuda técnica y la brecha frente a la competencia. Abordarla con estrategia, método y el talento adecuado convierte a la tecnología, una vez más, en un motor de crecimiento y no en un obstáculo.
+        </p>
+
+        <p style={{
+          marginTop: '3rem',
+          padding: '2rem',
+          backgroundColor: 'var(--blue-light)',
+          borderRadius: '12px',
+          border: '1px solid var(--blue-20)'
+        }}>
+          <strong>¿Necesitas modernización de aplicaciones para tu empresa? Conversemos.</strong> En 4AGILE contamos con arquitectos de software e ingenieros cloud listos para diseñar la estrategia de modernización que impulse tu transformación digital. <a href="/contacto" style={{ color: 'var(--blue)', textDecoration: 'underline' }}>Contáctanos hoy</a> y moderniza tus sistemas sin frenar tu operación.
+        </p>
+      </>
+    ),
+  },
   "observabilidad-monitoreo-proactivo-resiliencia-plataformas-digitales-chile": {
     title: "Observabilidad y Monitoreo Proactivo: Clave para la Resiliencia de Plataformas Digitales en Chile",
     image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80",

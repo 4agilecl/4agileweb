@@ -4,6 +4,26 @@ import { useSEO } from "../hooks/useSEO";
 
 const articles = [
   {
+    slug: "ciberseguridad-cloud-chile-protegiendo-infraestructura-critica-nube",
+    title: "Ciberseguridad Cloud en Chile: Protegiendo la Infraestructura Crítica en la Nube",
+    excerpt: "Descubre cómo la ciberseguridad cloud en Chile protege la infraestructura crítica en la nube, reduce riesgos de configuración y asegura la continuidad del negocio.",
+    image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?auto=format&fit=crop&w=800&q=80",
+    date: "2026-06-27",
+    category: "Ciberseguridad",
+    tags: ["Ciberseguridad Cloud", "Infraestructura Crítica", "Chile", "Nube", "Cumplimiento"],
+    metaDescription: "Descubre cómo la ciberseguridad cloud en Chile protege la infraestructura crítica en la nube, reduce riesgos y asegura la continuidad del negocio. ¡Conversemos!"
+  },
+  {
+    slug: "modernizacion-aplicaciones-estrategias-transformacion-digital-empresas-chilenas",
+    title: "Modernización de Aplicaciones: Estrategias para la Transformación Digital de Empresas Chilenas",
+    excerpt: "Conoce las estrategias de modernización de aplicaciones que impulsan la transformación digital de empresas chilenas sin frenar la operación ni aumentar la deuda técnica.",
+    image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80",
+    date: "2026-06-27",
+    category: "Desarrollo y Modernización",
+    tags: ["Modernización de Aplicaciones", "Transformación Digital", "Empresas Chilenas", "Cloud", "Legacy"],
+    metaDescription: "Conoce las estrategias de modernización de aplicaciones que impulsan la transformación digital de empresas chilenas sin frenar la operación. ¡Conversemos!"
+  },
+  {
     slug: "observabilidad-monitoreo-proactivo-resiliencia-plataformas-digitales-chile",
     title: "Observabilidad y Monitoreo Proactivo: Clave para la Resiliencia de Plataformas Digitales en Chile",
     excerpt: "Descubre cómo la observabilidad y el monitoreo proactivo permiten anticipar incidentes, reducir tiempos de caída y garantizar la resiliencia de las plataformas digitales en Chile.",
