@@ -4,6 +4,26 @@ import { useSEO } from "../hooks/useSEO";
 
 const articles = [
   {
+    slug: "gobierno-datos-chile-estrategias-integridad-cumplimiento-normativo",
+    title: "Gobierno de Datos en Chile: Estrategias para la Integridad y el Cumplimiento Normativo",
+    excerpt: "Descubre cómo implementar un gobierno de datos en Chile que asegure la integridad de la información, fortalezca el cumplimiento normativo y convierta los datos en un activo estratégico para tu empresa.",
+    image: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&w=800&q=80",
+    date: "2026-06-28",
+    category: "Datos y Seguridad",
+    tags: ["Gobierno de Datos", "Cumplimiento Normativo", "Chile", "Integridad de Datos", "Calidad de Datos"],
+    metaDescription: "Estrategias de gobierno de datos en Chile para asegurar la integridad de la información y el cumplimiento normativo. Convierte tus datos en un activo. ¡Conversemos!"
+  },
+  {
+    slug: "automatizacion-procesos-ia-empresas-chilenas-eficiencia-operativa",
+    title: "Automatización de Procesos con IA: Cómo las Empresas Chilenas están Escalando su Eficiencia Operativa",
+    excerpt: "Conoce cómo la automatización de procesos con IA permite a las empresas chilenas escalar su eficiencia operativa, reducir costos y liberar a sus equipos para tareas de mayor valor.",
+    image: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=800&q=80",
+    date: "2026-06-28",
+    category: "Inteligencia Artificial",
+    tags: ["Automatización de Procesos con IA", "Eficiencia Operativa", "Empresas Chilenas", "Chile", "Hiperautomatización"],
+    metaDescription: "Descubre cómo la automatización de procesos con IA ayuda a las empresas chilenas a escalar su eficiencia operativa y reducir costos. ¡Conversemos!"
+  },
+  {
     slug: "ciberseguridad-cloud-chile-protegiendo-infraestructura-critica-nube",
     title: "Ciberseguridad Cloud en Chile: Protegiendo la Infraestructura Crítica en la Nube",
     excerpt: "Descubre cómo la ciberseguridad cloud en Chile protege la infraestructura crítica en la nube, reduce riesgos de configuración y asegura la continuidad del negocio.",
