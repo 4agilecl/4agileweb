@@ -112,6 +112,10 @@ const articles = [
       "Descubre cómo la externalización de talento puede acelerar tus proyectos, reducir costos operativos y permitirte enfocarte en el núcleo de tu negocio.",
     image:
       "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80",
+    date: "2026-05-08",
+    category: "Hunting y Talento",
+    tags: ["Outsourcing TI", "Talento Especializado", "Chile", "Eficiencia"],
+    metaDescription: "Descubre cómo la externalización de talento TI acelera tus proyectos y reduce costos operativos con outsourcing estratégico en Chile."
   },
   {
     slug: "estado-del-arte-inteligencia-artificial",
@@ -120,6 +124,10 @@ const articles = [
       "Un análisis de los avances más recientes en IA, desde modelos fundacionales hasta su aplicación práctica en el mundo empresarial moderno.",
     image:
       "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=800&q=80",
+    date: "2026-05-09",
+    category: "Inteligencia Artificial",
+    tags: ["IA", "Modelos Fundacionales", "Tecnología", "Futuro"],
+    metaDescription: "Análisis del estado del arte de la inteligencia artificial, desde modelos fundacionales hasta su impacto práctico en las empresas modernas."
   },
   {
     slug: "data-scientist-en-chile",
@@ -367,6 +375,26 @@ const articles = [
     ],
     metaDescription:
       "Conoce cómo las células ágiles de desarrollo impulsan la transformación digital en grandes empresas chilenas con velocidad y calidad.",
+  },
+  {
+    slug: "platform-engineering-empresas-chilenas",
+    title: "Platform Engineering para empresas chilenas: cómo construir plataformas internas que escalan",
+    excerpt: "Descubre cómo el Platform Engineering permite a las empresas chilenas acelerar la entrega de software, reducir la carga cognitiva de los desarrolladores y construir plataformas internas de autoservicio eficientes.",
+    image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=800&q=80",
+    date: "2026-06-12",
+    category: "DevOps y Cloud",
+    tags: ["Platform Engineering", "Chile", "DevOps", "Plataformas Internas", "Transformación Digital"],
+    metaDescription: "Implementa Platform Engineering en tu empresa chilena y acelera la entrega de software con plataformas internas de autoservicio."
+  },
+  {
+    slug: "staffing-tecnologico-proyectos-transformacion-digital-chile",
+    title: "Staffing tecnológico para proyectos de transformación digital en Chile: talento justo, en el momento exacto",
+    excerpt: "El staffing tecnológico es clave para cubrir talento crítico en tus proyectos de transformación digital sin incurrir en contratación permanente lenta. Conoce el modelo de 4AGILE.",
+    image: "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&w=800&q=80",
+    date: "2026-06-12",
+    category: "Hunting y Talento",
+    tags: ["Staffing Tecnológico", "Chile", "Transformación Digital", "Talento TI", "Outsourcing"],
+    metaDescription: "El staffing tecnológico en Chile es la solución para cubrir talento crítico en proyectos de transformación digital. Conoce el modelo de 4AGILE. ¡Conversemos!"
   },
 ];
 
