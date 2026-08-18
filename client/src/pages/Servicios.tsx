@@ -1,5 +1,5 @@
 import { Link } from "wouter";
-import { ArrowRight, BadgeCheck, UsersRound, Search } from "lucide-react";
+import { ArrowRight, BadgeCheck, UsersRound, Search, Sparkles, Bot } from "lucide-react";
 import { useSEO } from "../hooks/useSEO";
 import Header from "../components/Header";
 
@@ -11,13 +11,28 @@ const serviceCards = [
     icon: UsersRound,
     title: "Outsourcing de talentos",
     label: "Capacidad especializada bajo demanda",
-    copy: "Integramos profesionales contratados y acompañados por 4AGILE para reforzar equipos críticos en tecnología, agilidad, data, soporte, producto y gestión. El foco no es solo cubrir una silla, sino sumar capacidad productiva con seguimiento, mentoría y continuidad.",
+    copy: "Integramos profesionales contratados y acompañados por 4AGILE para reforzar equipos críticos en tecnología, agilidad, data, soporte, producto y gestión. El foco no es solo cubrir una silla, sino sumar capacidad productiva con seguimiento, mentoría continua y capacitación constante en IA (bonificada 100%).",
     cta: "Necesito talentos para mi equipo",
+    ctaLink: "/contacto",
     details: [
       "Profesionales contratados directamente por 4AGILE con toda la carga administrativa resuelta.",
       "Seguimiento técnico y de clima constante para evitar rotación y mantener el foco operativo.",
       "Mentoría continua por consultores senior para nivelar brechas y asegurar calidad de entrega.",
-      "Acceso a capacitación constante en Inteligencia Artificial y habilidades interpersonales.",
+      "Acceso a capacitación constante en Inteligencia Artificial y habilidades interpersonales sin costo adicional.",
+    ],
+  },
+  {
+    icon: Sparkles,
+    title: "Mejoras en la productividad",
+    label: "Entrenamiento & Acompañamiento Estratégico",
+    copy: "Desarrollamos el potencial y rendimiento de los talentos mediante entrenamientos prácticos en Inteligencia Artificial, agilidad, habilidades blandas y excelencia tecnológica. Disponible para talentos internos de tu empresa o 100% bonificado en profesionales de Staffing 4AGILE.",
+    cta: "Conocer programa de productividad",
+    ctaLink: "/productividad",
+    details: [
+      "Formación hands-on en herramientas de IA Generativa y copilotos de código para acelerar entregas.",
+      "Optimización del flujo ágil de entrega (Scrum, Kanban, Lean) y eliminación de cuellos de botella.",
+      "Desarrollo de habilidades blandas, asertividad en la comunicación y liderazgo colaborativo.",
+      "Acompañamiento y mentoría técnica continua impartida por consultores senior.",
     ],
   },
   {
@@ -26,6 +41,7 @@ const serviceCards = [
     label: "Búsqueda precisa de perfiles clave",
     copy: "Encontramos, evaluamos y presentamos candidatos alineados al perfil técnico, contexto cultural y objetivos del negocio. Aplicamos selección experta para reducir tiempo, riesgo y fricción en contrataciones estratégicas.",
     cta: "Quiero buscar un perfil clave",
+    ctaLink: "/contacto",
     details: [
       "Proceso riguroso de screening técnico y evaluación de mindset por especialistas ágiles.",
       "Presentación de candidatos altamente pre-calificados en un plazo menor a 5 días hábiles.",
@@ -147,7 +163,7 @@ export default function Servicios() {
                       {service.copy}
                     </p>
                     <Link
-                      href="/contacto"
+                      href={service.ctaLink || "/contacto"}
                       className="btn btn-primary"
                       style={{
                         display: "inline-flex",

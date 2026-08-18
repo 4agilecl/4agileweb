@@ -340,6 +340,15 @@ export default function Home() {
                 TI. Esto no es solo lo que enseñamos, es nuestra forma de operar
                 y generar valor.
               </p>
+              <div style={{ marginTop: "24px" }}>
+                <Link
+                  href="/productividad"
+                  className="btn btn-primary"
+                  style={{ display: "inline-flex", alignItems: "center", gap: "8px" }}
+                >
+                  Conoce cómo mejoramos la productividad con IA <ArrowRight size={18} />
+                </Link>
+              </div>
             </div>
           </div>
         </section>

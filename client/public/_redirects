@@ -1,5 +1,8 @@
 # SPA Routes rewrites to allow client-side routing
 /servicios /index.html 200
+/productividad /index.html 200
+/mejoras-en-la-productividad /index.html 200
+/mejoras-productividad /index.html 200
 /nosotros /index.html 200
 /contacto /index.html 200
 /gracias /index.html 200

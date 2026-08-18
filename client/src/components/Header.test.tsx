@@ -22,6 +22,7 @@ describe("Header component", () => {
     // Desktop nav links
     expect(html).toContain("Inicio");
     expect(html).toContain("Servicios");
+    expect(html).toContain("Productividad");
     expect(html).toContain("Nosotros");
     expect(html).toContain("Blog");
     expect(html).toContain("Conversemos");
@@ -40,6 +41,16 @@ describe("Header component", () => {
     );
 
     expect(html).toContain('href="/servicios" class="active"');
+  });
+
+  it("marks active link correctly when on /productividad", () => {
+    const html = renderToString(
+      <Router hook={createMockLocation("/productividad")}>
+        <Header />
+      </Router>,
+    );
+
+    expect(html).toContain('href="/productividad" class="active"');
   });
 
   it("marks active link correctly when on /nosotros", () => {
