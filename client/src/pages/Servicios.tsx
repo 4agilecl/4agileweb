@@ -1,5 +1,5 @@
 import { Link } from "wouter";
-import { ArrowRight, BadgeCheck, UsersRound, Search } from "lucide-react";
+import { ArrowRight, BadgeCheck, UsersRound, Search, Zap } from "lucide-react";
 import { useSEO } from "../hooks/useSEO";
 import Header from "../components/Header";
 
@@ -13,11 +13,12 @@ const serviceCards = [
     label: "Capacidad especializada bajo demanda",
     copy: "Integramos profesionales contratados y acompañados por 4AGILE para reforzar equipos críticos en tecnología, agilidad, data, soporte, producto y gestión. El foco no es solo cubrir una silla, sino sumar capacidad productiva con seguimiento, mentoría y continuidad.",
     cta: "Necesito talentos para mi equipo",
+    link: "/contacto",
     details: [
       "Profesionales contratados directamente por 4AGILE con toda la carga administrativa resuelta.",
       "Seguimiento técnico y de clima constante para evitar rotación y mantener el foco operativo.",
       "Mentoría continua por consultores senior para nivelar brechas y asegurar calidad de entrega.",
-      "Acceso a capacitación constante en Inteligencia Artificial y habilidades interpersonales.",
+      "Acceso a capacitación constante en Inteligencia Artificial y habilidades interpersonales sin costo adicional.",
     ],
   },
   {
@@ -26,11 +27,26 @@ const serviceCards = [
     label: "Búsqueda precisa de perfiles clave",
     copy: "Encontramos, evaluamos y presentamos candidatos alineados al perfil técnico, contexto cultural y objetivos del negocio. Aplicamos selección experta para reducir tiempo, riesgo y fricción en contrataciones estratégicas.",
     cta: "Quiero buscar un perfil clave",
+    link: "/contacto",
     details: [
       "Proceso riguroso de screening técnico y evaluación de mindset por especialistas ágiles.",
       "Presentación de candidatos altamente pre-calificados en un plazo menor a 5 días hábiles.",
       "Garantía comercial de reemplazo sin costo si el profesional no se adapta en el periodo inicial.",
       "Acompañamiento en el onboarding para facilitar una integración exitosa a la cultura de la empresa.",
+    ],
+  },
+  {
+    icon: Zap,
+    title: "Mejora la productividad de talentos",
+    label: "Entrenamientos, IA y Acompañamiento",
+    copy: "Entrenamos y acompañamos a los talentos en Inteligencia Artificial, gestión ágil, habilidades blandas y nivelación tecnológica para multiplicar su productividad e impacto en el cliente.",
+    cta: "Conocer programas de productividad",
+    link: "/productividad",
+    details: [
+      "Programas in-company a medida para capacitar y elevar la productividad de tus equipos internos.",
+      "Entrenamientos prácticos en herramientas de Inteligencia Artificial (LLMs, Copilot, automatización).",
+      "Formación en gestión ágil y mentalidad Silicon Valley a través de nuestro sello Agilefactor.",
+      "100% gratuito e incluido en los talentos provistos por 4AGILE mediante nuestro servicio de staffing.",
     ],
   },
 ];
@@ -147,7 +163,7 @@ export default function Servicios() {
                       {service.copy}
                     </p>
                     <Link
-                      href="/contacto"
+                      href={service.link || "/contacto"}
                       className="btn btn-primary"
                       style={{
                         display: "inline-flex",

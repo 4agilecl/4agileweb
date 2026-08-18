@@ -9,6 +9,7 @@ import Blog from "./pages/Blog";
 import Article from "./pages/Article";
 import Servicios from "./pages/Servicios";
 import Nosotros from "./pages/Nosotros";
+import Productividad from "./pages/Productividad";
 import Contacto from "./pages/Contacto";
 
 // Filosofía visual: mantener el diseño premium corporativo original de 4AGILE y rutas simples para Netlify.
@@ -17,6 +18,7 @@ function Router() {
     <Switch>
       <Route path={"/"} component={Home} />
       <Route path={"/servicios"} component={Servicios} />
+      <Route path={"/productividad"} component={Productividad} />
       <Route path={"/nosotros"} component={Nosotros} />
       <Route path={"/contacto"} component={Contacto} />
       <Route path={"/gracias"} component={Gracias} />
