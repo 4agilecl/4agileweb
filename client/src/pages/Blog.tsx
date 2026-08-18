@@ -1,108 +1,201 @@
 import { Link } from "wouter";
 import { ArrowRight } from "lucide-react";
 import { useSEO } from "../hooks/useSEO";
+import Header from "../components/Header";
 
 const articles = [
   {
     slug: "gobierno-datos-chile-estrategias-integridad-cumplimiento-normativo",
-    title: "Gobierno de Datos en Chile: Estrategias para la Integridad y el Cumplimiento Normativo",
-    excerpt: "Descubre cómo implementar un gobierno de datos en Chile que asegure la integridad de la información, fortalezca el cumplimiento normativo y convierta los datos en un activo estratégico para tu empresa.",
-    image: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&w=800&q=80",
+    title:
+      "Gobierno de Datos en Chile: Estrategias para la Integridad y el Cumplimiento Normativo",
+    excerpt:
+      "Descubre cómo implementar un gobierno de datos en Chile que asegure la integridad de la información, fortalezca el cumplimiento normativo y convierta los datos en un activo estratégico para tu empresa.",
+    image:
+      "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&w=800&q=80",
     date: "2026-06-28",
     category: "Datos y Seguridad",
-    tags: ["Gobierno de Datos", "Cumplimiento Normativo", "Chile", "Integridad de Datos", "Calidad de Datos"],
-    metaDescription: "Estrategias de gobierno de datos en Chile para asegurar la integridad de la información y el cumplimiento normativo. Convierte tus datos en un activo. ¡Conversemos!"
+    tags: [
+      "Gobierno de Datos",
+      "Cumplimiento Normativo",
+      "Chile",
+      "Integridad de Datos",
+      "Calidad de Datos",
+    ],
+    metaDescription:
+      "Estrategias de gobierno de datos en Chile para asegurar la integridad de la información y el cumplimiento normativo. Convierte tus datos en un activo. ¡Conversemos!",
   },
   {
     slug: "automatizacion-procesos-ia-empresas-chilenas-eficiencia-operativa",
-    title: "Automatización de Procesos con IA: Cómo las Empresas Chilenas están Escalando su Eficiencia Operativa",
-    excerpt: "Conoce cómo la automatización de procesos con IA permite a las empresas chilenas escalar su eficiencia operativa, reducir costos y liberar a sus equipos para tareas de mayor valor.",
-    image: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=800&q=80",
+    title:
+      "Automatización de Procesos con IA: Cómo las Empresas Chilenas están Escalando su Eficiencia Operativa",
+    excerpt:
+      "Conoce cómo la automatización de procesos con IA permite a las empresas chilenas escalar su eficiencia operativa, reducir costos y liberar a sus equipos para tareas de mayor valor.",
+    image:
+      "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=800&q=80",
     date: "2026-06-28",
     category: "Inteligencia Artificial",
-    tags: ["Automatización de Procesos con IA", "Eficiencia Operativa", "Empresas Chilenas", "Chile", "Hiperautomatización"],
-    metaDescription: "Descubre cómo la automatización de procesos con IA ayuda a las empresas chilenas a escalar su eficiencia operativa y reducir costos. ¡Conversemos!"
+    tags: [
+      "Automatización de Procesos con IA",
+      "Eficiencia Operativa",
+      "Empresas Chilenas",
+      "Chile",
+      "Hiperautomatización",
+    ],
+    metaDescription:
+      "Descubre cómo la automatización de procesos con IA ayuda a las empresas chilenas a escalar su eficiencia operativa y reducir costos. ¡Conversemos!",
   },
   {
     slug: "ciberseguridad-cloud-chile-protegiendo-infraestructura-critica-nube",
-    title: "Ciberseguridad Cloud en Chile: Protegiendo la Infraestructura Crítica en la Nube",
-    excerpt: "Descubre cómo la ciberseguridad cloud en Chile protege la infraestructura crítica en la nube, reduce riesgos de configuración y asegura la continuidad del negocio.",
-    image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?auto=format&fit=crop&w=800&q=80",
+    title:
+      "Ciberseguridad Cloud en Chile: Protegiendo la Infraestructura Crítica en la Nube",
+    excerpt:
+      "Descubre cómo la ciberseguridad cloud en Chile protege la infraestructura crítica en la nube, reduce riesgos de configuración y asegura la continuidad del negocio.",
+    image:
+      "https://images.unsplash.com/photo-1563013544-824ae1b704d3?auto=format&fit=crop&w=800&q=80",
     date: "2026-06-27",
     category: "Ciberseguridad",
-    tags: ["Ciberseguridad Cloud", "Infraestructura Crítica", "Chile", "Nube", "Cumplimiento"],
-    metaDescription: "Descubre cómo la ciberseguridad cloud en Chile protege la infraestructura crítica en la nube, reduce riesgos y asegura la continuidad del negocio. ¡Conversemos!"
+    tags: [
+      "Ciberseguridad Cloud",
+      "Infraestructura Crítica",
+      "Chile",
+      "Nube",
+      "Cumplimiento",
+    ],
+    metaDescription:
+      "Descubre cómo la ciberseguridad cloud en Chile protege la infraestructura crítica en la nube, reduce riesgos y asegura la continuidad del negocio. ¡Conversemos!",
   },
   {
     slug: "modernizacion-aplicaciones-estrategias-transformacion-digital-empresas-chilenas",
-    title: "Modernización de Aplicaciones: Estrategias para la Transformación Digital de Empresas Chilenas",
-    excerpt: "Conoce las estrategias de modernización de aplicaciones que impulsan la transformación digital de empresas chilenas sin frenar la operación ni aumentar la deuda técnica.",
-    image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80",
+    title:
+      "Modernización de Aplicaciones: Estrategias para la Transformación Digital de Empresas Chilenas",
+    excerpt:
+      "Conoce las estrategias de modernización de aplicaciones que impulsan la transformación digital de empresas chilenas sin frenar la operación ni aumentar la deuda técnica.",
+    image:
+      "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80",
     date: "2026-06-27",
     category: "Desarrollo y Modernización",
-    tags: ["Modernización de Aplicaciones", "Transformación Digital", "Empresas Chilenas", "Cloud", "Legacy"],
-    metaDescription: "Conoce las estrategias de modernización de aplicaciones que impulsan la transformación digital de empresas chilenas sin frenar la operación. ¡Conversemos!"
+    tags: [
+      "Modernización de Aplicaciones",
+      "Transformación Digital",
+      "Empresas Chilenas",
+      "Cloud",
+      "Legacy",
+    ],
+    metaDescription:
+      "Conoce las estrategias de modernización de aplicaciones que impulsan la transformación digital de empresas chilenas sin frenar la operación. ¡Conversemos!",
   },
   {
     slug: "observabilidad-monitoreo-proactivo-resiliencia-plataformas-digitales-chile",
-    title: "Observabilidad y Monitoreo Proactivo: Clave para la Resiliencia de Plataformas Digitales en Chile",
-    excerpt: "Descubre cómo la observabilidad y el monitoreo proactivo permiten anticipar incidentes, reducir tiempos de caída y garantizar la resiliencia de las plataformas digitales en Chile.",
-    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80",
+    title:
+      "Observabilidad y Monitoreo Proactivo: Clave para la Resiliencia de Plataformas Digitales en Chile",
+    excerpt:
+      "Descubre cómo la observabilidad y el monitoreo proactivo permiten anticipar incidentes, reducir tiempos de caída y garantizar la resiliencia de las plataformas digitales en Chile.",
+    image:
+      "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80",
     date: "2026-06-26",
     category: "DevOps y Cloud",
-    tags: ["Observabilidad", "Monitoreo Proactivo", "Resiliencia", "Chile", "SRE"],
-    metaDescription: "Descubre cómo la observabilidad y el monitoreo proactivo aseguran la resiliencia de las plataformas digitales en Chile, anticipando incidentes. ¡Conversemos!"
+    tags: [
+      "Observabilidad",
+      "Monitoreo Proactivo",
+      "Resiliencia",
+      "Chile",
+      "SRE",
+    ],
+    metaDescription:
+      "Descubre cómo la observabilidad y el monitoreo proactivo aseguran la resiliencia de las plataformas digitales en Chile, anticipando incidentes. ¡Conversemos!",
   },
   {
     slug: "staffing-tecnologico-vs-reclutamiento-tradicional-escalar-equipos-it-chile",
-    title: "Staffing Tecnológico vs. Reclutamiento Tradicional: ¿Cuál es la mejor opción para escalar equipos de IT en Chile?",
-    excerpt: "Comparamos el staffing tecnológico y el reclutamiento tradicional para ayudarte a elegir el modelo más eficiente al escalar equipos de IT en Chile con velocidad y control.",
-    image: "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&w=800&q=80",
+    title:
+      "Staffing Tecnológico vs. Reclutamiento Tradicional: ¿Cuál es la mejor opción para escalar equipos de IT en Chile?",
+    excerpt:
+      "Comparamos el staffing tecnológico y el reclutamiento tradicional para ayudarte a elegir el modelo más eficiente al escalar equipos de IT en Chile con velocidad y control.",
+    image:
+      "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&w=800&q=80",
     date: "2026-06-26",
     category: "Hunting y Talento",
-    tags: ["Staffing Tecnológico", "Reclutamiento", "Equipos de IT", "Chile", "Outsourcing"],
-    metaDescription: "Staffing tecnológico vs. reclutamiento tradicional: descubre cuál es la mejor opción para escalar equipos de IT en Chile con agilidad y control. ¡Conversemos!"
+    tags: [
+      "Staffing Tecnológico",
+      "Reclutamiento",
+      "Equipos de IT",
+      "Chile",
+      "Outsourcing",
+    ],
+    metaDescription:
+      "Staffing tecnológico vs. reclutamiento tradicional: descubre cuál es la mejor opción para escalar equipos de IT en Chile con agilidad y control. ¡Conversemos!",
   },
   {
     slug: "optimizacion-costos-cloud-chile-estrategias-finops",
-    title: "Optimización de Costos Cloud en Chile: Estrategias FinOps para Empresas Modernas",
-    excerpt: "Descubre cómo la optimización de costos cloud en Chile a través de estrategias FinOps ayuda a empresas modernas a maximizar su ROI en la nube y optimizar su presupuesto técnico.",
-    image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=800&q=80",
+    title:
+      "Optimización de Costos Cloud en Chile: Estrategias FinOps para Empresas Modernas",
+    excerpt:
+      "Descubre cómo la optimización de costos cloud en Chile a través de estrategias FinOps ayuda a empresas modernas a maximizar su ROI en la nube y optimizar su presupuesto técnico.",
+    image:
+      "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=800&q=80",
     date: "2026-06-24",
     category: "DevOps y Cloud",
-    tags: ["Cloud", "FinOps", "Chile", "Optimización de Costos", "Empresas Modernas"],
-    metaDescription: "Descubre cómo la optimización de costos cloud en Chile a través de estrategias FinOps ayuda a empresas modernas a maximizar su ROI en la nube. ¡Hablemos!"
+    tags: [
+      "Cloud",
+      "FinOps",
+      "Chile",
+      "Optimización de Costos",
+      "Empresas Modernas",
+    ],
+    metaDescription:
+      "Descubre cómo la optimización de costos cloud en Chile a través de estrategias FinOps ayuda a empresas modernas a maximizar su ROI en la nube. ¡Hablemos!",
   },
   {
     slug: "qa-automation-reducir-time-to-market-desarrollo-software-chileno",
-    title: "QA Automation: Cómo Reducir el Time-to-Market en el Desarrollo de Software Chileno",
-    excerpt: "Descubre cómo la implementación de QA Automation acelera los ciclos de entrega de software y reduce el time-to-market en el desarrollo de software chileno de alto nivel.",
-    image: "https://images.unsplash.com/photo-1607799279861-4dd421887fb3?auto=format&fit=crop&w=800&q=80",
+    title:
+      "QA Automation: Cómo Reducir el Time-to-Market en el Desarrollo de Software Chileno",
+    excerpt:
+      "Descubre cómo la implementación de QA Automation acelera los ciclos de entrega de software y reduce el time-to-market en el desarrollo de software chileno de alto nivel.",
+    image:
+      "https://images.unsplash.com/photo-1607799279861-4dd421887fb3?auto=format&fit=crop&w=800&q=80",
     date: "2026-06-24",
     category: "Calidad y Pruebas",
-    tags: ["QA Automation", "Time-to-Market", "Desarrollo de Software", "Chile", "Testing"],
-    metaDescription: "Descubre cómo la implementación de QA Automation permite acelerar las entregas y reducir el time-to-market en el desarrollo de software chileno de alto nivel."
+    tags: [
+      "QA Automation",
+      "Time-to-Market",
+      "Desarrollo de Software",
+      "Chile",
+      "Testing",
+    ],
+    metaDescription:
+      "Descubre cómo la implementación de QA Automation permite acelerar las entregas y reducir el time-to-market en el desarrollo de software chileno de alto nivel.",
   },
 
   {
     slug: "beneficios-ia-generativa-gestion-proyectos-ti",
     title: "Beneficios de la IA Generativa en la Gestión de Proyectos TI",
-    excerpt: "Descubre cómo la IA Generativa revoluciona la gestión de proyectos TI en Chile, optimizando tiempos, recursos y calidad de entrega.",
-    image: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80",
+    excerpt:
+      "Descubre cómo la IA Generativa revoluciona la gestión de proyectos TI en Chile, optimizando tiempos, recursos y calidad de entrega.",
+    image:
+      "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80",
     date: "2026-06-19",
     category: "Inteligencia Artificial",
     tags: ["IA Generativa", "Gestión de Proyectos", "Chile", "TI", "Agilidad"],
-    metaDescription: "Descubre cómo la IA Generativa revoluciona la gestión de proyectos TI en Chile, optimizando tiempos, recursos y calidad de entrega. ¡Hablemos!",
+    metaDescription:
+      "Descubre cómo la IA Generativa revoluciona la gestión de proyectos TI en Chile, optimizando tiempos, recursos y calidad de entrega. ¡Hablemos!",
   },
   {
     slug: "estrategias-ciberseguridad-trabajo-remoto-chile",
     title: "Estrategias de Ciberseguridad para el Trabajo Remoto en Chile",
-    excerpt: "Protege tu empresa con las mejores estrategias de ciberseguridad para el trabajo remoto en Chile.",
-    image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=800&q=80",
+    excerpt:
+      "Protege tu empresa con las mejores estrategias de ciberseguridad para el trabajo remoto en Chile.",
+    image:
+      "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=800&q=80",
     date: "2026-06-19",
     category: "Ciberseguridad",
-    tags: ["Ciberseguridad", "Trabajo Remoto", "Chile", "Protección", "Estrategia"],
-    metaDescription: "Protege tu empresa con las mejores estrategias de ciberseguridad para el trabajo remoto en Chile. Evita riesgos y asegura la continuidad. ¡Contáctanos!",
+    tags: [
+      "Ciberseguridad",
+      "Trabajo Remoto",
+      "Chile",
+      "Protección",
+      "Estrategia",
+    ],
+    metaDescription:
+      "Protege tu empresa con las mejores estrategias de ciberseguridad para el trabajo remoto en Chile. Evita riesgos y asegura la continuidad. ¡Contáctanos!",
   },
 
   {
@@ -115,7 +208,8 @@ const articles = [
     date: "2026-05-08",
     category: "Hunting y Talento",
     tags: ["Outsourcing TI", "Talento Especializado", "Chile", "Eficiencia"],
-    metaDescription: "Descubre cómo la externalización de talento TI acelera tus proyectos y reduce costos operativos con outsourcing estratégico en Chile."
+    metaDescription:
+      "Descubre cómo la externalización de talento TI acelera tus proyectos y reduce costos operativos con outsourcing estratégico en Chile.",
   },
   {
     slug: "estado-del-arte-inteligencia-artificial",
@@ -127,7 +221,8 @@ const articles = [
     date: "2026-05-09",
     category: "Inteligencia Artificial",
     tags: ["IA", "Modelos Fundacionales", "Tecnología", "Futuro"],
-    metaDescription: "Análisis del estado del arte de la inteligencia artificial, desde modelos fundacionales hasta su impacto práctico en las empresas modernas."
+    metaDescription:
+      "Análisis del estado del arte de la inteligencia artificial, desde modelos fundacionales hasta su impacto práctico en las empresas modernas.",
   },
   {
     slug: "data-scientist-en-chile",
@@ -378,23 +473,43 @@ const articles = [
   },
   {
     slug: "platform-engineering-empresas-chilenas",
-    title: "Platform Engineering para empresas chilenas: cómo construir plataformas internas que escalan",
-    excerpt: "Descubre cómo el Platform Engineering permite a las empresas chilenas acelerar la entrega de software, reducir la carga cognitiva de los desarrolladores y construir plataformas internas de autoservicio eficientes.",
-    image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=800&q=80",
+    title:
+      "Platform Engineering para empresas chilenas: cómo construir plataformas internas que escalan",
+    excerpt:
+      "Descubre cómo el Platform Engineering permite a las empresas chilenas acelerar la entrega de software, reducir la carga cognitiva de los desarrolladores y construir plataformas internas de autoservicio eficientes.",
+    image:
+      "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=800&q=80",
     date: "2026-06-12",
     category: "DevOps y Cloud",
-    tags: ["Platform Engineering", "Chile", "DevOps", "Plataformas Internas", "Transformación Digital"],
-    metaDescription: "Implementa Platform Engineering en tu empresa chilena y acelera la entrega de software con plataformas internas de autoservicio."
+    tags: [
+      "Platform Engineering",
+      "Chile",
+      "DevOps",
+      "Plataformas Internas",
+      "Transformación Digital",
+    ],
+    metaDescription:
+      "Implementa Platform Engineering en tu empresa chilena y acelera la entrega de software con plataformas internas de autoservicio.",
   },
   {
     slug: "staffing-tecnologico-proyectos-transformacion-digital-chile",
-    title: "Staffing tecnológico para proyectos de transformación digital en Chile: talento justo, en el momento exacto",
-    excerpt: "El staffing tecnológico es clave para cubrir talento crítico en tus proyectos de transformación digital sin incurrir en contratación permanente lenta. Conoce el modelo de 4AGILE.",
-    image: "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&w=800&q=80",
+    title:
+      "Staffing tecnológico para proyectos de transformación digital en Chile: talento justo, en el momento exacto",
+    excerpt:
+      "El staffing tecnológico es clave para cubrir talento crítico en tus proyectos de transformación digital sin incurrir en contratación permanente lenta. Conoce el modelo de 4AGILE.",
+    image:
+      "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&w=800&q=80",
     date: "2026-06-12",
     category: "Hunting y Talento",
-    tags: ["Staffing Tecnológico", "Chile", "Transformación Digital", "Talento TI", "Outsourcing"],
-    metaDescription: "El staffing tecnológico en Chile es la solución para cubrir talento crítico en proyectos de transformación digital. Conoce el modelo de 4AGILE. ¡Conversemos!"
+    tags: [
+      "Staffing Tecnológico",
+      "Chile",
+      "Transformación Digital",
+      "Talento TI",
+      "Outsourcing",
+    ],
+    metaDescription:
+      "El staffing tecnológico en Chile es la solución para cubrir talento crítico en proyectos de transformación digital. Conoce el modelo de 4AGILE. ¡Conversemos!",
   },
 ];
 
@@ -408,26 +523,7 @@ export default function Blog() {
 
   return (
     <div className="site-shell">
-      <header className="site-header" aria-label="Navegación principal">
-        <Link className="brand" href="/" aria-label="4AGILE inicio">
-          <img
-            src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663522518131/WbYuRCsZwwbLteMC.png"
-            alt="Logo 4AGILE"
-          />
-          <span>4AGILE</span>
-        </Link>
-        <nav className="nav-links" aria-label="Secciones del sitio">
-          <Link href="/">Inicio</Link>
-          <Link href="/servicios">Servicios</Link>
-          <Link href="/nosotros">Nosotros</Link>
-          <Link href="/blog" className="active">
-            Blog
-          </Link>
-          <Link className="nav-cta" href="/contacto">
-            Conversemos
-          </Link>
-        </nav>
-      </header>
+      <Header />
 
       <main>
         <section

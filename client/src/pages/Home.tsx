@@ -14,6 +14,7 @@ import {
   UsersRound,
 } from "lucide-react";
 import { useSEO } from "../hooks/useSEO";
+import Header from "../components/Header";
 
 const LOGO_URL =
   "https://files.manuscdn.com/user_upload_by_module/session_file/310519663522518131/WbYuRCsZwwbLteMC.png";
@@ -144,23 +145,7 @@ export default function Home() {
 
   return (
     <div className="site-shell">
-      <header className="site-header" aria-label="Navegación principal">
-        <Link className="brand" href="/" aria-label="4AGILE inicio">
-          <img src={LOGO_URL} alt="Logo 4AGILE" />
-          <span>4AGILE</span>
-        </Link>
-        <nav className="nav-links" aria-label="Secciones del sitio">
-          <Link href="/" className="active">
-            Inicio
-          </Link>
-          <Link href="/servicios">Servicios</Link>
-          <Link href="/nosotros">Nosotros</Link>
-          <Link href="/blog">Blog</Link>
-          <Link className="nav-cta" href="/contacto">
-            Conversemos
-          </Link>
-        </nav>
-      </header>
+      <Header />
 
       <main id="inicio">
         <section

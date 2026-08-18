@@ -1,6 +1,7 @@
 import { Link, useParams } from "wouter";
 import { ArrowLeft } from "lucide-react";
 import { useSEO } from "../hooks/useSEO";
+import Header from "../components/Header";
 
 const articlesContent: Record<
   string,
@@ -2343,7 +2344,7 @@ const articlesContent: Record<
             style={{ color: "var(--blue)", textDecoration: "underline" }}
           >
             Escríbenos hoy
-          </a>{"\ "}
+          </a>{" "}
           y comencemos a diseñar tu hoja de ruta cloud.
         </p>
       </>
@@ -2369,120 +2370,139 @@ const articlesContent: Record<
     content: (
       <>
         <p>
-          En los últimos años, el concepto de <strong>Platform Engineering</strong> ha
-          emergido con fuerza en las organizaciones tecnológicas más avanzadas del mundo.
-          En Chile, las empresas que lideran la transformación digital ya están adoptando
-          este enfoque para resolver uno de los problemas más persistentes en los equipos
-          de desarrollo: la fricción operativa que frena la velocidad de entrega. El
-          Platform Engineering en Chile no es una moda pasajera; es una respuesta
-          estructural a la complejidad creciente de los entornos de software modernos.
+          En los últimos años, el concepto de{" "}
+          <strong>Platform Engineering</strong> ha emergido con fuerza en las
+          organizaciones tecnológicas más avanzadas del mundo. En Chile, las
+          empresas que lideran la transformación digital ya están adoptando este
+          enfoque para resolver uno de los problemas más persistentes en los
+          equipos de desarrollo: la fricción operativa que frena la velocidad de
+          entrega. El Platform Engineering en Chile no es una moda pasajera; es
+          una respuesta estructural a la complejidad creciente de los entornos
+          de software modernos.
         </p>
 
         <h2>¿Qué es el Platform Engineering y por qué importa?</h2>
         <p>
-          El Platform Engineering es la disciplina que consiste en diseñar, construir y
-          mantener plataformas internas de desarrollo —conocidas como Internal Developer
-          Platforms (IDP)— que permiten a los equipos de ingeniería desplegar, operar y
-          monitorear sus aplicaciones de forma autónoma, sin depender constantemente de
-          equipos de infraestructura o DevOps centralizados. En esencia, se trata de
-          convertir las capacidades de infraestructura, CI/CD, observabilidad y seguridad
-          en productos internos de autoservicio que los desarrolladores pueden consumir
-          con mínima fricción.
+          El Platform Engineering es la disciplina que consiste en diseñar,
+          construir y mantener plataformas internas de desarrollo —conocidas
+          como Internal Developer Platforms (IDP)— que permiten a los equipos de
+          ingeniería desplegar, operar y monitorear sus aplicaciones de forma
+          autónoma, sin depender constantemente de equipos de infraestructura o
+          DevOps centralizados. En esencia, se trata de convertir las
+          capacidades de infraestructura, CI/CD, observabilidad y seguridad en
+          productos internos de autoservicio que los desarrolladores pueden
+          consumir con mínima fricción.
         </p>
         <p>
-          Para las empresas chilenas que operan con múltiples equipos de desarrollo, la
-          ausencia de una plataforma interna coherente genera cuellos de botella
-          predecibles: los desarrolladores pierden tiempo configurando entornos, los
-          equipos de operaciones se convierten en guardianes de procesos manuales y la
-          velocidad de entrega se resiente. El Platform Engineering resuelve este problema
-          de raíz, estableciendo una capa de abstracción que democratiza el acceso a la
-          infraestructura sin sacrificar el control ni la seguridad.
+          Para las empresas chilenas que operan con múltiples equipos de
+          desarrollo, la ausencia de una plataforma interna coherente genera
+          cuellos de botella predecibles: los desarrolladores pierden tiempo
+          configurando entornos, los equipos de operaciones se convierten en
+          guardianes de procesos manuales y la velocidad de entrega se resiente.
+          El Platform Engineering resuelve este problema de raíz, estableciendo
+          una capa de abstracción que democratiza el acceso a la infraestructura
+          sin sacrificar el control ni la seguridad.
         </p>
 
         <h2>Los pilares de una plataforma interna efectiva</h2>
         <p>
-          Construir una Internal Developer Platform exitosa requiere más que herramientas;
-          exige un enfoque de producto aplicado a la infraestructura. Los pilares
-          fundamentales incluyen: un portal de autoservicio donde los desarrolladores
-          puedan provisionar entornos, desplegar servicios y consultar documentación sin
-          abrir tickets; pipelines de CI/CD estandarizados y reutilizables que reduzcan
-          la duplicación de configuraciones entre equipos; una capa de observabilidad
-          integrada con logs, métricas y trazas disponibles desde el primer despliegue;
-          y políticas de seguridad y cumplimiento aplicadas de forma automática,
-          sin bloquear la velocidad de los equipos.
+          Construir una Internal Developer Platform exitosa requiere más que
+          herramientas; exige un enfoque de producto aplicado a la
+          infraestructura. Los pilares fundamentales incluyen: un portal de
+          autoservicio donde los desarrolladores puedan provisionar entornos,
+          desplegar servicios y consultar documentación sin abrir tickets;
+          pipelines de CI/CD estandarizados y reutilizables que reduzcan la
+          duplicación de configuraciones entre equipos; una capa de
+          observabilidad integrada con logs, métricas y trazas disponibles desde
+          el primer despliegue; y políticas de seguridad y cumplimiento
+          aplicadas de forma automática, sin bloquear la velocidad de los
+          equipos.
         </p>
         <p>
           En el contexto chileno, donde muchas organizaciones aún operan con
-          infraestructura híbrida o en proceso de migración cloud, el Platform Engineering
-          actúa como el pegamento que unifica las capacidades existentes bajo una
-          experiencia de desarrollo coherente. Esto es especialmente valioso para empresas
-          de sectores como banca, retail, salud y telecomunicaciones, donde la
-          complejidad regulatoria y operativa es alta.
+          infraestructura híbrida o en proceso de migración cloud, el Platform
+          Engineering actúa como el pegamento que unifica las capacidades
+          existentes bajo una experiencia de desarrollo coherente. Esto es
+          especialmente valioso para empresas de sectores como banca, retail,
+          salud y telecomunicaciones, donde la complejidad regulatoria y
+          operativa es alta.
         </p>
 
-        <h2>Platform Engineering versus DevOps: una evolución, no una ruptura</h2>
+        <h2>
+          Platform Engineering versus DevOps: una evolución, no una ruptura
+        </h2>
         <p>
-          Una pregunta frecuente en las organizaciones chilenas que están evaluando este
-          enfoque es si el Platform Engineering reemplaza al DevOps. La respuesta es no:
-          el Platform Engineering es la evolución natural del DevOps a escala. Mientras
-          que el DevOps promueve la colaboración entre desarrollo y operaciones, el
-          Platform Engineering institucionaliza esa colaboración en forma de productos
-          internos reutilizables. Los ingenieros de plataforma no son administradores de
-          sistemas con otro nombre; son ingenieros de software que aplican principios de
-          diseño de producto a la infraestructura, con el desarrollador como usuario final.
+          Una pregunta frecuente en las organizaciones chilenas que están
+          evaluando este enfoque es si el Platform Engineering reemplaza al
+          DevOps. La respuesta es no: el Platform Engineering es la evolución
+          natural del DevOps a escala. Mientras que el DevOps promueve la
+          colaboración entre desarrollo y operaciones, el Platform Engineering
+          institucionaliza esa colaboración en forma de productos internos
+          reutilizables. Los ingenieros de plataforma no son administradores de
+          sistemas con otro nombre; son ingenieros de software que aplican
+          principios de diseño de producto a la infraestructura, con el
+          desarrollador como usuario final.
         </p>
         <p>
-          En 4AGILE hemos acompañado a equipos de ingeniería chilenos en la transición
-          desde modelos DevOps artesanales hacia plataformas internas estructuradas. La
-          diferencia en velocidad de entrega y satisfacción de los equipos de desarrollo
-          es consistentemente notable: los ciclos de despliegue se acortan, los
-          incidentes por configuración manual disminuyen y los desarrolladores recuperan
-          tiempo para enfocarse en crear valor de negocio.
+          En 4AGILE hemos acompañado a equipos de ingeniería chilenos en la
+          transición desde modelos DevOps artesanales hacia plataformas internas
+          estructuradas. La diferencia en velocidad de entrega y satisfacción de
+          los equipos de desarrollo es consistentemente notable: los ciclos de
+          despliegue se acortan, los incidentes por configuración manual
+          disminuyen y los desarrolladores recuperan tiempo para enfocarse en
+          crear valor de negocio.
         </p>
 
         <h2>Cómo adoptar Platform Engineering en tu empresa chilena</h2>
         <p>
           La adopción de Platform Engineering no requiere una transformación
-          big-bang. El enfoque más efectivo es incremental: comenzar identificando
-          los puntos de mayor fricción en el ciclo de vida del desarrollo, construir
-          una primera versión mínima de la plataforma que resuelva esos problemas
-          específicos, y luego iterar basándose en el feedback de los equipos de
-          desarrollo. Las herramientas más utilizadas en este espacio incluyen
-          Backstage (portal de desarrolladores de Spotify), ArgoCD y Flux para
-          GitOps, Crossplane para infraestructura declarativa, y plataformas cloud
-          como AWS, GCP o Azure con sus servicios gestionados.
+          big-bang. El enfoque más efectivo es incremental: comenzar
+          identificando los puntos de mayor fricción en el ciclo de vida del
+          desarrollo, construir una primera versión mínima de la plataforma que
+          resuelva esos problemas específicos, y luego iterar basándose en el
+          feedback de los equipos de desarrollo. Las herramientas más utilizadas
+          en este espacio incluyen Backstage (portal de desarrolladores de
+          Spotify), ArgoCD y Flux para GitOps, Crossplane para infraestructura
+          declarativa, y plataformas cloud como AWS, GCP o Azure con sus
+          servicios gestionados.
         </p>
         <p>
-          El factor humano es igualmente crítico. Construir una plataforma interna
-          exitosa requiere ingenieros con una combinación poco común de habilidades:
-          profundidad en infraestructura cloud, experiencia en desarrollo de software
-          y, sobre todo, empatía hacia el usuario desarrollador. En el mercado chileno,
-          estos perfiles son escasos y altamente demandados, lo que hace que el
-          acompañamiento de un partner especializado sea frecuentemente la vía más
-          rápida y segura para avanzar.
+          El factor humano es igualmente crítico. Construir una plataforma
+          interna exitosa requiere ingenieros con una combinación poco común de
+          habilidades: profundidad en infraestructura cloud, experiencia en
+          desarrollo de software y, sobre todo, empatía hacia el usuario
+          desarrollador. En el mercado chileno, estos perfiles son escasos y
+          altamente demandados, lo que hace que el acompañamiento de un partner
+          especializado sea frecuentemente la vía más rápida y segura para
+          avanzar.
         </p>
 
-        <h2>Beneficios medibles del Platform Engineering en organizaciones chilenas</h2>
+        <h2>
+          Beneficios medibles del Platform Engineering en organizaciones
+          chilenas
+        </h2>
         <p>
-          Las organizaciones que implementan Platform Engineering reportan mejoras
-          consistentes en métricas DORA: mayor frecuencia de despliegue, menor tiempo
-          de recuperación ante incidentes, menor tasa de fallos en cambios y menor
-          tiempo de entrega de cambios. Más allá de las métricas técnicas, el impacto
-          en la retención de talento es significativo: los desarrolladores prefieren
-          trabajar en entornos donde la infraestructura no es un obstáculo sino un
-          habilitador. En un mercado laboral tecnológico tan competitivo como el chileno,
-          este factor tiene un valor estratégico que va más allá de la eficiencia operativa.
+          Las organizaciones que implementan Platform Engineering reportan
+          mejoras consistentes en métricas DORA: mayor frecuencia de despliegue,
+          menor tiempo de recuperación ante incidentes, menor tasa de fallos en
+          cambios y menor tiempo de entrega de cambios. Más allá de las métricas
+          técnicas, el impacto en la retención de talento es significativo: los
+          desarrolladores prefieren trabajar en entornos donde la
+          infraestructura no es un obstáculo sino un habilitador. En un mercado
+          laboral tecnológico tan competitivo como el chileno, este factor tiene
+          un valor estratégico que va más allá de la eficiencia operativa.
         </p>
 
         <h2>Conclusión: la plataforma interna como ventaja competitiva</h2>
         <p>
-          El Platform Engineering en Chile está dejando de ser una práctica de vanguardia
-          reservada para las grandes empresas tecnológicas para convertirse en una
-          necesidad operativa para cualquier organización que quiera competir con agilidad
-          en la economía digital. Las empresas que invierten hoy en construir plataformas
-          internas sólidas están construyendo una ventaja competitiva duradera: la
-          capacidad de entregar software de calidad, con velocidad y con equipos
-          autónomos y motivados.
+          El Platform Engineering en Chile está dejando de ser una práctica de
+          vanguardia reservada para las grandes empresas tecnológicas para
+          convertirse en una necesidad operativa para cualquier organización que
+          quiera competir con agilidad en la economía digital. Las empresas que
+          invierten hoy en construir plataformas internas sólidas están
+          construyendo una ventaja competitiva duradera: la capacidad de
+          entregar software de calidad, con velocidad y con equipos autónomos y
+          motivados.
         </p>
 
         <p
@@ -2499,9 +2519,9 @@ const articlesContent: Record<
           <strong>
             ¿Necesitas Platform Engineering para tu empresa en Chile?
           </strong>{" "}
-          En 4AGILE contamos con ingenieros especializados en plataformas internas,
-          DevOps avanzado y arquitectura cloud que pueden acompañarte desde el
-          diagnóstico hasta la implementación.{" "}
+          En 4AGILE contamos con ingenieros especializados en plataformas
+          internas, DevOps avanzado y arquitectura cloud que pueden acompañarte
+          desde el diagnóstico hasta la implementación.{" "}
           <a
             href="/contacto"
             style={{ color: "var(--blue)", textDecoration: "underline" }}
@@ -2533,93 +2553,101 @@ const articlesContent: Record<
     content: (
       <>
         <p>
-          Los proyectos de transformación digital en Chile tienen una característica
-          que los distingue de otros tipos de iniciativas empresariales: su éxito
-          depende de manera crítica de la disponibilidad de talento tecnológico
-          especializado en el momento preciso. No antes, no después. El{" "}
-          <strong>staffing tecnológico</strong> surge como la respuesta más pragmática
-          a este desafío, permitiendo a las organizaciones chilenas incorporar
-          profesionales de alto nivel exactamente cuando los necesitan, sin los
-          tiempos y riesgos asociados a los procesos de contratación permanente.
+          Los proyectos de transformación digital en Chile tienen una
+          característica que los distingue de otros tipos de iniciativas
+          empresariales: su éxito depende de manera crítica de la disponibilidad
+          de talento tecnológico especializado en el momento preciso. No antes,
+          no después. El <strong>staffing tecnológico</strong> surge como la
+          respuesta más pragmática a este desafío, permitiendo a las
+          organizaciones chilenas incorporar profesionales de alto nivel
+          exactamente cuando los necesitan, sin los tiempos y riesgos asociados
+          a los procesos de contratación permanente.
         </p>
 
         <h2>El problema del talento en proyectos de transformación digital</h2>
         <p>
-          La transformación digital no es un proyecto con inicio y fin claramente
-          definidos; es un proceso continuo que atraviesa fases con requerimientos
-          de talento muy distintos. En la fase de diagnóstico y arquitectura se
-          necesitan arquitectos de soluciones y consultores de estrategia tecnológica.
-          En la fase de implementación, el foco se desplaza hacia ingenieros de
-          software, especialistas en cloud y expertos en integración de sistemas.
-          En la fase de estabilización y operación, los perfiles críticos son los
-          SREs, los ingenieros de DevOps y los especialistas en observabilidad.
+          La transformación digital no es un proyecto con inicio y fin
+          claramente definidos; es un proceso continuo que atraviesa fases con
+          requerimientos de talento muy distintos. En la fase de diagnóstico y
+          arquitectura se necesitan arquitectos de soluciones y consultores de
+          estrategia tecnológica. En la fase de implementación, el foco se
+          desplaza hacia ingenieros de software, especialistas en cloud y
+          expertos en integración de sistemas. En la fase de estabilización y
+          operación, los perfiles críticos son los SREs, los ingenieros de
+          DevOps y los especialistas en observabilidad.
         </p>
         <p>
-          Contratar a todos estos perfiles de forma permanente es inviable para la
-          mayoría de las empresas chilenas, tanto por el costo como por la dificultad
-          de retenerlos una vez que el proyecto concluye. El staffing tecnológico
-          en Chile resuelve esta ecuación: permite acceder a los perfiles correctos
-          en cada fase del proyecto, con contratos flexibles que se ajustan a la
-          duración real de cada etapa.
+          Contratar a todos estos perfiles de forma permanente es inviable para
+          la mayoría de las empresas chilenas, tanto por el costo como por la
+          dificultad de retenerlos una vez que el proyecto concluye. El staffing
+          tecnológico en Chile resuelve esta ecuación: permite acceder a los
+          perfiles correctos en cada fase del proyecto, con contratos flexibles
+          que se ajustan a la duración real de cada etapa.
         </p>
 
-        <h2>Qué diferencia al staffing tecnológico del reclutamiento tradicional</h2>
+        <h2>
+          Qué diferencia al staffing tecnológico del reclutamiento tradicional
+        </h2>
         <p>
           El staffing tecnológico especializado no es simplemente una agencia de
-          empleo con foco en TI. Las diferencias son sustanciales. En primer lugar,
-          los tiempos son radicalmente distintos: mientras un proceso de reclutamiento
-          permanente puede tomar entre dos y cuatro meses, un proceso de staffing
-          tecnológico bien ejecutado puede incorporar al profesional en dos a cuatro
-          semanas. En segundo lugar, la validación técnica es más profunda: los
-          proveedores de staffing especializados evalúan no solo el CV sino las
-          habilidades técnicas reales mediante pruebas prácticas y entrevistas
-          con pares técnicos.
+          empleo con foco en TI. Las diferencias son sustanciales. En primer
+          lugar, los tiempos son radicalmente distintos: mientras un proceso de
+          reclutamiento permanente puede tomar entre dos y cuatro meses, un
+          proceso de staffing tecnológico bien ejecutado puede incorporar al
+          profesional en dos a cuatro semanas. En segundo lugar, la validación
+          técnica es más profunda: los proveedores de staffing especializados
+          evalúan no solo el CV sino las habilidades técnicas reales mediante
+          pruebas prácticas y entrevistas con pares técnicos.
         </p>
         <p>
           En tercer lugar, y quizás lo más relevante para los proyectos de
           transformación digital en Chile, el staffing tecnológico incluye una
           garantía de reemplazo: si el profesional no se adapta al proyecto o al
-          equipo, el proveedor asume la responsabilidad de encontrar un reemplazo
-          sin costo adicional. Esta garantía transforma el riesgo de una mala
-          contratación —que en un proceso permanente puede costar entre seis y doce
-          meses de salario— en un riesgo gestionado y acotado.
+          equipo, el proveedor asume la responsabilidad de encontrar un
+          reemplazo sin costo adicional. Esta garantía transforma el riesgo de
+          una mala contratación —que en un proceso permanente puede costar entre
+          seis y doce meses de salario— en un riesgo gestionado y acotado.
         </p>
 
-        <h2>Perfiles más demandados en staffing tecnológico para transformación digital</h2>
+        <h2>
+          Perfiles más demandados en staffing tecnológico para transformación
+          digital
+        </h2>
         <p>
-          En el mercado chileno, los perfiles más solicitados a través de staffing
-          tecnológico para proyectos de transformación digital incluyen: ingenieros
-          de backend con experiencia en microservicios y APIs REST/GraphQL; especialistas
-          en cloud (AWS, GCP, Azure) con certificaciones vigentes; ingenieros de
-          datos con dominio de pipelines ETL/ELT y plataformas como Databricks o
-          Snowflake; arquitectos de soluciones con experiencia en migraciones cloud;
-          y líderes técnicos con capacidad de gestionar equipos distribuidos y
-          comunicarse efectivamente con stakeholders de negocio.
+          En el mercado chileno, los perfiles más solicitados a través de
+          staffing tecnológico para proyectos de transformación digital
+          incluyen: ingenieros de backend con experiencia en microservicios y
+          APIs REST/GraphQL; especialistas en cloud (AWS, GCP, Azure) con
+          certificaciones vigentes; ingenieros de datos con dominio de pipelines
+          ETL/ELT y plataformas como Databricks o Snowflake; arquitectos de
+          soluciones con experiencia en migraciones cloud; y líderes técnicos
+          con capacidad de gestionar equipos distribuidos y comunicarse
+          efectivamente con stakeholders de negocio.
         </p>
         <p>
           La escasez de estos perfiles en el mercado laboral chileno hace que el
           staffing tecnológico sea especialmente valioso: los proveedores
           especializados mantienen comunidades activas de profesionales que no
           están buscando empleo activamente pero están abiertos a proyectos
-          interesantes, lo que amplía significativamente el universo de candidatos
-          disponibles respecto a lo que se puede encontrar en plataformas de
-          empleo convencionales.
+          interesantes, lo que amplía significativamente el universo de
+          candidatos disponibles respecto a lo que se puede encontrar en
+          plataformas de empleo convencionales.
         </p>
 
         <h2>El modelo de staffing tecnológico de 4AGILE</h2>
         <p>
           En 4AGILE hemos desarrollado un modelo de staffing tecnológico para
-          proyectos de transformación digital en Chile que combina tres elementos
-          diferenciadores. El primero es la comunidad de talento: mantenemos
-          relaciones activas con una red de profesionales tecnológicos de alto
-          nivel que han sido evaluados previamente, lo que nos permite reducir
-          drásticamente los tiempos de incorporación. El segundo es la validación
-          técnica rigurosa: cada profesional pasa por una evaluación técnica
-          específica para el rol y el contexto del proyecto, no una evaluación
-          genérica. El tercero es el acompañamiento post-incorporación: no
-          desaparecemos después de la firma del contrato; hacemos seguimiento
-          activo durante los primeros noventa días para asegurar que la integración
-          sea exitosa.
+          proyectos de transformación digital en Chile que combina tres
+          elementos diferenciadores. El primero es la comunidad de talento:
+          mantenemos relaciones activas con una red de profesionales
+          tecnológicos de alto nivel que han sido evaluados previamente, lo que
+          nos permite reducir drásticamente los tiempos de incorporación. El
+          segundo es la validación técnica rigurosa: cada profesional pasa por
+          una evaluación técnica específica para el rol y el contexto del
+          proyecto, no una evaluación genérica. El tercero es el acompañamiento
+          post-incorporación: no desaparecemos después de la firma del contrato;
+          hacemos seguimiento activo durante los primeros noventa días para
+          asegurar que la integración sea exitosa.
         </p>
 
         <h2>Cuándo el staffing tecnológico es la mejor opción</h2>
@@ -2640,8 +2668,8 @@ const articlesContent: Record<
           La transformación digital en Chile no fracasa por falta de tecnología;
           fracasa por falta del talento adecuado en el momento adecuado. El
           staffing tecnológico especializado es la herramienta que permite a las
-          organizaciones chilenas cerrar esa brecha de manera rápida, flexible
-          y con riesgo controlado. Las empresas que adoptan este modelo no solo
+          organizaciones chilenas cerrar esa brecha de manera rápida, flexible y
+          con riesgo controlado. Las empresas que adoptan este modelo no solo
           aceleran sus proyectos de transformación digital; también aprenden a
           gestionar el talento tecnológico como un recurso estratégico dinámico,
           no como un costo fijo.
@@ -2659,11 +2687,12 @@ const articlesContent: Record<
           }}
         >
           <strong>
-            ¿Necesitas staffing tecnológico para tu proyecto de transformación digital en Chile?
+            ¿Necesitas staffing tecnológico para tu proyecto de transformación
+            digital en Chile?
           </strong>{" "}
           En 4AGILE conectamos a las empresas con el talento tecnológico que
-          necesitan, en el momento exacto y con la validación técnica que garantiza
-          el éxito del proyecto.{" "}
+          necesitan, en el momento exacto y con la validación técnica que
+          garantiza el éxito del proyecto.{" "}
           <a
             href="/contacto"
             style={{ color: "var(--blue)", textDecoration: "underline" }}
@@ -2677,488 +2706,1184 @@ const articlesContent: Record<
   },
   "beneficios-ia-generativa-gestion-proyectos-ti": {
     title: "Beneficios de la IA Generativa en la Gestión de Proyectos TI",
-    image: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80",
+    image:
+      "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80",
     date: "2026-06-19",
     category: "Inteligencia Artificial",
     tags: ["IA Generativa", "Gestión de Proyectos", "Chile", "TI", "Agilidad"],
-    metaDescription: "Descubre cómo la IA Generativa revoluciona la gestión de proyectos TI en Chile, optimizando tiempos, recursos y calidad de entrega. ¡Hablemos!",
+    metaDescription:
+      "Descubre cómo la IA Generativa revoluciona la gestión de proyectos TI en Chile, optimizando tiempos, recursos y calidad de entrega. ¡Hablemos!",
     content: (
       <>
-        
-        <p>La irrupción de la Inteligencia Artificial Generativa (GenAI) ha dejado de ser una tendencia futurista para convertirse en una realidad operativa que está transformando radicalmente la gestión de proyectos de Tecnología de la Información (TI). En el contexto chileno, donde la eficiencia y la optimización de recursos son pilares fundamentales para la competitividad, la GenAI se posiciona como el aliado estratégico definitivo para los Project Managers y líderes técnicos.</p>
+        <p>
+          La irrupción de la Inteligencia Artificial Generativa (GenAI) ha
+          dejado de ser una tendencia futurista para convertirse en una realidad
+          operativa que está transformando radicalmente la gestión de proyectos
+          de Tecnología de la Información (TI). En el contexto chileno, donde la
+          eficiencia y la optimización de recursos son pilares fundamentales
+          para la competitividad, la GenAI se posiciona como el aliado
+          estratégico definitivo para los Project Managers y líderes técnicos.
+        </p>
 
         <h2>1. Automatización de Documentación y Reportabilidad</h2>
-        <p>Uno de los mayores "cuellos de botella" en cualquier proyecto TI es la generación y mantenimiento de documentación técnica y funcional. La IA Generativa permite automatizar la creación de manuales de usuario, documentación de código y reportes de avance con una precisión asombrosa. Esto no solo reduce el tiempo dedicado a tareas administrativas, sino que asegura que la documentación esté siempre actualizada y alineada con el desarrollo real.</p>
+        <p>
+          Uno de los mayores "cuellos de botella" en cualquier proyecto TI es la
+          generación y mantenimiento de documentación técnica y funcional. La IA
+          Generativa permite automatizar la creación de manuales de usuario,
+          documentación de código y reportes de avance con una precisión
+          asombrosa. Esto no solo reduce el tiempo dedicado a tareas
+          administrativas, sino que asegura que la documentación esté siempre
+          actualizada y alineada con el desarrollo real.
+        </p>
 
         <h2>2. Optimización en la Estimación de Tiempos y Recursos</h2>
-        <p>La GenAI puede analizar datos históricos de proyectos anteriores para ofrecer estimaciones mucho más precisas sobre la duración de las tareas y la carga de trabajo necesaria. Al integrar modelos predictivos, los gestores de proyectos en Chile pueden mitigar riesgos de retrasos y sobrecostos, permitiendo una planificación mucho más robusta y realista frente a los stakeholders.</p>
+        <p>
+          La GenAI puede analizar datos históricos de proyectos anteriores para
+          ofrecer estimaciones mucho más precisas sobre la duración de las
+          tareas y la carga de trabajo necesaria. Al integrar modelos
+          predictivos, los gestores de proyectos en Chile pueden mitigar riesgos
+          de retrasos y sobrecostos, permitiendo una planificación mucho más
+          robusta y realista frente a los stakeholders.
+        </p>
 
         <h2>3. Mejora en la Comunicación y Colaboración</h2>
-        <p>Herramientas basadas en GenAI pueden actuar como facilitadores en la comunicación entre equipos multidisciplinarios. Desde la traducción técnica para equipos globales hasta la síntesis de minutas de reuniones, la IA asegura que todos los miembros del equipo estén en la misma página, reduciendo malentendidos que suelen derivar en retrabajo costoso.</p>
+        <p>
+          Herramientas basadas en GenAI pueden actuar como facilitadores en la
+          comunicación entre equipos multidisciplinarios. Desde la traducción
+          técnica para equipos globales hasta la síntesis de minutas de
+          reuniones, la IA asegura que todos los miembros del equipo estén en la
+          misma página, reduciendo malentendidos que suelen derivar en retrabajo
+          costoso.
+        </p>
 
         <h2>4. Soporte en el Aseguramiento de Calidad (QA)</h2>
-        <p>La generación automática de casos de prueba y scripts de automatización QA es otro de los grandes beneficios. Al predecir posibles fallos basados en el código fuente, la GenAI permite a los equipos de desarrollo en Chile anticiparse a los errores antes de que lleguen a producción, elevando los estándares de calidad del software entregado.</p>
-
-        <p><strong>Conclusión:</strong> La IA Generativa no viene a reemplazar al Project Manager, sino a potenciar sus capacidades analíticas y operativas. En 4AGILE, ayudamos a las organizaciones a integrar estas tecnologías en sus flujos de trabajo, garantizando proyectos TI más ágiles, seguros y rentables.</p>
-
-        <p style={{ 
-          marginTop: '3rem', 
-          padding: '2rem', 
-          backgroundColor: 'var(--blue-light)', 
-          borderRadius: '12px',
-          border: '1px solid var(--blue-20)'
-        }}>
-          <strong>¿Necesitas potenciar la gestión de tus proyectos TI con IA Generativa en Chile?</strong>{" "}
-          En 4AGILE contamos con el talento experto para integrar soluciones de vanguardia en tu organización.{" "}
-          <a href="/contacto" style={{ color: 'var(--blue)', textDecoration: 'underline' }}>Conversemos hoy mismo</a> y llevemos tu agilidad al siguiente nivel.
+        <p>
+          La generación automática de casos de prueba y scripts de
+          automatización QA es otro de los grandes beneficios. Al predecir
+          posibles fallos basados en el código fuente, la GenAI permite a los
+          equipos de desarrollo en Chile anticiparse a los errores antes de que
+          lleguen a producción, elevando los estándares de calidad del software
+          entregado.
         </p>
-        
+
+        <p>
+          <strong>Conclusión:</strong> La IA Generativa no viene a reemplazar al
+          Project Manager, sino a potenciar sus capacidades analíticas y
+          operativas. En 4AGILE, ayudamos a las organizaciones a integrar estas
+          tecnologías en sus flujos de trabajo, garantizando proyectos TI más
+          ágiles, seguros y rentables.
+        </p>
+
+        <p
+          style={{
+            marginTop: "3rem",
+            padding: "2rem",
+            backgroundColor: "var(--blue-light)",
+            borderRadius: "12px",
+            border: "1px solid var(--blue-20)",
+          }}
+        >
+          <strong>
+            ¿Necesitas potenciar la gestión de tus proyectos TI con IA
+            Generativa en Chile?
+          </strong>{" "}
+          En 4AGILE contamos con el talento experto para integrar soluciones de
+          vanguardia en tu organización.{" "}
+          <a
+            href="/contacto"
+            style={{ color: "var(--blue)", textDecoration: "underline" }}
+          >
+            Conversemos hoy mismo
+          </a>{" "}
+          y llevemos tu agilidad al siguiente nivel.
+        </p>
       </>
     ),
   },
   "estrategias-ciberseguridad-trabajo-remoto-chile": {
     title: "Estrategias de Ciberseguridad para el Trabajo Remoto en Chile",
-    image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=800&q=80",
+    image:
+      "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=800&q=80",
     date: "2026-06-19",
     category: "Ciberseguridad",
-    tags: ["Ciberseguridad", "Trabajo Remoto", "Chile", "Protección", "Estrategia"],
-    metaDescription: "Protege tu empresa con las mejores estrategias de ciberseguridad para el trabajo remoto en Chile. Evita riesgos y asegura la continuidad. ¡Contáctanos!",
+    tags: [
+      "Ciberseguridad",
+      "Trabajo Remoto",
+      "Chile",
+      "Protección",
+      "Estrategia",
+    ],
+    metaDescription:
+      "Protege tu empresa con las mejores estrategias de ciberseguridad para el trabajo remoto en Chile. Evita riesgos y asegura la continuidad. ¡Contáctanos!",
     content: (
       <>
-        
-        <p>El trabajo remoto se ha consolidado como un modelo operativo estándar para miles de empresas en Chile. Sin embargo, esta flexibilidad ha expandido significativamente la superficie de ataque para los ciberdelincuentes. La protección de los activos digitales ya no se limita al perímetro de la oficina, sino que se extiende a cada hogar y dispositivo conectado. Implementar estrategias de ciberseguridad robustas es hoy una prioridad crítica para la continuidad del negocio.</p>
+        <p>
+          El trabajo remoto se ha consolidado como un modelo operativo estándar
+          para miles de empresas en Chile. Sin embargo, esta flexibilidad ha
+          expandido significativamente la superficie de ataque para los
+          ciberdelincuentes. La protección de los activos digitales ya no se
+          limita al perímetro de la oficina, sino que se extiende a cada hogar y
+          dispositivo conectado. Implementar estrategias de ciberseguridad
+          robustas es hoy una prioridad crítica para la continuidad del negocio.
+        </p>
 
         <h2>1. Implementación de Arquitecturas Zero Trust</h2>
-        <p>El concepto de "nunca confiar, siempre verificar" es la base de la ciberseguridad moderna. En un entorno de trabajo remoto, las empresas chilenas deben adoptar modelos Zero Trust donde cada intento de acceso a la red corporativa sea verificado rigurosamente, independientemente de si proviene de dentro o fuera de la red. Esto minimiza el riesgo de movimientos laterales de atacantes en caso de una brecha inicial.</p>
+        <p>
+          El concepto de "nunca confiar, siempre verificar" es la base de la
+          ciberseguridad moderna. En un entorno de trabajo remoto, las empresas
+          chilenas deben adoptar modelos Zero Trust donde cada intento de acceso
+          a la red corporativa sea verificado rigurosamente, independientemente
+          de si proviene de dentro o fuera de la red. Esto minimiza el riesgo de
+          movimientos laterales de atacantes en caso de una brecha inicial.
+        </p>
 
         <h2>2. Autenticación de Múltiple Factor (MFA)</h2>
-        <p>El uso de contraseñas por sí solo es insuficiente. El MFA es una de las defensas más efectivas y sencillas de implementar. Al requerir una segunda forma de verificación (como un código en el móvil o biometría), se reduce drásticamente la probabilidad de accesos no autorizados mediante el robo de credenciales, una de las tácticas más comunes en ataques de phishing dirigidos a trabajadores remotos en Chile.</p>
+        <p>
+          El uso de contraseñas por sí solo es insuficiente. El MFA es una de
+          las defensas más efectivas y sencillas de implementar. Al requerir una
+          segunda forma de verificación (como un código en el móvil o
+          biometría), se reduce drásticamente la probabilidad de accesos no
+          autorizados mediante el robo de credenciales, una de las tácticas más
+          comunes en ataques de phishing dirigidos a trabajadores remotos en
+          Chile.
+        </p>
 
         <h2>3. Uso Obligatorio de VPNs y Conexiones Seguras</h2>
-        <p>Garantizar que todo el tráfico de datos entre el colaborador y la empresa esté cifrado es fundamental. Las Redes Privadas Virtuales (VPN) de grado empresarial permiten crear túneles seguros que protegen la información sensible de posibles intercepciones en redes domésticas o públicas, asegurando la confidencialidad de la propiedad intelectual de la organización.</p>
+        <p>
+          Garantizar que todo el tráfico de datos entre el colaborador y la
+          empresa esté cifrado es fundamental. Las Redes Privadas Virtuales
+          (VPN) de grado empresarial permiten crear túneles seguros que protegen
+          la información sensible de posibles intercepciones en redes domésticas
+          o públicas, asegurando la confidencialidad de la propiedad intelectual
+          de la organización.
+        </p>
 
         <h2>4. Cultura de Ciberseguridad y Capacitación Continua</h2>
-        <p>El eslabón más débil suele ser el factor humano. Las empresas en Chile deben invertir en programas de concientización para que sus colaboradores identifiquen intentos de phishing, smishing y otras tácticas de ingeniería social. Un equipo bien informado es la primera y más importante línea de defensa contra las amenazas digitales modernas.</p>
-
-        <p><strong>Conclusión:</strong> La ciberseguridad en el trabajo remoto no es un producto, sino un proceso continuo de vigilancia y adaptación. Proteger el crecimiento empresarial en el entorno digital requiere una combinación de tecnología de punta y una cultura organizacional resiliente.</p>
-
-        <p style={{ 
-          marginTop: '3rem', 
-          padding: '2rem', 
-          backgroundColor: 'var(--blue-light)', 
-          borderRadius: '12px',
-          border: '1px solid var(--blue-20)'
-        }}>
-          <strong>¿Buscas fortalecer la ciberseguridad de tu equipo remoto en Chile?</strong>{" "}
-          En 4AGILE te ayudamos a diseñar e implementar estrategias de protección integral adaptadas a tus necesidades.{" "}
-          <a href="/contacto" style={{ color: 'var(--blue)', textDecoration: 'underline' }}>Contáctanos hoy</a> y asegura la tranquilidad de tu operación digital.
+        <p>
+          El eslabón más débil suele ser el factor humano. Las empresas en Chile
+          deben invertir en programas de concientización para que sus
+          colaboradores identifiquen intentos de phishing, smishing y otras
+          tácticas de ingeniería social. Un equipo bien informado es la primera
+          y más importante línea de defensa contra las amenazas digitales
+          modernas.
         </p>
-        
+
+        <p>
+          <strong>Conclusión:</strong> La ciberseguridad en el trabajo remoto no
+          es un producto, sino un proceso continuo de vigilancia y adaptación.
+          Proteger el crecimiento empresarial en el entorno digital requiere una
+          combinación de tecnología de punta y una cultura organizacional
+          resiliente.
+        </p>
+
+        <p
+          style={{
+            marginTop: "3rem",
+            padding: "2rem",
+            backgroundColor: "var(--blue-light)",
+            borderRadius: "12px",
+            border: "1px solid var(--blue-20)",
+          }}
+        >
+          <strong>
+            ¿Buscas fortalecer la ciberseguridad de tu equipo remoto en Chile?
+          </strong>{" "}
+          En 4AGILE te ayudamos a diseñar e implementar estrategias de
+          protección integral adaptadas a tus necesidades.{" "}
+          <a
+            href="/contacto"
+            style={{ color: "var(--blue)", textDecoration: "underline" }}
+          >
+            Contáctanos hoy
+          </a>{" "}
+          y asegura la tranquilidad de tu operación digital.
+        </p>
       </>
     ),
   },
 
   "gobierno-datos-chile-estrategias-integridad-cumplimiento-normativo": {
-    title: "Gobierno de Datos en Chile: Estrategias para la Integridad y el Cumplimiento Normativo",
-    image: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&w=800&q=80",
+    title:
+      "Gobierno de Datos en Chile: Estrategias para la Integridad y el Cumplimiento Normativo",
+    image:
+      "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&w=800&q=80",
     date: "2026-06-28",
     category: "Datos y Seguridad",
-    tags: ["Gobierno de Datos", "Cumplimiento Normativo", "Chile", "Integridad de Datos", "Calidad de Datos"],
-    metaDescription: "Estrategias de gobierno de datos en Chile para asegurar la integridad de la información y el cumplimiento normativo. Convierte tus datos en un activo. ¡Conversemos!",
+    tags: [
+      "Gobierno de Datos",
+      "Cumplimiento Normativo",
+      "Chile",
+      "Integridad de Datos",
+      "Calidad de Datos",
+    ],
+    metaDescription:
+      "Estrategias de gobierno de datos en Chile para asegurar la integridad de la información y el cumplimiento normativo. Convierte tus datos en un activo. ¡Conversemos!",
     content: (
       <>
         <p>
-          En el contexto empresarial chileno, la transformación digital ha acelerado la recolección de volúmenes masivos de información. Sin embargo, acumular datos sin una estructura de control clara expone a las organizaciones a graves riesgos operativos, legales y financieros. El <strong>gobierno de datos en Chile</strong> se consolida como una disciplina estratégica fundamental para asegurar la integridad de la información, robustecer el cumplimiento normativo y transformar los datos en verdaderos activos comerciales.
+          En el contexto empresarial chileno, la transformación digital ha
+          acelerado la recolección de volúmenes masivos de información. Sin
+          embargo, acumular datos sin una estructura de control clara expone a
+          las organizaciones a graves riesgos operativos, legales y financieros.
+          El <strong>gobierno de datos en Chile</strong> se consolida como una
+          disciplina estratégica fundamental para asegurar la integridad de la
+          información, robustecer el cumplimiento normativo y transformar los
+          datos en verdaderos activos comerciales.
         </p>
 
-        <h2>¿Cuáles son los desafíos regulatorios de datos para las empresas en Chile?</h2>
+        <h2>
+          ¿Cuáles son los desafíos regulatorios de datos para las empresas en
+          Chile?
+        </h2>
         <p>
-          Con la constante evolución del marco legislativo en Chile, incluyendo la Ley de Protección de Datos Personales (alineada a estándares internacionales como la GDPR europea), las corporaciones se enfrentan a severas exigencias y sanciones asociadas al manejo inadecuado de la información sensible de sus clientes y colaboradores. La gobernanza de datos define las políticas, roles y responsabilidades claras sobre quién puede acceder a qué datos, en qué condiciones y con qué nivel de seguridad.
+          Con la constante evolución del marco legislativo en Chile, incluyendo
+          la Ley de Protección de Datos Personales (alineada a estándares
+          internacionales como la GDPR europea), las corporaciones se enfrentan
+          a severas exigencias y sanciones asociadas al manejo inadecuado de la
+          información sensible de sus clientes y colaboradores. La gobernanza de
+          datos define las políticas, roles y responsabilidades claras sobre
+          quién puede acceder a qué datos, en qué condiciones y con qué nivel de
+          seguridad.
         </p>
         <p>
-          Implementar una estrategia formal de gobierno de datos en Chile permite mitigar riesgos asociados a fugas de información, accesos no autorizados y uso ético indebido. Asimismo, asegura que la organización esté plenamente preparada ante auditorías de cumplimiento sectorial y legal.
+          Implementar una estrategia formal de gobierno de datos en Chile
+          permite mitigar riesgos asociados a fugas de información, accesos no
+          autorizados y uso ético indebido. Asimismo, asegura que la
+          organización esté plenamente preparada ante auditorías de cumplimiento
+          sectorial y legal.
         </p>
 
-        <h2>¿Cómo se logra asegurar la integridad y la calidad de la información empresarial?</h2>
+        <h2>
+          ¿Cómo se logra asegurar la integridad y la calidad de la información
+          empresarial?
+        </h2>
         <p>
-          La toma de decisiones de nivel ejecutivo solo es confiable si se basa en datos correctos y consolidados. Una de las problemáticas operativas más frecuentes en las empresas medianas y grandes en Chile es la fragmentación de la información: silos de datos incompletos, duplicados o desactualizados que entorpecen la agilidad operativa y distorsionan los reportes financieros.
+          La toma de decisiones de nivel ejecutivo solo es confiable si se basa
+          en datos correctos y consolidados. Una de las problemáticas operativas
+          más frecuentes en las empresas medianas y grandes en Chile es la
+          fragmentación de la información: silos de datos incompletos,
+          duplicados o desactualizados que entorpecen la agilidad operativa y
+          distorsionan los reportes financieros.
         </p>
         <p>
-          A través de metodologías ágiles de calidad de datos, se establecen reglas automáticas de validación, limpieza y enriquecimiento de la información en tiempo real. Esto garantiza una única fuente de verdad (Single Source of Truth), donde cada área de la corporación opera bajo los mismos parámetros unificados, reduciendo el retrabajo y potenciando la eficiencia del back office.
+          A través de metodologías ágiles de calidad de datos, se establecen
+          reglas automáticas de validación, limpieza y enriquecimiento de la
+          información en tiempo real. Esto garantiza una única fuente de verdad
+          (Single Source of Truth), donde cada área de la corporación opera bajo
+          los mismos parámetros unificados, reduciendo el retrabajo y
+          potenciando la eficiencia del back office.
         </p>
 
-        <h2>¿De qué manera el gobierno de datos impulsa la competitividad y el valor del negocio?</h2>
+        <h2>
+          ¿De qué manera el gobierno de datos impulsa la competitividad y el
+          valor del negocio?
+        </h2>
         <p>
-          Más allá de ser un escudo regulatorio, la gobernanza integral habilita la adopción exitosa de tecnologías avanzadas como el Machine Learning, Business Intelligence y soluciones de Inteligencia Artificial Generativa. Las empresas líderes en Chile que ya cuentan con un sólido gobierno de datos pueden entrenar sus modelos algorítmicos con datos limpios y estructurados, acelerando la innovación y obteniendo una ventaja competitiva decisiva en el sector retail, financiero y logístico.
+          Más allá de ser un escudo regulatorio, la gobernanza integral habilita
+          la adopción exitosa de tecnologías avanzadas como el Machine Learning,
+          Business Intelligence y soluciones de Inteligencia Artificial
+          Generativa. Las empresas líderes en Chile que ya cuentan con un sólido
+          gobierno de datos pueden entrenar sus modelos algorítmicos con datos
+          limpios y estructurados, acelerando la innovación y obteniendo una
+          ventaja competitiva decisiva en el sector retail, financiero y
+          logístico.
         </p>
 
-        <p className="cta-paragraph" style={{ marginTop: '2.5rem', padding: '2rem', backgroundColor: 'var(--blue-light)', borderRadius: '12px', border: '1px solid var(--blue-20)' }}>
-          <strong>¿Buscas implementar una estrategia robusta de gobierno de datos en Chile?</strong>{" "}
-          En 4AGILE contamos con arquitectos de datos y especialistas en cumplimiento TI listos para potenciar tus capacidades digitales.{" "}
-          <a href="/contacto" style={{ color: "var(--blue)", textDecoration: "underline" }}>Conversemos hoy</a> y consolida el valor estratégico de tu información.
+        <p
+          className="cta-paragraph"
+          style={{
+            marginTop: "2.5rem",
+            padding: "2rem",
+            backgroundColor: "var(--blue-light)",
+            borderRadius: "12px",
+            border: "1px solid var(--blue-20)",
+          }}
+        >
+          <strong>
+            ¿Buscas implementar una estrategia robusta de gobierno de datos en
+            Chile?
+          </strong>{" "}
+          En 4AGILE contamos con arquitectos de datos y especialistas en
+          cumplimiento TI listos para potenciar tus capacidades digitales.{" "}
+          <a
+            href="/contacto"
+            style={{ color: "var(--blue)", textDecoration: "underline" }}
+          >
+            Conversemos hoy
+          </a>{" "}
+          y consolida el valor estratégico de tu información.
         </p>
       </>
-    )
+    ),
   },
 
   "automatizacion-procesos-ia-empresas-chilenas-eficiencia-operativa": {
-    title: "Automatización de Procesos con IA: Cómo las Empresas Chilenas están Escalando su Eficiencia Operativa",
-    image: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=800&q=80",
+    title:
+      "Automatización de Procesos con IA: Cómo las Empresas Chilenas están Escalando su Eficiencia Operativa",
+    image:
+      "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=800&q=80",
     date: "2026-06-28",
     category: "Inteligencia Artificial",
-    tags: ["Automatización de Procesos con IA", "Eficiencia Operativa", "Empresas Chilenas", "Chile", "Hiperautomatización"],
-    metaDescription: "Descubre cómo la automatización de procesos con IA ayuda a las empresas chilenas a escalar su eficiencia operativa y reducir costos. ¡Conversemos!",
+    tags: [
+      "Automatización de Procesos con IA",
+      "Eficiencia Operativa",
+      "Empresas Chilenas",
+      "Chile",
+      "Hiperautomatización",
+    ],
+    metaDescription:
+      "Descubre cómo la automatización de procesos con IA ayuda a las empresas chilenas a escalar su eficiencia operativa y reducir costos. ¡Conversemos!",
     content: (
       <>
         <p>
-          En el exigente panorama empresarial actual, la velocidad operacional y la reducción de costos transaccionales son variables que definen el liderazgo de mercado. La <strong>automatización de procesos con IA en empresas chilenas</strong> ha dejado de ser un proyecto de mediano plazo para convertirse en un imperativo inmediato de eficiencia e hiperautomatización en múltiples sectores industriales del país.
+          En el exigente panorama empresarial actual, la velocidad operacional y
+          la reducción de costos transaccionales son variables que definen el
+          liderazgo de mercado. La{" "}
+          <strong>
+            automatización de procesos con IA en empresas chilenas
+          </strong>{" "}
+          ha dejado de ser un proyecto de mediano plazo para convertirse en un
+          imperativo inmediato de eficiencia e hiperautomatización en múltiples
+          sectores industriales del país.
         </p>
 
-        <h2>¿Cómo la inteligencia artificial revoluciona la automatización de flujos de trabajo corporativos?</h2>
+        <h2>
+          ¿Cómo la inteligencia artificial revoluciona la automatización de
+          flujos de trabajo corporativos?
+        </h2>
         <p>
-          A diferencia de los enfoques tradicionales de automatización (como RPA rígido), la incorporación de modelos cognitivos de IA permite interpretar datos no estructurados, como correos electrónicos de clientes, documentos de facturación complejos, contratos legales y reportes técnicos de operaciones. Las soluciones de Inteligencia Artificial interpretan el contexto de la información, toman decisiones lógicas basadas en reglas dinámicas de negocio y ejecutan acciones complejas de manera autónoma, liberando a los equipos de tareas monótonas y repetitivas.
+          A diferencia de los enfoques tradicionales de automatización (como RPA
+          rígido), la incorporación de modelos cognitivos de IA permite
+          interpretar datos no estructurados, como correos electrónicos de
+          clientes, documentos de facturación complejos, contratos legales y
+          reportes técnicos de operaciones. Las soluciones de Inteligencia
+          Artificial interpretan el contexto de la información, toman decisiones
+          lógicas basadas en reglas dinámicas de negocio y ejecutan acciones
+          complejas de manera autónoma, liberando a los equipos de tareas
+          monótonas y repetitivas.
         </p>
         <p>
-          Esto reduce drásticamente las tasas de error humano, acorta los tiempos de respuesta de cara al consumidor de días a pocos minutos, y asegura un estándar continuo de calidad en la ejecución de procesos críticos del negocio.
+          Esto reduce drásticamente las tasas de error humano, acorta los
+          tiempos de respuesta de cara al consumidor de días a pocos minutos, y
+          asegura un estándar continuo de calidad en la ejecución de procesos
+          críticos del negocio.
         </p>
 
-        <h2>¿Cuáles son las áreas de mayor impacto al automatizar con IA en organizaciones chilenas?</h2>
+        <h2>
+          ¿Cuáles son las áreas de mayor impacto al automatizar con IA en
+          organizaciones chilenas?
+        </h2>
         <p>
-          El impacto de estas tecnologías es transversal, pero se aprecia con especial fuerza en la gestión de logística y cadena de suministro (optimización de inventarios y rutas), el soporte técnico automatizado mediante agentes inteligentes multilingües, y el procesamiento transaccional financiero (conciliaciones de cuentas automáticas, detección de fraudes o validación inmediata de facturas ante el SII).
+          El impacto de estas tecnologías es transversal, pero se aprecia con
+          especial fuerza en la gestión de logística y cadena de suministro
+          (optimización de inventarios y rutas), el soporte técnico automatizado
+          mediante agentes inteligentes multilingües, y el procesamiento
+          transaccional financiero (conciliaciones de cuentas automáticas,
+          detección de fraudes o validación inmediata de facturas ante el SII).
         </p>
         <p>
-          Al escalar la eficiencia operativa con IA, los líderes logran una adaptabilidad inmensa ante picos transaccionales, pudiendo triplicar su volumen de procesamiento sin necesidad de realizar contrataciones apresuradas de personal de soporte temporal.
+          Al escalar la eficiencia operativa con IA, los líderes logran una
+          adaptabilidad inmensa ante picos transaccionales, pudiendo triplicar
+          su volumen de procesamiento sin necesidad de realizar contrataciones
+          apresuradas de personal de soporte temporal.
         </p>
 
-        <h2>¿Cómo diseñar un plan de adopción progresivo de automatización inteligente?</h2>
+        <h2>
+          ¿Cómo diseñar un plan de adopción progresivo de automatización
+          inteligente?
+        </h2>
         <p>
-          La mejor estrategia consiste en identificar "quick wins" o frutas maduras: procesos repetitivos, de alto volumen de datos, con cuellos de botella obvios pero de baja complejidad inicial. Al resolver un flujo de trabajo central de forma automatizada con éxito, la organización adquiere la confianza y los indicadores de éxito necesarios para extender la hiperautomatización a nivel corporativo, con el acompañamiento de talento técnico experto en inteligencia artificial.
+          La mejor estrategia consiste en identificar "quick wins" o frutas
+          maduras: procesos repetitivos, de alto volumen de datos, con cuellos
+          de botella obvios pero de baja complejidad inicial. Al resolver un
+          flujo de trabajo central de forma automatizada con éxito, la
+          organización adquiere la confianza y los indicadores de éxito
+          necesarios para extender la hiperautomatización a nivel corporativo,
+          con el acompañamiento de talento técnico experto en inteligencia
+          artificial.
         </p>
 
-        <p className="cta-paragraph" style={{ marginTop: '2.5rem', padding: '2rem', backgroundColor: 'var(--blue-light)', borderRadius: '12px', border: '1px solid var(--blue-20)' }}>
-          <strong>¿Quieres escalar la eficiencia de tus operaciones B2B con IA?</strong>{" "}
-          En 4AGILE diseñamos e implementamos arquitecturas de automatización inteligente con los mejores expertos de la industria.{" "}
-          <a href="/contacto" style={{ color: "var(--blue)", textDecoration: "underline" }}>Contáctanos hoy mismo</a> y optimicemos tus procesos operativos.
+        <p
+          className="cta-paragraph"
+          style={{
+            marginTop: "2.5rem",
+            padding: "2rem",
+            backgroundColor: "var(--blue-light)",
+            borderRadius: "12px",
+            border: "1px solid var(--blue-20)",
+          }}
+        >
+          <strong>
+            ¿Quieres escalar la eficiencia de tus operaciones B2B con IA?
+          </strong>{" "}
+          En 4AGILE diseñamos e implementamos arquitecturas de automatización
+          inteligente con los mejores expertos de la industria.{" "}
+          <a
+            href="/contacto"
+            style={{ color: "var(--blue)", textDecoration: "underline" }}
+          >
+            Contáctanos hoy mismo
+          </a>{" "}
+          y optimicemos tus procesos operativos.
         </p>
       </>
-    )
+    ),
   },
 
   "ciberseguridad-cloud-chile-protegiendo-infraestructura-critica-nube": {
-    title: "Ciberseguridad Cloud en Chile: Protegiendo la Infraestructura Crítica en la Nube",
-    image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?auto=format&fit=crop&w=800&q=80",
+    title:
+      "Ciberseguridad Cloud en Chile: Protegiendo la Infraestructura Crítica en la Nube",
+    image:
+      "https://images.unsplash.com/photo-1563013544-824ae1b704d3?auto=format&fit=crop&w=800&q=80",
     date: "2026-06-27",
     category: "Ciberseguridad",
-    tags: ["Ciberseguridad Cloud", "Infraestructura Crítica", "Chile", "Nube", "Cumplimiento"],
-    metaDescription: "Descubre cómo la ciberseguridad cloud en Chile protege la infraestructura crítica en la nube, reduce riesgos y asegura la continuidad del negocio. ¡Conversemos!",
+    tags: [
+      "Ciberseguridad Cloud",
+      "Infraestructura Crítica",
+      "Chile",
+      "Nube",
+      "Cumplimiento",
+    ],
+    metaDescription:
+      "Descubre cómo la ciberseguridad cloud en Chile protege la infraestructura crítica en la nube, reduce riesgos y asegura la continuidad del negocio. ¡Conversemos!",
     content: (
       <>
         <p>
-          El acelerado proceso de migración de aplicaciones hacia entornos de nubes híbridas y públicas ha transformado la operatividad de las corporaciones nacionales. Sin embargo, esta transición tecnológica expande la superficie de ataque digital para las organizaciones. La <strong>ciberseguridad cloud en Chile</strong> orientada a proteger la infraestructura crítica es hoy una prioridad estratégica insoslayable para directores y gerencias de TI.
+          El acelerado proceso de migración de aplicaciones hacia entornos de
+          nubes híbridas y públicas ha transformado la operatividad de las
+          corporaciones nacionales. Sin embargo, esta transición tecnológica
+          expande la superficie de ataque digital para las organizaciones. La{" "}
+          <strong>ciberseguridad cloud en Chile</strong> orientada a proteger la
+          infraestructura crítica es hoy una prioridad estratégica insoslayable
+          para directores y gerencias de TI.
         </p>
 
-        <h2>¿Cómo se protege la infraestructura crítica empresarial ante amenazas avanzadas en la nube?</h2>
+        <h2>
+          ¿Cómo se protege la infraestructura crítica empresarial ante amenazas
+          avanzadas en la nube?
+        </h2>
         <p>
-          La infraestructura crítica abarca todos aquellos sistemas esenciales cuya caída afectaría de forma grave la facturación, los datos corporativos, la logística de despacho o el cumplimiento regulatorio sectorial (como la CMF o SUBTEL). El enfoque de ciberseguridad moderna asume que las amenazas ya pueden estar dentro del sistema (modelo Zero Trust), requiriendo autenticación multifactor estricta, monitoreo de anomalías en tiempo real y cifrado de datos de extremo a extremo (tanto en tránsito como en reposo).
+          La infraestructura crítica abarca todos aquellos sistemas esenciales
+          cuya caída afectaría de forma grave la facturación, los datos
+          corporativos, la logística de despacho o el cumplimiento regulatorio
+          sectorial (como la CMF o SUBTEL). El enfoque de ciberseguridad moderna
+          asume que las amenazas ya pueden estar dentro del sistema (modelo Zero
+          Trust), requiriendo autenticación multifactor estricta, monitoreo de
+          anomalías en tiempo real y cifrado de datos de extremo a extremo
+          (tanto en tránsito como en reposo).
         </p>
         <p>
-          Para las empresas en Chile, implementar perímetros de seguridad lógicos adaptados al entorno multinube (AWS, Azure, GCP) reduce drásticamente las brechas asociadas a errores comunes de configuración en las plataformas cloud.
+          Para las empresas en Chile, implementar perímetros de seguridad
+          lógicos adaptados al entorno multinube (AWS, Azure, GCP) reduce
+          drásticamente las brechas asociadas a errores comunes de configuración
+          en las plataformas cloud.
         </p>
 
-        <h2>¿Cuáles son las mejores prácticas para mitigar riesgos en la adopción de nubes públicas?</h2>
+        <h2>
+          ¿Cuáles son las mejores prácticas para mitigar riesgos en la adopción
+          de nubes públicas?
+        </h2>
         <p>
-          La base de la protección reside en la automatización de la gobernanza de accesos, el parcheo automático de dependencias y la auditoría continua de configuraciones de red. Asimismo, incorporar DevOps y ciberseguridad desde el inicio del ciclo de desarrollo (DevSecOps) garantiza que las plataformas sean resilientes y estables antes de ser desplegadas a producción.
+          La base de la protección reside en la automatización de la gobernanza
+          de accesos, el parcheo automático de dependencias y la auditoría
+          continua de configuraciones de red. Asimismo, incorporar DevOps y
+          ciberseguridad desde el inicio del ciclo de desarrollo (DevSecOps)
+          garantiza que las plataformas sean resilientes y estables antes de ser
+          desplegadas a producción.
         </p>
         <p>
-          En el dinámico ecosistema actual de amenazas, contar con la asesoría de ingenieros especializados en seguridad en la nube es la inversión más rentable para evitar costosas interrupciones operativas y multas por pérdidas de propiedad intelectual.
+          En el dinámico ecosistema actual de amenazas, contar con la asesoría
+          de ingenieros especializados en seguridad en la nube es la inversión
+          más rentable para evitar costosas interrupciones operativas y multas
+          por pérdidas de propiedad intelectual.
         </p>
 
-        <p className="cta-paragraph" style={{ marginTop: '2.5rem', padding: '2rem', backgroundColor: 'var(--blue-light)', borderRadius: '12px', border: '1px solid var(--blue-20)' }}>
-          <strong>¿Quieres blindar tu infraestructura crítica en la nube?</strong>{" "}
-          En 4AGILE implementamos arquitecturas seguras con especialistas en ciberseguridad cloud de alto rendimiento.{" "}
-          <a href="/contacto" style={{ color: "var(--blue)", textDecoration: "underline" }}>Conversemos hoy</a> y protege la continuidad operativa de tu corporación.
+        <p
+          className="cta-paragraph"
+          style={{
+            marginTop: "2.5rem",
+            padding: "2rem",
+            backgroundColor: "var(--blue-light)",
+            borderRadius: "12px",
+            border: "1px solid var(--blue-20)",
+          }}
+        >
+          <strong>
+            ¿Quieres blindar tu infraestructura crítica en la nube?
+          </strong>{" "}
+          En 4AGILE implementamos arquitecturas seguras con especialistas en
+          ciberseguridad cloud de alto rendimiento.{" "}
+          <a
+            href="/contacto"
+            style={{ color: "var(--blue)", textDecoration: "underline" }}
+          >
+            Conversemos hoy
+          </a>{" "}
+          y protege la continuidad operativa de tu corporación.
         </p>
       </>
-    )
+    ),
   },
 
-  "modernizacion-aplicaciones-estrategias-transformacion-digital-empresas-chilenas": {
-    title: "Modernización de Aplicaciones: Estrategias para la Transformación Digital de Empresas Chilenas",
-    image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80",
-    date: "2026-06-27",
-    category: "Desarrollo y Modernización",
-    tags: ["Modernización de Aplicaciones", "Transformación Digital", "Empresas Chilenas", "Cloud", "Legacy"],
-    metaDescription: "Conoce las estrategias de modernización de aplicaciones que impulsan la transformación digital de empresas chilenas sin frenar la operación. ¡Conversemos!",
-    content: (
-      <>
-        <p>
-          Para mantener el liderazgo en un entorno comercial digitalizado, las grandes corporaciones en Chile deben liberarse del peso de la deuda técnica heredada. La <strong>modernización de aplicaciones para empresas chilenas</strong> no se reduce a un simple recambio tecnológico, sino que representa una decisión de negocio crítica para habilitar la agilidad organizativa y acelerar el Time-to-Market de nuevas propuestas de valor.
-        </p>
+  "modernizacion-aplicaciones-estrategias-transformacion-digital-empresas-chilenas":
+    {
+      title:
+        "Modernización de Aplicaciones: Estrategias para la Transformación Digital de Empresas Chilenas",
+      image:
+        "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80",
+      date: "2026-06-27",
+      category: "Desarrollo y Modernización",
+      tags: [
+        "Modernización de Aplicaciones",
+        "Transformación Digital",
+        "Empresas Chilenas",
+        "Cloud",
+        "Legacy",
+      ],
+      metaDescription:
+        "Conoce las estrategias de modernización de aplicaciones que impulsan la transformación digital de empresas chilenas sin frenar la operación. ¡Conversemos!",
+      content: (
+        <>
+          <p>
+            Para mantener el liderazgo en un entorno comercial digitalizado, las
+            grandes corporaciones en Chile deben liberarse del peso de la deuda
+            técnica heredada. La{" "}
+            <strong>
+              modernización de aplicaciones para empresas chilenas
+            </strong>{" "}
+            no se reduce a un simple recambio tecnológico, sino que representa
+            una decisión de negocio crítica para habilitar la agilidad
+            organizativa y acelerar el Time-to-Market de nuevas propuestas de
+            valor.
+          </p>
 
-        <h2>¿Cuáles son las estrategias recomendadas para migrar aplicaciones monolíticas antiguas?</h2>
-        <p>
-          El principal temor de los directores de TI radica en la interrupción operativa de los servicios nucleares de la empresa. Para evitarlo, la mejor aproximación es la modernización incremental o modular. Consiste en desacoplar paulatinamente funcionalidades del monolito heredado y convertirlas en microservicios empaquetados en contenedores (como Docker o Kubernetes), utilizando metodologías de desarrollo ágil y DevOps de vanguardia.
-        </p>
-        <p>
-          Esto permite introducir mejoras operacionales continuas y lanzar actualizaciones constantes al mercado sin arriesgar la estabilidad del ecosistema digital completo de la corporación.
-        </p>
+          <h2>
+            ¿Cuáles son las estrategias recomendadas para migrar aplicaciones
+            monolíticas antiguas?
+          </h2>
+          <p>
+            El principal temor de los directores de TI radica en la interrupción
+            operativa de los servicios nucleares de la empresa. Para evitarlo,
+            la mejor aproximación es la modernización incremental o modular.
+            Consiste en desacoplar paulatinamente funcionalidades del monolito
+            heredado y convertirlas en microservicios empaquetados en
+            contenedores (como Docker o Kubernetes), utilizando metodologías de
+            desarrollo ágil y DevOps de vanguardia.
+          </p>
+          <p>
+            Esto permite introducir mejoras operacionales continuas y lanzar
+            actualizaciones constantes al mercado sin arriesgar la estabilidad
+            del ecosistema digital completo de la corporación.
+          </p>
 
-        <h2>¿De qué manera el talento especializado define el éxito de una modernización tecnológica?</h2>
-        <p>
-          Abordar proyectos de esta complejidad operativa requiere de ingenieros de software senior, arquitectos cloud de alto nivel y especialistas en control de calidad automatizado (QA). Este equipo multidisciplinario debe entender las reglas de negocio codificadas en los sistemas antiguos y diseñar rutas de migración eficientes hacia arquitecturas modernas y escalables.
-        </p>
-        <p>
-          Contar con un socio estratégico confiable de outsourcing de talentos TI acelera notablemente las curvas de adopción y reduce de manera sustantiva el riesgo comercial de los procesos de modernización tecnológica.
-        </p>
+          <h2>
+            ¿De qué manera el talento especializado define el éxito de una
+            modernización tecnológica?
+          </h2>
+          <p>
+            Abordar proyectos de esta complejidad operativa requiere de
+            ingenieros de software senior, arquitectos cloud de alto nivel y
+            especialistas en control de calidad automatizado (QA). Este equipo
+            multidisciplinario debe entender las reglas de negocio codificadas
+            en los sistemas antiguos y diseñar rutas de migración eficientes
+            hacia arquitecturas modernas y escalables.
+          </p>
+          <p>
+            Contar con un socio estratégico confiable de outsourcing de talentos
+            TI acelera notablemente las curvas de adopción y reduce de manera
+            sustantiva el riesgo comercial de los procesos de modernización
+            tecnológica.
+          </p>
 
-        <p className="cta-paragraph" style={{ marginTop: '2.5rem', padding: '2rem', backgroundColor: 'var(--blue-light)', borderRadius: '12px', border: '1px solid var(--blue-20)' }}>
-          <strong>¿Necesitas modernizar tus plataformas legacy de forma segura?</strong>{" "}
-          En 4AGILE te conectamos con las células ágiles de desarrollo e ingenieros DevOps más preparados del mercado.{" "}
-          <a href="/contacto" style={{ color: "var(--blue)", textDecoration: "underline" }}>Conversemos hoy mismo</a> e impulsemos tu transformación digital corporativa.
-        </p>
-      </>
-    )
-  },
+          <p
+            className="cta-paragraph"
+            style={{
+              marginTop: "2.5rem",
+              padding: "2rem",
+              backgroundColor: "var(--blue-light)",
+              borderRadius: "12px",
+              border: "1px solid var(--blue-20)",
+            }}
+          >
+            <strong>
+              ¿Necesitas modernizar tus plataformas legacy de forma segura?
+            </strong>{" "}
+            En 4AGILE te conectamos con las células ágiles de desarrollo e
+            ingenieros DevOps más preparados del mercado.{" "}
+            <a
+              href="/contacto"
+              style={{ color: "var(--blue)", textDecoration: "underline" }}
+            >
+              Conversemos hoy mismo
+            </a>{" "}
+            e impulsemos tu transformación digital corporativa.
+          </p>
+        </>
+      ),
+    },
 
-  "observabilidad-monitoreo-proactivo-resiliencia-plataformas-digitales-chile": {
-    title: "Observabilidad y Monitoreo Proactivo: Clave para la Resiliencia de Plataformas Digitales en Chile",
-    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80",
-    date: "2026-06-26",
-    category: "DevOps y Cloud",
-    tags: ["Observabilidad", "Monitoreo Proactivo", "Resiliencia", "Chile", "SRE"],
-    metaDescription: "Descubre cómo la observabilidad y el monitoreo proactivo aseguran la resiliencia de las plataformas digitales en Chile, anticipando incidentes. ¡Conversemos!",
-    content: (
-      <>
-        <p>
-          En un mercado digital sumamente dinámico y exigente, los consumidores nacionales no perdonan la lentitud transaccional ni las caídas del sistema. La adopción de estrategias de <strong>observabilidad y monitoreo proactivo en Chile</strong> representa la diferencia crucial entre apagar constantes crisis operativas y liderar el mercado con plataformas digitales altamente estables, resilientes y escalables.
-        </p>
+  "observabilidad-monitoreo-proactivo-resiliencia-plataformas-digitales-chile":
+    {
+      title:
+        "Observabilidad y Monitoreo Proactivo: Clave para la Resiliencia de Plataformas Digitales en Chile",
+      image:
+        "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80",
+      date: "2026-06-26",
+      category: "DevOps y Cloud",
+      tags: [
+        "Observabilidad",
+        "Monitoreo Proactivo",
+        "Resiliencia",
+        "Chile",
+        "SRE",
+      ],
+      metaDescription:
+        "Descubre cómo la observabilidad y el monitoreo proactivo aseguran la resiliencia de las plataformas digitales en Chile, anticipando incidentes. ¡Conversemos!",
+      content: (
+        <>
+          <p>
+            En un mercado digital sumamente dinámico y exigente, los
+            consumidores nacionales no perdonan la lentitud transaccional ni las
+            caídas del sistema. La adopción de estrategias de{" "}
+            <strong>observabilidad y monitoreo proactivo en Chile</strong>{" "}
+            representa la diferencia crucial entre apagar constantes crisis
+            operativas y liderar el mercado con plataformas digitales altamente
+            estables, resilientes y escalables.
+          </p>
 
-        <h2>¿Por qué la observabilidad trasciende los sistemas tradicionales de monitoreo de TI?</h2>
-        <p>
-          El monitoreo tradicional responde únicamente al "qué": avisa cuando un servidor se ha caído o la memoria RAM se satura. En cambio, la observabilidad responde al "por qué" interno del comportamiento de las plataformas complejas (arquitecturas de microservicios o entornos cloud híbridos) analizando de forma inteligente sus datos externos de salida: métricas, registros consolidados (logs) y trazas de transacciones distribuidas.
-        </p>
-        <p>
-          Esto le permite a los ingenieros de soporte y confiabilidad de sitio (SRE) identificar cuellos de botella sutiles, rastrear una llamada de API fallida de forma secuencial y solucionar incidentes latentes en cuestión de minutos, eliminando largas horas de diagnóstico manual.
-        </p>
+          <h2>
+            ¿Por qué la observabilidad trasciende los sistemas tradicionales de
+            monitoreo de TI?
+          </h2>
+          <p>
+            El monitoreo tradicional responde únicamente al "qué": avisa cuando
+            un servidor se ha caído o la memoria RAM se satura. En cambio, la
+            observabilidad responde al "por qué" interno del comportamiento de
+            las plataformas complejas (arquitecturas de microservicios o
+            entornos cloud híbridos) analizando de forma inteligente sus datos
+            externos de salida: métricas, registros consolidados (logs) y trazas
+            de transacciones distribuidas.
+          </p>
+          <p>
+            Esto le permite a los ingenieros de soporte y confiabilidad de sitio
+            (SRE) identificar cuellos de botella sutiles, rastrear una llamada
+            de API fallida de forma secuencial y solucionar incidentes latentes
+            en cuestión de minutos, eliminando largas horas de diagnóstico
+            manual.
+          </p>
 
-        <h2>¿Cómo se construye la resiliencia operativa en plataformas críticas B2B?</h2>
-        <p>
-          La clave radica en establecer umbrales proactivos e inteligentes basados en machine learning que alerten de anomalías antes de que el usuario final experimente lentitud o fallas transaccionales. Al combinar estas alertas con procesos de autorreparación automática de infraestructura cloud, la resiliencia operativa se transforma en una capacidad estructural, asegurando la continuidad del negocio y elevando la reputación digital de la marca ante sus clientes corporativos.
-        </p>
+          <h2>
+            ¿Cómo se construye la resiliencia operativa en plataformas críticas
+            B2B?
+          </h2>
+          <p>
+            La clave radica en establecer umbrales proactivos e inteligentes
+            basados en machine learning que alerten de anomalías antes de que el
+            usuario final experimente lentitud o fallas transaccionales. Al
+            combinar estas alertas con procesos de autorreparación automática de
+            infraestructura cloud, la resiliencia operativa se transforma en una
+            capacidad estructural, asegurando la continuidad del negocio y
+            elevando la reputación digital de la marca ante sus clientes
+            corporativos.
+          </p>
 
-        <p className="cta-paragraph" style={{ marginTop: '2.5rem', padding: '2rem', backgroundColor: 'var(--blue-light)', borderRadius: '12px', border: '1px solid var(--blue-20)' }}>
-          <strong>¿Quieres implementar observabilidad proactiva y cultura SRE en tu empresa?</strong>{" "}
-          En 4AGILE proveemos ingenieros DevOps altamente capacitados en arquitecturas de monitoreo avanzado y observabilidad cloud.{" "}
-          <a href="/contacto" style={{ color: "var(--blue)", textDecoration: "underline" }}>Escríbenos hoy</a> y maximicemos la resiliencia de tus plataformas digitales.
-        </p>
-      </>
-    )
-  },
+          <p
+            className="cta-paragraph"
+            style={{
+              marginTop: "2.5rem",
+              padding: "2rem",
+              backgroundColor: "var(--blue-light)",
+              borderRadius: "12px",
+              border: "1px solid var(--blue-20)",
+            }}
+          >
+            <strong>
+              ¿Quieres implementar observabilidad proactiva y cultura SRE en tu
+              empresa?
+            </strong>{" "}
+            En 4AGILE proveemos ingenieros DevOps altamente capacitados en
+            arquitecturas de monitoreo avanzado y observabilidad cloud.{" "}
+            <a
+              href="/contacto"
+              style={{ color: "var(--blue)", textDecoration: "underline" }}
+            >
+              Escríbenos hoy
+            </a>{" "}
+            y maximicemos la resiliencia de tus plataformas digitales.
+          </p>
+        </>
+      ),
+    },
 
-  "staffing-tecnologico-vs-reclutamiento-tradicional-escalar-equipos-it-chile": {
-    title: "Staffing Tecnológico vs. Reclutamiento Tradicional: ¿Cuál es la mejor opción para escalar equipos de IT en Chile?",
-    image: "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&w=800&q=80",
-    date: "2026-06-26",
-    category: "Hunting y Talento",
-    tags: ["Staffing Tecnológico", "Reclutamiento", "Equipos de IT", "Chile", "Outsourcing"],
-    metaDescription: "Staffing tecnológico vs. reclutamiento tradicional: descubre cuál es la mejor opción para escalar equipos de IT en Chile con agilidad y control. ¡Conversemos!",
-    content: (
-      <>
-        <p>
-          Escalar las capacidades técnicas en medio de proyectos de transformación digital acelerada representa uno de los desafíos más complejos para las gerencias generales y de TI. Comparar el <strong>staffing tecnológico vs reclutamiento tradicional en Chile</strong> es crucial para entender qué modelo operativo asegura velocidad, minimiza riesgos de contratación y resguarda el presupuesto operativo de la empresa de manera efectiva.
-        </p>
+  "staffing-tecnologico-vs-reclutamiento-tradicional-escalar-equipos-it-chile":
+    {
+      title:
+        "Staffing Tecnológico vs. Reclutamiento Tradicional: ¿Cuál es la mejor opción para escalar equipos de IT en Chile?",
+      image:
+        "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&w=800&q=80",
+      date: "2026-06-26",
+      category: "Hunting y Talento",
+      tags: [
+        "Staffing Tecnológico",
+        "Reclutamiento",
+        "Equipos de IT",
+        "Chile",
+        "Outsourcing",
+      ],
+      metaDescription:
+        "Staffing tecnológico vs. reclutamiento tradicional: descubre cuál es la mejor opción para escalar equipos de IT en Chile con agilidad y control. ¡Conversemos!",
+      content: (
+        <>
+          <p>
+            Escalar las capacidades técnicas en medio de proyectos de
+            transformación digital acelerada representa uno de los desafíos más
+            complejos para las gerencias generales y de TI. Comparar el{" "}
+            <strong>
+              staffing tecnológico vs reclutamiento tradicional en Chile
+            </strong>{" "}
+            es crucial para entender qué modelo operativo asegura velocidad,
+            minimiza riesgos de contratación y resguarda el presupuesto
+            operativo de la empresa de manera efectiva.
+          </p>
 
-        <h2>¿Cuáles son los cuellos de botella del reclutamiento tradicional en el sector tecnológico?</h2>
-        <p>
-          El modelo de reclutamiento convencional busca incorporar profesionales a la nómina permanente de la organización. Sin embargo, en el dinámico ecosistema TI de Chile, este proceso suele tomar de 45 a 90 días, un periodo inviable para proyectos que demandan respuestas inmediatas. Adicionalmente, el alto costo administrativo de onboarding, beneficios corporativos permanentes y el riesgo de una mala contratación que derive en desvinculaciones complejas representan una carga financiera y operacional considerable.
-        </p>
+          <h2>
+            ¿Cuáles son los cuellos de botella del reclutamiento tradicional en
+            el sector tecnológico?
+          </h2>
+          <p>
+            El modelo de reclutamiento convencional busca incorporar
+            profesionales a la nómina permanente de la organización. Sin
+            embargo, en el dinámico ecosistema TI de Chile, este proceso suele
+            tomar de 45 a 90 días, un periodo inviable para proyectos que
+            demandan respuestas inmediatas. Adicionalmente, el alto costo
+            administrativo de onboarding, beneficios corporativos permanentes y
+            el riesgo de una mala contratación que derive en desvinculaciones
+            complejas representan una carga financiera y operacional
+            considerable.
+          </p>
 
-        <h2>¿Cómo el staffing tecnológico de 4AGILE acelera el escalamiento de tus equipos de IT?</h2>
-        <p>
-          El staffing especializado o externalización temporal provee talento altamente calificado e inmediatamente productivo para un proyecto con un esquema ágil de contratación flexible. En 4AGILE, seleccionamos, evaluamos, incorporamos y nos hacemos cargo administrativamente del profesional tecnológico, reduciendo el Time-to-Market del equipo a pocos días. 
-        </p>
-        <p>
-          Esto le brinda a las corporaciones chilenas la elasticidad operacional idónea para expandir o contraer sus equipos de desarrollo de software, DevOps o QA de acuerdo a las demandas de cada ciclo del proyecto B2B, sin comprometer costos fijos a largo plazo ni arriesgar la velocidad operacional.
-        </p>
+          <h2>
+            ¿Cómo el staffing tecnológico de 4AGILE acelera el escalamiento de
+            tus equipos de IT?
+          </h2>
+          <p>
+            El staffing especializado o externalización temporal provee talento
+            altamente calificado e inmediatamente productivo para un proyecto
+            con un esquema ágil de contratación flexible. En 4AGILE,
+            seleccionamos, evaluamos, incorporamos y nos hacemos cargo
+            administrativamente del profesional tecnológico, reduciendo el
+            Time-to-Market del equipo a pocos días.
+          </p>
+          <p>
+            Esto le brinda a las corporaciones chilenas la elasticidad
+            operacional idónea para expandir o contraer sus equipos de
+            desarrollo de software, DevOps o QA de acuerdo a las demandas de
+            cada ciclo del proyecto B2B, sin comprometer costos fijos a largo
+            plazo ni arriesgar la velocidad operacional.
+          </p>
 
-        <p className="cta-paragraph" style={{ marginTop: '2.5rem', padding: '2rem', backgroundColor: 'var(--blue-light)', borderRadius: '12px', border: '1px solid var(--blue-20)' }}>
-          <strong>¿Necesitas escalar tu capacidad de desarrollo o ingeniería TI de forma ágil?</strong>{" "}
-          En 4AGILE somos expertos en staffing tecnológico y hunting TI de alta velocidad para las principales industrias corporativas de Chile.{" "}
-          <a href="/contacto" style={{ color: "var(--blue)", textDecoration: "underline" }}>Conversemos hoy</a> y armemos tu equipo técnico a medida.
-        </p>
-      </>
-    )
-  },
+          <p
+            className="cta-paragraph"
+            style={{
+              marginTop: "2.5rem",
+              padding: "2rem",
+              backgroundColor: "var(--blue-light)",
+              borderRadius: "12px",
+              border: "1px solid var(--blue-20)",
+            }}
+          >
+            <strong>
+              ¿Necesitas escalar tu capacidad de desarrollo o ingeniería TI de
+              forma ágil?
+            </strong>{" "}
+            En 4AGILE somos expertos en staffing tecnológico y hunting TI de
+            alta velocidad para las principales industrias corporativas de
+            Chile.{" "}
+            <a
+              href="/contacto"
+              style={{ color: "var(--blue)", textDecoration: "underline" }}
+            >
+              Conversemos hoy
+            </a>{" "}
+            y armemos tu equipo técnico a medida.
+          </p>
+        </>
+      ),
+    },
 
   "optimizacion-costos-cloud-chile-estrategias-finops": {
-    title: "Optimización de Costos Cloud en Chile: Estrategias FinOps para Empresas Modernas",
-    image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=800&q=80",
+    title:
+      "Optimización de Costos Cloud en Chile: Estrategias FinOps para Empresas Modernas",
+    image:
+      "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=800&q=80",
     date: "2026-06-24",
     category: "DevOps y Cloud",
-    tags: ["Cloud", "FinOps", "Chile", "Optimización de Costos", "Empresas Modernas"],
-    metaDescription: "Descubre cómo la optimización de costos cloud en Chile a través de estrategias FinOps ayuda a empresas modernas a maximizar su ROI en la nube. ¡Hablemos!",
+    tags: [
+      "Cloud",
+      "FinOps",
+      "Chile",
+      "Optimización de Costos",
+      "Empresas Modernas",
+    ],
+    metaDescription:
+      "Descubre cómo la optimización de costos cloud en Chile a través de estrategias FinOps ayuda a empresas modernas a maximizar su ROI en la nube. ¡Hablemos!",
     content: (
       <>
         <p>
-          La migración hacia la nube promete escalabilidad y reducción de costos operativos, pero sin un control financiero estricto, la facturación mensual puede salirse rápidamente de control. La <strong>optimización de costos cloud en Chile</strong> basada en metodologías FinOps se posiciona como una disciplina estratégica fundamental para que las organizaciones modernas maximicen el retorno de su inversión tecnológica en la nube.
+          La migración hacia la nube promete escalabilidad y reducción de costos
+          operativos, pero sin un control financiero estricto, la facturación
+          mensual puede salirse rápidamente de control. La{" "}
+          <strong>optimización de costos cloud en Chile</strong> basada en
+          metodologías FinOps se posiciona como una disciplina estratégica
+          fundamental para que las organizaciones modernas maximicen el retorno
+          de su inversión tecnológica en la nube.
         </p>
 
-        <h2>¿Qué es la metodología FinOps y cómo ayuda a controlar el presupuesto técnico cloud?</h2>
+        <h2>
+          ¿Qué es la metodología FinOps y cómo ayuda a controlar el presupuesto
+          técnico cloud?
+        </h2>
         <p>
-          FinOps (Cloud Financial Operations) es una cultura operativa y metodológica que une a las áreas financieras, de TI y de negocio para asegurar una responsabilidad compartida sobre los gastos en la nube. En lugar de recortar presupuestos de forma reactiva y arbitraria, FinOps propone un ciclo continuo de visibilidad de gastos, optimización en tiempo real (apagado de recursos ociosos, redimensionamiento de bases de datos o migración de almacenamiento frío) y planificación predictiva.
+          FinOps (Cloud Financial Operations) es una cultura operativa y
+          metodológica que une a las áreas financieras, de TI y de negocio para
+          asegurar una responsabilidad compartida sobre los gastos en la nube.
+          En lugar de recortar presupuestos de forma reactiva y arbitraria,
+          FinOps propone un ciclo continuo de visibilidad de gastos,
+          optimización en tiempo real (apagado de recursos ociosos,
+          redimensionamiento de bases de datos o migración de almacenamiento
+          frío) y planificación predictiva.
         </p>
         <p>
-          Esto asegura que cada peso gastado en plataformas como AWS, Azure o GCP se traduzca de forma directa en valor de negocio y eficiencia operacional verificable para la corporación.
+          Esto asegura que cada peso gastado en plataformas como AWS, Azure o
+          GCP se traduzca de forma directa en valor de negocio y eficiencia
+          operacional verificable para la corporación.
         </p>
 
-        <h2>¿Cuáles son las tácticas clave de optimización que generan ahorros inmediatos?</h2>
+        <h2>
+          ¿Cuáles son las tácticas clave de optimización que generan ahorros
+          inmediatos?
+        </h2>
         <p>
-          Las principales oportunidades de optimización radican en identificar y desactivar instancias computacionales no utilizadas fuera del horario laboral, dimensionar correctamente las capacidades asignadas a cada entorno (rightsizing), y utilizar esquemas de contratación preferencial (Savings Plans o Instancias Reservadas) para cargas operativas estables. 
+          Las principales oportunidades de optimización radican en identificar y
+          desactivar instancias computacionales no utilizadas fuera del horario
+          laboral, dimensionar correctamente las capacidades asignadas a cada
+          entorno (rightsizing), y utilizar esquemas de contratación
+          preferencial (Savings Plans o Instancias Reservadas) para cargas
+          operativas estables.
         </p>
         <p>
-          La asesoría de ingenieros DevOps especializados con enfoque FinOps permite a las empresas en Chile experimentar reducciones del 20% al 40% en su facturación cloud mensual sin sacrificar de ninguna manera el rendimiento ni la estabilidad operativa de sus plataformas de cara al cliente final.
+          La asesoría de ingenieros DevOps especializados con enfoque FinOps
+          permite a las empresas en Chile experimentar reducciones del 20% al
+          40% en su facturación cloud mensual sin sacrificar de ninguna manera
+          el rendimiento ni la estabilidad operativa de sus plataformas de cara
+          al cliente final.
         </p>
 
-        <p className="cta-paragraph" style={{ marginTop: '2.5rem', padding: '2rem', backgroundColor: 'var(--blue-light)', borderRadius: '12px', border: '1px solid var(--blue-20)' }}>
-          <strong>¿Sientes que tu facturación cloud está fuera de control?</strong>{" "}
-          En 4AGILE aplicamos las mejores metodologías FinOps y estrategias de optimización de costos en la nube para empresas chilenas.{" "}
-          <a href="/contacto" style={{ color: "var(--blue)", textDecoration: "underline" }}>Contáctanos hoy mismo</a> y optimicemos juntos tu presupuesto técnico.
+        <p
+          className="cta-paragraph"
+          style={{
+            marginTop: "2.5rem",
+            padding: "2rem",
+            backgroundColor: "var(--blue-light)",
+            borderRadius: "12px",
+            border: "1px solid var(--blue-20)",
+          }}
+        >
+          <strong>
+            ¿Sientes que tu facturación cloud está fuera de control?
+          </strong>{" "}
+          En 4AGILE aplicamos las mejores metodologías FinOps y estrategias de
+          optimización de costos en la nube para empresas chilenas.{" "}
+          <a
+            href="/contacto"
+            style={{ color: "var(--blue)", textDecoration: "underline" }}
+          >
+            Contáctanos hoy mismo
+          </a>{" "}
+          y optimicemos juntos tu presupuesto técnico.
         </p>
       </>
-    )
+    ),
   },
 
   "qa-automation-reducir-time-to-market-desarrollo-software-chileno": {
-    title: "QA Automation: Cómo Reducir el Time-to-Market en el Desarrollo de Software Chileno",
-    image: "https://images.unsplash.com/photo-1607799279861-4dd421887fb3?auto=format&fit=crop&w=800&q=80",
+    title:
+      "QA Automation: Cómo Reducir el Time-to-Market en el Desarrollo de Software Chileno",
+    image:
+      "https://images.unsplash.com/photo-1607799279861-4dd421887fb3?auto=format&fit=crop&w=800&q=80",
     date: "2026-06-24",
     category: "Calidad y Pruebas",
-    tags: ["QA Automation", "Time-to-Market", "Desarrollo de Software", "Chile", "Testing"],
-    metaDescription: "Descubre cómo la implementación de QA Automation permite acelerar las entregas y reducir el time-to-market en el desarrollo de software chileno de alto nivel.",
+    tags: [
+      "QA Automation",
+      "Time-to-Market",
+      "Desarrollo de Software",
+      "Chile",
+      "Testing",
+    ],
+    metaDescription:
+      "Descubre cómo la implementación de QA Automation permite acelerar las entregas y reducir el time-to-market en el desarrollo de software chileno de alto nivel.",
     content: (
       <>
         <p>
-          En la economía digital contemporánea, lanzar nuevas funcionalidades al mercado antes que la competencia representa una de las mayores ventajas corporativas. La implementación de prácticas de <strong>QA Automation en el desarrollo de software chileno</strong> permite a las organizaciones acelerar sustancialmente sus entregas operacionales, garantizando estabilidad y reduciendo de manera drástica el Time-to-Market global de sus productos de cara al consumidor final.
+          En la economía digital contemporánea, lanzar nuevas funcionalidades al
+          mercado antes que la competencia representa una de las mayores
+          ventajas corporativas. La implementación de prácticas de{" "}
+          <strong>QA Automation en el desarrollo de software chileno</strong>{" "}
+          permite a las organizaciones acelerar sustancialmente sus entregas
+          operacionales, garantizando estabilidad y reduciendo de manera
+          drástica el Time-to-Market global de sus productos de cara al
+          consumidor final.
         </p>
 
-        <h2>¿Cómo la automatización de pruebas de software impacta en la velocidad de lanzamiento?</h2>
+        <h2>
+          ¿Cómo la automatización de pruebas de software impacta en la velocidad
+          de lanzamiento?
+        </h2>
         <p>
-          El testing manual clásico representa un cuello de botella masivo en los ciclos ágiles de desarrollo de software. Cada vez que se añade una nueva funcionalidad, el equipo de QA debe evaluar manualmente todas las secciones preexistentes para descartar regresiones. Este proceso reiterativo consume días u horas valiosas, retrasando de forma inaceptable las entregas.
+          El testing manual clásico representa un cuello de botella masivo en
+          los ciclos ágiles de desarrollo de software. Cada vez que se añade una
+          nueva funcionalidad, el equipo de QA debe evaluar manualmente todas
+          las secciones preexistentes para descartar regresiones. Este proceso
+          reiterativo consume días u horas valiosas, retrasando de forma
+          inaceptable las entregas.
         </p>
         <p>
-          Al implementar un flujo de QA Automation integrado a los pipelines de entrega e integración continua (CI/CD), el sistema ejecuta cientos de pruebas en paralelo en cuestión de pocos minutos ante cada cambio de código. Esto reduce los tiempos de validación, mejora de forma notable la experiencia del desarrollador y asegura lanzamientos seguros y ágiles al mercado.
+          Al implementar un flujo de QA Automation integrado a los pipelines de
+          entrega e integración continua (CI/CD), el sistema ejecuta cientos de
+          pruebas en paralelo en cuestión de pocos minutos ante cada cambio de
+          código. Esto reduce los tiempos de validación, mejora de forma notable
+          la experiencia del desarrollador y asegura lanzamientos seguros y
+          ágiles al mercado.
         </p>
 
-        <h2>¿Cuáles son los principales retornos de inversión al automatizar el control de calidad?</h2>
+        <h2>
+          ¿Cuáles son los principales retornos de inversión al automatizar el
+          control de calidad?
+        </h2>
         <p>
-          Además de acelerar el Time-to-Market, la automatización disminuye sustancialmente el retrabajo técnico (bugs detectados de forma tardía en producción, cuyo costo de reparación es hasta 100 veces superior). De esta forma se potencia el valor operativo del equipo técnico, liberando a los ingenieros de QA para realizar pruebas exploratorias y de usabilidad de alta intención, robusteciendo la experiencia final del usuario B2B.
+          Además de acelerar el Time-to-Market, la automatización disminuye
+          sustancialmente el retrabajo técnico (bugs detectados de forma tardía
+          en producción, cuyo costo de reparación es hasta 100 veces superior).
+          De esta forma se potencia el valor operativo del equipo técnico,
+          liberando a los ingenieros de QA para realizar pruebas exploratorias y
+          de usabilidad de alta intención, robusteciendo la experiencia final
+          del usuario B2B.
         </p>
 
-        <p className="cta-paragraph" style={{ marginTop: '2.5rem', padding: '2rem', backgroundColor: 'var(--blue-light)', borderRadius: '12px', border: '1px solid var(--blue-20)' }}>
-          <strong>¿Quieres acelerar tus lanzamientos tecnológicos sin arriesgar la calidad?</strong>{" "}
-          En 4AGILE estructuramos células de QA Automation integradas con ingenieros de pruebas de primer nivel técnico.{" "}
-          <a href="/contacto" style={{ color: "var(--blue)", textDecoration: "underline" }}>Conversemos hoy mismo</a> y optimiza tus procesos de entrega de software.
+        <p
+          className="cta-paragraph"
+          style={{
+            marginTop: "2.5rem",
+            padding: "2rem",
+            backgroundColor: "var(--blue-light)",
+            borderRadius: "12px",
+            border: "1px solid var(--blue-20)",
+          }}
+        >
+          <strong>
+            ¿Quieres acelerar tus lanzamientos tecnológicos sin arriesgar la
+            calidad?
+          </strong>{" "}
+          En 4AGILE estructuramos células de QA Automation integradas con
+          ingenieros de pruebas de primer nivel técnico.{" "}
+          <a
+            href="/contacto"
+            style={{ color: "var(--blue)", textDecoration: "underline" }}
+          >
+            Conversemos hoy mismo
+          </a>{" "}
+          y optimiza tus procesos de entrega de software.
         </p>
       </>
-    )
+    ),
   },
 
   "ia-generativa-banca-chile": {
-    title: "IA Generativa para la banca en Chile: transformando la eficiencia operativa y el cumplimiento",
-    image: "https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=800&q=80",
+    title:
+      "IA Generativa para la banca en Chile: transformando la eficiencia operativa y el cumplimiento",
+    image:
+      "https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=800&q=80",
     date: "2026-06-12",
     category: "Inteligencia Artificial",
     tags: ["IA Generativa", "Banca", "Chile", "Cumplimiento", "Eficiencia"],
-    metaDescription: "Descubre cómo la IA Generativa para la banca en Chile está redefiniendo la eficiencia y el cumplimiento regulatorio en el sector financiero.",
+    metaDescription:
+      "Descubre cómo la IA Generativa para la banca en Chile está redefiniendo la eficiencia y el cumplimiento regulatorio en el sector financiero.",
     content: (
       <>
         <p>
-          El sector financiero nacional enfrenta un constante desafío de optimización y estricta regulación. La adopción estratégica de la <strong>IA Generativa para la banca en Chile</strong> está marcando un punto de inflexión operativo, permitiendo a las instituciones redefinir la eficiencia de sus procesos de back office, agilizar la atención comercial y asegurar un cumplimiento normativo impecable ante entidades reguladoras como la CMF (Comisión para el Mercado Financiero).
+          El sector financiero nacional enfrenta un constante desafío de
+          optimización y estricta regulación. La adopción estratégica de la{" "}
+          <strong>IA Generativa para la banca en Chile</strong> está marcando un
+          punto de inflexión operativo, permitiendo a las instituciones
+          redefinir la eficiencia de sus procesos de back office, agilizar la
+          atención comercial y asegurar un cumplimiento normativo impecable ante
+          entidades reguladoras como la CMF (Comisión para el Mercado
+          Financiero).
         </p>
 
-        <h2>¿Cómo optimiza la inteligencia artificial generativa los procesos internos del sector bancario?</h2>
+        <h2>
+          ¿Cómo optimiza la inteligencia artificial generativa los procesos
+          internos del sector bancario?
+        </h2>
         <p>
-          En los departamentos de back office y operaciones financieras en Chile, el personal consume valiosas horas analizando manualmente contratos comerciales, solicitudes de crédito complejas, carpetas tributarias y normativas de cumplimiento. Los modelos avanzados de IA Generativa permiten estructurar y sintetizar de forma automática información proveniente de múltiples documentos masivos no estructurados en cuestión de segundos, reduciendo drásticamente la fricción administrativa y acortando los tiempos de aprobación de productos financieros de días a minutos.
+          En los departamentos de back office y operaciones financieras en
+          Chile, el personal consume valiosas horas analizando manualmente
+          contratos comerciales, solicitudes de crédito complejas, carpetas
+          tributarias y normativas de cumplimiento. Los modelos avanzados de IA
+          Generativa permiten estructurar y sintetizar de forma automática
+          información proveniente de múltiples documentos masivos no
+          estructurados en cuestión de segundos, reduciendo drásticamente la
+          fricción administrativa y acortando los tiempos de aprobación de
+          productos financieros de días a minutos.
         </p>
 
-        <h2>¿De qué manera la IA resguarda el riguroso cumplimiento normativo ante la CMF?</h2>
+        <h2>
+          ¿De qué manera la IA resguarda el riguroso cumplimiento normativo ante
+          la CMF?
+        </h2>
         <p>
-          La CMF exige altos estándares de auditoría, gobernanza de riesgos y transparencia en las operaciones financieras de Chile. La IA Generativa actúa como un asistente experto e infatigable de cumplimiento (Compliance), evaluando en tiempo real que cada proceso transaccional y comunicación se ajuste plenamente a las directrices vigentes, detectando de forma proactiva desvíos o anomalías operativas.
+          La CMF exige altos estándares de auditoría, gobernanza de riesgos y
+          transparencia en las operaciones financieras de Chile. La IA
+          Generativa actúa como un asistente experto e infatigable de
+          cumplimiento (Compliance), evaluando en tiempo real que cada proceso
+          transaccional y comunicación se ajuste plenamente a las directrices
+          vigentes, detectando de forma proactiva desvíos o anomalías
+          operativas.
         </p>
         <p>
-          Al implementar modelos de inteligencia artificial explicable y gobernada, la banca en Chile garantiza una resiliencia operacional inquebrantable, blindando su reputación y robusteciendo la confianza de sus clientes corporativos.
+          Al implementar modelos de inteligencia artificial explicable y
+          gobernada, la banca en Chile garantiza una resiliencia operacional
+          inquebrantable, blindando su reputación y robusteciendo la confianza
+          de sus clientes corporativos.
         </p>
 
-        <p className="cta-paragraph" style={{ marginTop: '2.5rem', padding: '2rem', backgroundColor: 'var(--blue-light)', borderRadius: '12px', border: '1px solid var(--blue-20)' }}>
-          <strong>¿Buscas implementar IA Generativa segura y gobernada en tu institución financiera?</strong>{" "}
-          En 4AGILE proveemos ingenieros y desarrolladores altamente especializados en el desarrollo de soluciones de IA para el sector fintech y bancario.{" "}
-          <a href="/contacto" style={{ color: "var(--blue)", textDecoration: "underline" }}>Escríbenos hoy</a> y lidera la revolución financiera en Chile.
+        <p
+          className="cta-paragraph"
+          style={{
+            marginTop: "2.5rem",
+            padding: "2rem",
+            backgroundColor: "var(--blue-light)",
+            borderRadius: "12px",
+            border: "1px solid var(--blue-20)",
+          }}
+        >
+          <strong>
+            ¿Buscas implementar IA Generativa segura y gobernada en tu
+            institución financiera?
+          </strong>{" "}
+          En 4AGILE proveemos ingenieros y desarrolladores altamente
+          especializados en el desarrollo de soluciones de IA para el sector
+          fintech y bancario.{" "}
+          <a
+            href="/contacto"
+            style={{ color: "var(--blue)", textDecoration: "underline" }}
+          >
+            Escríbenos hoy
+          </a>{" "}
+          y lidera la revolución financiera en Chile.
         </p>
       </>
-    )
+    ),
   },
 
   "celulas-agiles-desarrollo-chile": {
-    title: "Células ágiles de desarrollo: el motor de la transformación digital en grandes empresas chilenas",
-    image: "https://images.unsplash.com/photo-1531538606174-0f90ff5dce83?auto=format&fit=crop&w=800&q=80",
+    title:
+      "Células ágiles de desarrollo: el motor de la transformación digital en grandes empresas chilenas",
+    image:
+      "https://images.unsplash.com/photo-1531538606174-0f90ff5dce83?auto=format&fit=crop&w=800&q=80",
     date: "2026-06-12",
     category: "Metodologías y Agilidad",
-    tags: ["Células Ágiles", "Transformación Digital", "Grandes Empresas", "Chile", "Desarrollo de Software"],
-    metaDescription: "Conoce cómo las células ágiles de desarrollo impulsan la transformación digital en grandes empresas chilenas con velocidad y calidad.",
+    tags: [
+      "Células Ágiles",
+      "Transformación Digital",
+      "Grandes Empresas",
+      "Chile",
+      "Desarrollo de Software",
+    ],
+    metaDescription:
+      "Conoce cómo las células ágiles de desarrollo impulsan la transformación digital en grandes empresas chilenas con velocidad y calidad.",
     content: (
       <>
         <p>
-          El éxito de la modernización tecnológica en las principales industrias corporativas de Chile no depende únicamente de la infraestructura en la nube o del software seleccionado; radica en la conformación de equipos de alto rendimiento. Las <strong>células ágiles de desarrollo en Chile</strong> se erigen hoy como el motor de ejecución más efectivo para acelerar la innovación, asegurar calidad técnica de punta y acortar el Time-to-Market de forma sostenida en el tiempo.
+          El éxito de la modernización tecnológica en las principales industrias
+          corporativas de Chile no depende únicamente de la infraestructura en
+          la nube o del software seleccionado; radica en la conformación de
+          equipos de alto rendimiento. Las{" "}
+          <strong>células ágiles de desarrollo en Chile</strong> se erigen hoy
+          como el motor de ejecución más efectivo para acelerar la innovación,
+          asegurar calidad técnica de punta y acortar el Time-to-Market de forma
+          sostenida en el tiempo.
         </p>
 
-        <h2>¿Qué diferencia a las células ágiles de desarrollo de los esquemas tradicionales de TI?</h2>
+        <h2>
+          ¿Qué diferencia a las células ágiles de desarrollo de los esquemas
+          tradicionales de TI?
+        </h2>
         <p>
-          A diferencia del modelo convencional de contratación o asignación rígida de tareas, una célula ágil de desarrollo (o squad) es un equipo multidisciplinario, autoorganizado y dueño absoluto de un módulo o producto digital. Está compuesta por roles especializados que colaboran de manera sinérgica: Product Owner, Scrum Master, desarrolladores de software senior (Frontend/Backend), ingenieros de QA Automation y especialistas DevOps.
+          A diferencia del modelo convencional de contratación o asignación
+          rígida de tareas, una célula ágil de desarrollo (o squad) es un equipo
+          multidisciplinario, autoorganizado y dueño absoluto de un módulo o
+          producto digital. Está compuesta por roles especializados que
+          colaboran de manera sinérgica: Product Owner, Scrum Master,
+          desarrolladores de software senior (Frontend/Backend), ingenieros de
+          QA Automation y especialistas DevOps.
         </p>
         <p>
-          Este equipo opera bajo metodologías ágiles (Scrum, Kanban, SAFe), entregando incrementos de software funcionales y testeados en cada ciclo de sprint (habitualmente de dos semanas), asegurando una retroalimentación continua con el negocio y eliminando el riesgo de largos proyectos de cascada que se desvían de los objetivos reales de la corporación.
+          Este equipo opera bajo metodologías ágiles (Scrum, Kanban, SAFe),
+          entregando incrementos de software funcionales y testeados en cada
+          ciclo de sprint (habitualmente de dos semanas), asegurando una
+          retroalimentación continua con el negocio y eliminando el riesgo de
+          largos proyectos de cascada que se desvían de los objetivos reales de
+          la corporación.
         </p>
 
-        <h2>¿Cuáles son los beneficios de adoptar el modelo de células ágiles de 4AGILE?</h2>
+        <h2>
+          ¿Cuáles son los beneficios de adoptar el modelo de células ágiles de
+          4AGILE?
+        </h2>
         <p>
-          La adopción de nuestras células de desarrollo especializado brinda a las corporaciones en Chile velocidad operativa inmediata sin la lentitud del reclutamiento propio, total control sobre las prioridades del producto, acompañamiento de líderes experimentados en agilidad técnica, y una notable mitigación de riesgos de retraso o sobrecostos. 
+          La adopción de nuestras células de desarrollo especializado brinda a
+          las corporaciones en Chile velocidad operativa inmediata sin la
+          lentitud del reclutamiento propio, total control sobre las prioridades
+          del producto, acompañamiento de líderes experimentados en agilidad
+          técnica, y una notable mitigación de riesgos de retraso o sobrecostos.
         </p>
         <p>
-          Esto le permite a las grandes empresas focalizar sus capacidades estratégicas internas en el núcleo de su negocio, delegando la ejecución del desarrollo digital a squads de alto rendimiento de manera flexible y escalable.
+          Esto le permite a las grandes empresas focalizar sus capacidades
+          estratégicas internas en el núcleo de su negocio, delegando la
+          ejecución del desarrollo digital a squads de alto rendimiento de
+          manera flexible y escalable.
         </p>
 
-        <p className="cta-paragraph" style={{ marginTop: '2.5rem', padding: '2rem', backgroundColor: 'var(--blue-light)', borderRadius: '12px', border: '1px solid var(--blue-20)' }}>
-          <strong>¿Necesitas implementar células ágiles de desarrollo de alto nivel para tu empresa en Chile?</strong>{" "}
-          En 4AGILE proveemos escuadrones multidisciplinarios listos para integrarse a tus operaciones digitales bajo los más altos estándares del mercado B2B.{" "}
-          <a href="/contacto" style={{ color: "var(--blue)", textDecoration: "underline" }}>Conversemos hoy mismo</a> e impulsemos tu transformación tecnológica.
+        <p
+          className="cta-paragraph"
+          style={{
+            marginTop: "2.5rem",
+            padding: "2rem",
+            backgroundColor: "var(--blue-light)",
+            borderRadius: "12px",
+            border: "1px solid var(--blue-20)",
+          }}
+        >
+          <strong>
+            ¿Necesitas implementar células ágiles de desarrollo de alto nivel
+            para tu empresa en Chile?
+          </strong>{" "}
+          En 4AGILE proveemos escuadrones multidisciplinarios listos para
+          integrarse a tus operaciones digitales bajo los más altos estándares
+          del mercado B2B.{" "}
+          <a
+            href="/contacto"
+            style={{ color: "var(--blue)", textDecoration: "underline" }}
+          >
+            Conversemos hoy mismo
+          </a>{" "}
+          e impulsemos tu transformación tecnológica.
         </p>
       </>
-    )
+    ),
   },
-
 };
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 export default function Article() {
   const { slug } = useParams();
@@ -3199,24 +3924,7 @@ export default function Article() {
 
   return (
     <div className="site-shell">
-      <header className="site-header" aria-label="Navegación principal">
-        <Link className="brand" href="/" aria-label="4AGILE inicio">
-          <img
-            src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663522518131/WbYuRCsZwwbLteMC.png"
-            alt="Logo 4AGILE"
-          />
-          <span>4AGILE</span>
-        </Link>
-        <nav className="nav-links" aria-label="Secciones del sitio">
-          <Link href="/">Inicio</Link>
-          <Link href="/servicios">Servicios</Link>
-          <Link href="/nosotros">Nosotros</Link>
-          <Link href="/blog">Blog</Link>
-          <Link className="nav-cta" href="/contacto">
-            Conversemos
-          </Link>
-        </nav>
-      </header>
+      <Header />
 
       <main>
         <article
