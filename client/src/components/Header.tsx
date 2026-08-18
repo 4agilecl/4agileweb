@@ -35,6 +35,7 @@ export default function Header() {
 
   const isHomeActive = location === "/";
   const isServiciosActive = location === "/servicios";
+  const isProductividadActive = location === "/productividad";
   const isNosotrosActive = location === "/nosotros";
   const isBlogActive = location.startsWith("/blog");
   const isContactoActive = location === "/contacto";
@@ -59,6 +60,12 @@ export default function Header() {
           </Link>
           <Link href="/servicios" className={isServiciosActive ? "active" : ""}>
             Servicios
+          </Link>
+          <Link
+            href="/productividad"
+            className={isProductividadActive ? "active" : ""}
+          >
+            Productividad
           </Link>
           <Link href="/nosotros" className={isNosotrosActive ? "active" : ""}>
             Nosotros
@@ -143,6 +150,14 @@ export default function Header() {
                 onClick={() => setIsOpen(false)}
               >
                 <span className="mobile-nav-item-title">Servicios</span>
+                <ChevronRight size={18} className="mobile-nav-chevron" />
+              </Link>
+              <Link
+                href="/productividad"
+                className={`mobile-nav-item ${isProductividadActive ? "active" : ""}`}
+                onClick={() => setIsOpen(false)}
+              >
+                <span className="mobile-nav-item-title">Productividad</span>
                 <ChevronRight size={18} className="mobile-nav-chevron" />
               </Link>
               <Link

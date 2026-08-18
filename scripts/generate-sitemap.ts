@@ -113,6 +113,10 @@ function main() {
     <priority>0.9</priority>
   </url>
   <url>
+    <loc>https://4agile.cl/productividad</loc>
+    <priority>0.9</priority>
+  </url>
+  <url>
     <loc>https://4agile.cl/nosotros</loc>
     <priority>0.8</priority>
   </url>

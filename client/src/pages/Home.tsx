@@ -12,6 +12,7 @@ import {
   ShieldCheck,
   Target,
   UsersRound,
+  Zap,
 } from "lucide-react";
 import { useSEO } from "../hooks/useSEO";
 import Header from "../components/Header";
@@ -28,6 +29,7 @@ const serviceCards = [
     label: "Capacidad especializada bajo demanda",
     copy: "Integramos profesionales contratados y acompañados por 4AGILE para reforzar equipos críticos en tecnología, agilidad, data, soporte, producto y gestión. El foco no es solo cubrir una silla, sino sumar capacidad productiva con seguimiento, mentoría y continuidad.",
     cta: "Necesito talentos para mi equipo",
+    link: "/servicios",
   },
   {
     icon: Search,
@@ -35,6 +37,15 @@ const serviceCards = [
     label: "Búsqueda precisa de perfiles clave",
     copy: "Encontramos, evaluamos y presentamos candidatos alineados al perfil técnico, contexto cultural y objetivos del negocio. Aplicamos selección experta para reducir tiempo, riesgo y fricción en contrataciones estratégicas.",
     cta: "Quiero buscar un perfil clave",
+    link: "/servicios",
+  },
+  {
+    icon: Zap,
+    title: "Mejora la productividad de talentos",
+    label: "Entrenamientos e IA aplicada",
+    copy: "Entrenamos y acompañamos a los talentos para potenciar su productividad mediante Inteligencia Artificial, gestión ágil, habilidades blandas y nivelación tecnológica. Disponible para equipos del cliente o 100% incluido sin costo en nuestro staffing.",
+    cta: "Ver programas de productividad",
+    link: "/productividad",
   },
 ];
 
@@ -201,20 +212,20 @@ export default function Home() {
           <div className="split">
             <div>
               <h2>
-                Dos soluciones para resolver el reto más difícil: encontrar y
-                sostener talento que entregue valor.
+                Soluciones integrales para resolver el reto más difícil: encontrar,
+                potenciar y sostener talento que entregue valor.
               </h2>
             </div>
             <div>
               <p>
                 4AGILE combina búsqueda especializada, evaluación, contratación,
-                integración y acompañamiento continuo. Nuestro diferencial está
+                acompañamiento continuo y entrenamientos en productividad con IA y agilidad. Nuestro diferencial está
                 en mirar el talento como una capacidad estratégica, no como una
                 transacción aislada.
               </p>
               <p>
-                Ya sea que necesites reforzar un equipo con outsourcing o
-                encontrar un perfil crítico mediante hunting, diseñamos el
+                Ya sea que necesites reforzar un equipo con outsourcing,
+                encontrar un perfil crítico mediante hunting o elevar la productividad de tus células, diseñamos el
                 servicio según tu contexto, urgencia, cultura y objetivos.
               </p>
             </div>
@@ -231,7 +242,7 @@ export default function Home() {
                   </div>
                   <h3>{service.title}</h3>
                   <p>{service.copy}</p>
-                  <Link href="/servicios">
+                  <Link href={service.link || "/servicios"}>
                     {service.cta} <ArrowRight size={17} />
                   </Link>
                 </article>
