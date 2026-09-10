@@ -49,6 +49,21 @@ const serviceCards = [
   },
 ];
 
+const clientLogos = [
+  { name: "Caja Los Andes", file: "caja-los-andes.png" },
+  { name: "Arauco", file: "arauco.png" },
+  { name: "AFP Cuprum", file: "cuprum-afp.png" },
+  { name: "CORFO", file: "corfo.png" },
+  { name: "Sercotec", file: "sercotec.png" },
+  { name: "Pontificia Universidad Católica de Chile", file: "uc-chile.png" },
+  { name: "AFP Habitat", file: "afp-habitat.png" },
+  { name: "Walmart", file: "walmart.png" },
+  { name: "Servicio de Impuestos Internos", file: "sii.png" },
+  { name: "AFC Chile", file: "afc-chile.png" },
+  { name: "Scotiabank", file: "scotiabank.png" },
+  { name: "ACHS", file: "achs.png" },
+];
+
 const differentiators = [
   [
     "< 5 días",
@@ -212,21 +227,22 @@ export default function Home() {
           <div className="split">
             <div>
               <h2>
-                Soluciones integrales para resolver el reto más difícil: encontrar,
-                potenciar y sostener talento que entregue valor.
+                Soluciones integrales para resolver el reto más difícil:
+                encontrar, potenciar y sostener talento que entregue valor.
               </h2>
             </div>
             <div>
               <p>
                 4AGILE combina búsqueda especializada, evaluación, contratación,
-                acompañamiento continuo y entrenamientos en productividad con IA y agilidad. Nuestro diferencial está
-                en mirar el talento como una capacidad estratégica, no como una
-                transacción aislada.
+                acompañamiento continuo y entrenamientos en productividad con IA
+                y agilidad. Nuestro diferencial está en mirar el talento como
+                una capacidad estratégica, no como una transacción aislada.
               </p>
               <p>
                 Ya sea que necesites reforzar un equipo con outsourcing,
-                encontrar un perfil crítico mediante hunting o elevar la productividad de tus células, diseñamos el
-                servicio según tu contexto, urgencia, cultura y objetivos.
+                encontrar un perfil crítico mediante hunting o elevar la
+                productividad de tus células, diseñamos el servicio según tu
+                contexto, urgencia, cultura y objetivos.
               </p>
             </div>
           </div>
@@ -435,6 +451,29 @@ export default function Home() {
               integración. Si el perfil no es el adecuado, buscamos un reemplazo
               sin costo adicional y mantenemos el foco en resolver tu necesidad.
             </p>
+          </div>
+        </section>
+
+        <section className="clients section-light" id="clientes">
+          <div className="container">
+            <div className="section-kicker">Clientes</div>
+            <h2>Han confiado en nosotros</h2>
+            <p className="clients-lead">
+              Empresas e instituciones de distintas industrias han trabajado con
+              talentos y equipos acompañados por 4AGILE para reforzar sus áreas
+              críticas, cubrir perfiles clave y elevar su productividad.
+            </p>
+            <div className="clients-grid">
+              {clientLogos.map((logo) => (
+                <div className="client-logo" key={logo.file}>
+                  <img
+                    src={`/logos/clientes/${logo.file}`}
+                    alt={logo.name}
+                    loading="lazy"
+                  />
+                </div>
+              ))}
+            </div>
           </div>
         </section>
 
